@@ -1,0 +1,377 @@
+@import "mixins";
+@import "variables";
+@import "offcanvas";
+@import "setting-slick";
+@import "body";
+@import "button";
+
+/*Navbar*/
+
+.home {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+.navbar{
+  // background-color: transparent;
+  background-color: #FFF !important;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  transition: all ease .5s;
+  z-index: 3;
+  top: -1px;
+  display: flex;
+  justify-content: space-between;
+  transition: .5s ease-in-out;
+  // margin-top: 40px;
+
+  @include respond-to(md) {
+    padding: 0 50px 0px 0px;
+  }
+
+  @include respond-to(sm){
+    padding: 0 0px 0px 20px;
+  }
+  @include respond-to(xs) {
+    background-color: $navbar !important;
+    padding: 0px;
+  }
+  
+  &.fixed {
+    background-color: $white!important;
+    box-shadow: 1px -1px 30px 0 rgba(0, 0, 0, 0.11), 1px 3px 15px 0 rgba(0, 0, 0, 0.08);
+    @include respond-to(sm) {
+      background-color: $white;
+    }
+  }
+
+  .navbar-brand {
+    margin-left: 10px;
+
+    @include respond-to(md) {
+      margin-left: 55px;
+    }
+    @include respond-to(sm){
+      margin-left: 0;
+    }
+
+    @include respond-to(xs){
+      padding: 10px;
+      margin-left: 0;
+    }
+    img {
+      width: 115px;
+    }
+  }
+ 
+}
+.navbar-nav {
+  
+  .nav-item{
+    padding: 0 5px;
+    .nav-link {
+      color: $black;
+      font-size: 17px;
+      font-family: $roboto;
+      letter-spacing: 1px;
+      transition: .5s ease-in-out;
+      position: relative;
+      transition: all 2s;
+      overflow: hidden;
+
+      @include respond-to(xs) {
+        color: $black;
+      }
+      &.dropdown-toggle {
+        &:after {
+          display: none;
+        }
+      }
+
+      &:hover, &:active {
+        color: $black;
+      }
+
+      &.fixed-color {
+        color: $black;
+
+        &::before{
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 3px;
+          background: $blue-mejor;
+          transform: translateX(-101%);
+          content: '';
+          position: absolute;
+          transition: transform .5s ease;
+
+          @include respond-to(xs) {
+            width: 40%;
+          }
+        }
+      }
+      &::before{
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background: $blue-mejor;
+        transform: translateX(-101%);
+        content: '';
+        position: absolute;
+        transition: transform .5s ease;
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        transition: transform .5s ease;
+      }
+
+
+      &:hover {
+        &::before{
+          transform: translateX(0);
+        }
+      }
+      &.active {
+        &::before{
+          transform: translateX(0);
+        }
+      }
+    }
+	}
+}
+
+.categories {
+	padding: 100px 0 100px 0;
+	background-color: #f9f9f9;
+}
+
+.content-title {
+	.title-section {
+		padding: 20px;
+		font-family: $roboto;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			width: 3%;
+			height: 5px;
+			background-color: $blue-mejor;
+			bottom: 0;
+			left: 2%;
+		}
+	}
+	p {
+		padding: 0px 25px;
+		font-family: $raleway;
+	}
+}
+
+.content-categories{
+	// display: grid;
+	// grid-template-columns: 20% 20% 20% 20% 20%;
+	border-radius: 5px;
+}
+.category-column {
+
+	.category {
+		padding: 12px;
+		height: 200px;
+		background-color: $white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 20px 10px;
+		border-radius: 5px;
+		
+		p {
+			margin-top: 10px;
+			font-family: $raleway;
+		}
+	}
+}
+
+.inf {
+	height: 100vh;
+	padding-top: 100px;
+}
+.content-inf {
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+
+	&.content-inf-services {
+		grid-template-columns: 25% 25% 25% 25%;
+	}
+}
+
+.card-inf {
+	padding: 40px;
+	display: flex;
+	float: initial;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 300px;
+	position: relative;
+
+	&.card-inf-line {
+		padding: 20px;
+		display: flex;
+		flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+		&:last-child {
+			&::after{
+				display: none;
+			}
+		}
+		&:after {
+			position: absolute;
+			content: '';
+			right: 0;
+			top: 35%;
+			width: 3px;
+			height: 100px;
+			background-color: $gray-mejor;
+		}
+	}
+	&.card-inf-bg {
+		background-color: $gray-mejor;
+		border-radius: 5px;
+		margin-right: 20px;
+	}
+}
+
+.card-inf-description{
+	p {
+		font-family: $raleway;
+		text-align: center;
+	}
+}
+
+.card-inf-professional {
+	
+	padding: 10px;
+}
+
+.card-content-professional {
+	padding: 10px;
+	box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h3 {
+		font-family: $raleway;
+		font-size: 18px;
+	}
+}
+
+
+
+footer {
+	padding: 40px 20px 0px 20px;
+}
+
+.footer-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.footer-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.content-inf-footer{
+	margin-bottom: 15px;
+}
+.content-inf-footer {
+	display: flex;
+	flex-direction: column;
+	p {
+		font-weight: 600 !important;
+    margin-bottom: 3px
+	}
+	a {
+		
+		color: $black;
+		text-decoration: none;
+	}
+}
+
+.footer-company {
+	display: flex;
+	justify-content: center;
+}
+
+
+.content-form {
+  margin-top: 20px;
+  .control-expanded {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    align-items: flex-end;
+    .control-label {
+      width: 80%;
+      text-align: left;
+      @include respond-to(xs) {
+        width: 100%;
+      }
+      label{
+        font-family: $roboto;
+        font-weight: 600;
+      }
+    }
+
+    input, textarea {
+      background-color: $white;
+      border-width: 1px;
+      border-style: solid;
+      border-color: $gray-mejor;
+      border-radius: 2px;
+      color: #565678;
+      max-width: 80%;
+      width: 80%;
+      padding: 10px;
+      resize: none;
+      outline: $gray-mejor;
+
+      @include respond-to(xs) {
+        max-width: 100%;
+        width: 100%;
+        background-color: transparent;
+      
+      }
+      
+    }
+  }
+}
+
+
+.cta-form{
+  display: flex;
+  width: 100%;
+  justify-content:flex-end;
+  align-items: flex-end;
+  height: 50px;
+
+  @include respond-to(sm) {
+    height: 50px;
+  }
+
+  a {
+    flex-basis: 25%;
+
+    @include respond-to(xs){
+      flex-basis: 100%;
+    }
+  }
+
+}
