@@ -51,6 +51,27 @@
                       -# %h1.title-banner.wow.animated.fadeInUp{ 'data-wow-duration' => '1500ms', 'data-wow-delay' => '.2s'  }= slide[:title]
                       %p.wow.animated.fadeInUp{ 'data-wow-duration' => '1500ms', 'data-wow-delay' => '.9s'  }= slide[:description]
                       %a.btn-slider.btn.btn-primary{ href: ''} Cotiza
+    %section.section-padding
+      .container
+        .content-title
+          %h1.title-section Que ofrece mejor cotiza
+          %p Lo mejor lo encuentras con nosotros
+        .content-inf
+          .card-inf.card-inf-line
+            .card-inf-image
+              %img{:src => "assets/img/1.webp"}/
+            .card-inf-description
+              %p Contamos con profesionales de confianza y recomendados por nuestros clientes
+          .card-inf.card-inf-line
+            .card-inf-image
+              %img{:src => "assets/img/2.webp"}/
+            .card-inf-description
+              %p Asesoría gratuita online constante por arquitecto, ante cualquier duda con la construcción, regularización o diseño de su proyecto
+          .card-inf.card-inf-line
+            .card-inf-image
+              %img{:src => "assets/img/3.webp"}/
+            .card-inf-description
+              %p Pronto, descuentos en las principales tiendas de cosnstrucción de chile
     %section.categories
       .container
         .content-title
@@ -110,22 +131,28 @@
               .icon
                 %img{:src => "assets/img/categories/2.webp"}/
               %p.name-category Otros
-    %section.inf
+    %section.section-padding 
       .container
-        .content-title
-          %h1.title-section Nuestros productos
+        .content-title.content-title-d
+          %h1.title-section.title-product-after Nuestros productos
+          %a.btn-slider.btn.btn-primary{ href: ''} Ver más
         .content-services
           .content-first-img
-            %img.img-fluid{:alt => "image", :src => "https://images.unsplash.com/photo-1540103711724-ebf833bde8d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80"}/
+            .mask
+              %img.img-fluid{:alt => "image", :src => "https://images.unsplash.com/photo-1540103711724-ebf833bde8d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80"}/
+              %h3.title-services Herramientas
           .content-second-images
             .content-two
               .content-img
                 %img.img-fluid{:alt => "image", :src => "https://images.unsplash.com/photo-1458829549177-e9a8f3db5b14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"}/
+                %h3.title-services piezas
               .content-img
                 %img.img-fluid{:alt => "image", :src => "https://images.unsplash.com/photo-1540103711724-ebf833bde8d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80"}/
+                %h3.title-services piezas
             .content-last-img
               %img.img-fluid{:alt => "image", :src => "https://images.unsplash.com/photo-1540103711724-ebf833bde8d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80"}/
-    %section.inf
+              %h3.title-services otros
+    %section.section-padding 
       .container
         .content-title
           %h1.title-section Nuestros servicios
@@ -150,30 +177,8 @@
               %img{:src => "assets/img/steps/3.webp"}/
             .card-inf-description
               %p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatibus vitae voluptatum.
-
     
-    %section
-      .container
-        .content-title
-          %h1.title-section Que ofrece mejor cotiza
-          %p Lo mejor lo encuentras con nosotros
-        .content-inf
-          .card-inf.card-inf-line
-            .card-inf-image
-              %img{:src => "assets/img/1.webp"}/
-            .card-inf-description
-              %p Contamos con profesionales de confianza y recomendados por nuestros clientes
-          .card-inf.card-inf-line
-            .card-inf-image
-              %img{:src => "assets/img/2.webp"}/
-            .card-inf-description
-              %p Asesoría gratuita online constante por arquitecto, ante cualquier duda con la construcción, regularización o diseño de su proyecto
-          .card-inf.card-inf-line
-            .card-inf-image
-              %img{:src => "assets/img/3.webp"}/
-            .card-inf-description
-              %p Pronto, descuentos en las principales tiendas de cosnstrucción de chile
-    %section
+    %section.section-padding.section-services
       .container
         .content-title
           %h1.title-section Como funciona
@@ -194,7 +199,7 @@
               %img{:src => "assets/img/steps/3.webp"}/
             .card-inf-description
               %p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatibus vitae voluptatum.
-    %section.inf
+    %section.section-padding 
       .container
         .content-title
           %h1.title-section Encuentra al profesinal de tu zona

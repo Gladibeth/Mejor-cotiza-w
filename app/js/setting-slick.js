@@ -60,7 +60,7 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    dots: true,
+    dots: false,
     arrows: false,
     responsive: [
       {
