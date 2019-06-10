@@ -13,6 +13,18 @@
   %body
     %section.home
       %nav.navbar.navbar-expand-md.navbar-fixed-js
+        .top-header
+          .container.d-flex
+            .phone
+              %a.mr-3{ href: '#' }
+                %i.fa.fa-phone 
+                %span (+569) 8 904 32 64
+              %a{ href: '#' }
+                %i.fa.fa-envelope
+                %span Contacto@mejorcotiza.cl
+            .search
+              .search__container
+                %input.search__input{:placeholder => "Buscar", :type => "text"}/
         .container
           %a.navbar-brand{:href => "#"} 
             %img{ :src=>"assets/img/LOGO 1.jpg", :alt=>""}
@@ -25,10 +37,6 @@
                 %a.nav-link.active{:href => "#home-serviteca", "data-scroll" => ""} Pide tu cotización
               %li.nav-item
                 %a.nav-link{:href => "#team-about", "data-scroll" => ""} Trabaja con nosotros
-              -# %li.nav-item.dropdown
-              -#   %a.nav-link{:href => "#services", "data-scroll" => ""} Servicios
-              -# %li.nav-item
-              -#   %a.nav-link{:href => "#footer", "data-scroll" => ""} Contacto
 
       - slider = [{image: "assets/img/slider/0.jpg", title: 'Recibe nuestros presupuestos en solo tres paso y Gratis!', description: 'Recibe nuestros presupuestos en solo tres paso y Gratis!'}, {image: "assets/img/slider/2.jpeg", title: 'Mejor Cotiza', description: 'Recibe nuestros presupuestos en solo tres paso y Gratis!'},{image: "assets/img/slider/3.jpeg", title: 'Mejor Cotiza', description: 'Recibe nuestros presupuestos en solo tres paso y Gratis!'}]
       .carousel-content
@@ -214,7 +222,7 @@
             .footer-content-inf
               .content-inf-footer
                 %p Correo
-                %a{ :href => ''} Contactto@mejorcotiza.cl
+                %a{ :href => ''} Contacto@mejorcotiza.cl
                 %a{ :href => ''} Materiales@mejorcotiza.cl
               .content-inf-footer
                 %p Teléfonos

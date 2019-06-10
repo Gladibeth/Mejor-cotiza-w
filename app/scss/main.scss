@@ -2,6 +2,7 @@
 @import "variables";
 @import "offcanvas";
 @import "setting-slick";
+@import "category-slick";
 @import "body";
 @import "button";
 
@@ -14,9 +15,10 @@
   width: 100%;
 }
 .navbar{
-  // background-color: transparent;
+  display: flex;
+  flex-direction: column;
   background-color: #FFF !important;
-  height: 80px;
+  height: 100px;
   position: fixed;
   width: 100%;
   transition: all ease .5s;
@@ -25,7 +27,14 @@
   display: flex;
   justify-content: space-between;
   transition: .5s ease-in-out;
-  // margin-top: 40px;
+  padding: 0;
+
+  
+  &.fixed {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+  }
 
   @include respond-to(md) {
     padding: 0 50px 0px 0px;
@@ -67,6 +76,109 @@
   }
  
 }
+
+.top-header {
+  background-color: $blue-mejor;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+  padding: 5px;
+  
+
+  &.top-header-deleted {
+    display: none;
+    transition: 0.3s ease-in-out;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .phone {
+      padding-left: 15px;
+      a {
+        color: $white;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: none;
+        }
+
+        span {
+          color: $white;
+          font-family: $roboto
+        }
+        i {
+          color: $white;
+        }
+      }
+    }
+    .search {
+      margin-right: 10px;
+      &__title {
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+      }
+      
+      &__input {
+        width: 100%;
+        padding: 4px 24px;
+
+        background-color: transparent;
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        
+        color: $white;
+        background-color: transparent;
+        background-image: url("../img/search.svg");
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid $white;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        
+        &::placeholder {
+          color: $white;
+          letter-spacing: 1.5px;
+        }
+          
+        &:hover,
+        &:focus {
+          outline: 0;          
+        }
+      }
+    } 
+
+    .credits {
+      &__container {
+        margin-top: 24px;
+      }
+      
+      &__text {
+        text-align: center;
+        font-size: 13px;
+        line-height: 18px;
+      }
+      
+      &__link {
+        color: #ff8b88;
+        text-decoration: none;
+        transition: color 250ms ease-in;
+        
+        &:hover,
+        &:focus {
+          color: color(#ff8b88 blackness(+25%));
+        }
+      }
+    }
+  }
+}
+
+
 .navbar-nav {
   
   .nav-item{
@@ -172,9 +284,11 @@
 }
 
 .content-categories{
-	// display: grid;
-	// grid-template-columns: 20% 20% 20% 20% 20%;
-	border-radius: 5px;
+  border-radius: 5px;
+  .slick-dots {
+
+  }
+
 }
 .category-column {
 
@@ -187,7 +301,8 @@
 		align-items: center;
 		justify-content: center;
 		margin: 20px 10px;
-		border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
 		
 		p {
 			margin-top: 10px;
@@ -334,14 +449,14 @@ footer {
       background-color: $white;
       border-width: 1px;
       border-style: solid;
-      border-color: $gray-mejor;
+      border-color: #ccc;
       border-radius: 2px;
       color: #565678;
       max-width: 80%;
       width: 80%;
       padding: 10px;
       resize: none;
-      outline: $gray-mejor;
+      outline: #ccc;
 
       @include respond-to(xs) {
         max-width: 100%;
