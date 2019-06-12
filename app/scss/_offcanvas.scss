@@ -15,7 +15,7 @@
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-
+    // padding: 15px;
     @include respond-to(xs) {
       top: 75px;
       padding: 40px 10px;
