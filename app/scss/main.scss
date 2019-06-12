@@ -285,6 +285,7 @@
 
   &.card-left {
     align-items: flex-start;
+    position: relative;
     &:last-child {
 			&::after{
 				display: none;
@@ -356,6 +357,11 @@
     height: 100%;
     object-fit: contain;
   }
+
+  // .steps {
+  //   font-size: 20px;
+  //   font-weight: 700;
+  // }
 }
 
 .card-inf-description{
@@ -772,12 +778,6 @@ footer {
 
 
 .box-img {
-  // .box-img-about {
-  //   display: flex;
-  //   justify-content: center;
-  //   height: 300px;
-  //   width: 100%;
-  // }
 
   img {
     height: 100%;
@@ -835,4 +835,14 @@ footer {
 
 .container-fluid{
   padding: 50px;
+}
+
+.steps {
+  font-weight: 700;
+  font-size: 12rem;
+  font-family: "Raleway", sans-serif;
+  opacity: 0.1;
+  position: absolute;
+  right: -2px;
+  top: -150%;
 }

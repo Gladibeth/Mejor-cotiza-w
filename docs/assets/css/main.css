@@ -1172,6 +1172,7 @@ body {
 
 .card-inf.card-left {
   align-items: flex-start;
+  position: relative;
 }
 
 .card-inf.card-left:last-child::after {
@@ -1720,4 +1721,14 @@ footer {
 
 .container-fluid {
   padding: 50px;
+}
+
+.steps {
+  font-weight: 700;
+  font-size: 12rem;
+  font-family: "Raleway", sans-serif;
+  opacity: 0.1;
+  position: absolute;
+  right: -2px;
+  top: -150%;
 }
