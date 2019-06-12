@@ -1175,10 +1175,6 @@ body {
   position: relative;
 }
 
-.card-inf.card-left:last-child::after {
-  display: none;
-}
-
 .card-inf.card-left:after {
   position: absolute;
   content: '';
@@ -1269,11 +1265,15 @@ body {
 }
 
 .card-inf-professional {
-  padding: 10px;
+  padding: 20px;
+}
+
+.slider-professional {
+  margin-top: 50px;
 }
 
 .card-content-professional {
-  padding: 10px;
+  padding: 35px;
   box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
   display: flex;
   flex-direction: column;
@@ -1730,5 +1730,5 @@ footer {
   opacity: 0.1;
   position: absolute;
   right: -2px;
-  top: -150%;
+  top: -35%;
 }
