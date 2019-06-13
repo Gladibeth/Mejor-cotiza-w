@@ -267,6 +267,10 @@
 	display: grid;
 	grid-template-columns: 33.3% 33.3% 33.3%;
 
+  &.content-inf-card {
+    margin-top: 60px !important;
+    padding: 20px;
+  }
 	&.content-inf-services {
 		grid-template-columns: 25% 25% 25% 25%;
 	}
@@ -284,13 +288,7 @@
 
 
   &.card-left {
-    align-items: flex-start;
     position: relative;
-    // &:last-child {
-		// 	&::after{
-		// 		display: none;
-		// 	}
-		// }
 		&:after {
       position: absolute;
       content: '';
@@ -303,7 +301,7 @@
 
   }
   .content-inf{
-
+    
     h2 {
       margin-top: 20px;
       font-size: 40px;
@@ -350,8 +348,8 @@
 	}
 }
 .card-inf-image {
-  height: 120px;
-
+  height: 80px;
+  margin-bottom: 20px;
   img {
     width: 100%;
     height: 100%;
@@ -366,14 +364,21 @@
 
 .card-inf-description{
 
+  h3{
+    font-family: $raleway;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
   &.card-description-left {
     p {
-      text-align: left !important;
+      text-align: center !important;
     }
     h3 {
       font-family: $raleway;
       font-size: 18px;
       font-weight: 700;
+      text-align: center !important;
     }
   }
 
@@ -394,7 +399,7 @@
 
 
 .slider-professional {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .card-content-professional {
 	padding: 35px;
@@ -421,7 +426,7 @@
 
 
 .section-padding {
-  padding: 100px 0 0px 0px;
+  padding:80px 0 0px 0px;
 }
 .content-services {
   display: grid;
@@ -660,6 +665,7 @@ footer {
 
 .container-partnerts {
   margin-top: 85px;
+  padding: 20px;
 }
 
 .content-products {

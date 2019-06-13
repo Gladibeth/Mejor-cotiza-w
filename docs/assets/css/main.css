@@ -1196,6 +1196,11 @@ body {
   grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
+.content-inf.content-inf-card {
+  margin-top: 60px !important;
+  padding: 20px;
+}
+
 .content-inf.content-inf-services {
   grid-template-columns: 25% 25% 25% 25%;
 }
@@ -1212,7 +1217,6 @@ body {
 }
 
 .card-inf.card-left {
-  align-items: flex-start;
   position: relative;
 }
 
@@ -1275,7 +1279,8 @@ body {
 }
 
 .card-inf-image {
-  height: 120px;
+  height: 80px;
+  margin-bottom: 20px;
 }
 
 .card-inf-image img {
@@ -1284,14 +1289,22 @@ body {
   object-fit: contain;
 }
 
+.card-inf-description h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .card-inf-description.card-description-left p {
-  text-align: left !important;
+  text-align: center !important;
 }
 
 .card-inf-description.card-description-left h3 {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
+  text-align: center !important;
 }
 
 .card-inf-description h2 {
@@ -1310,7 +1323,7 @@ body {
 }
 
 .slider-professional {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .card-content-professional {
@@ -1336,7 +1349,7 @@ body {
 }
 
 .section-padding {
-  padding: 100px 0 0px 0px;
+  padding: 80px 0 0px 0px;
 }
 
 .content-services {
@@ -1583,6 +1596,7 @@ footer {
 
 .container-partnerts {
   margin-top: 85px;
+  padding: 20px;
 }
 
 .content-products {
