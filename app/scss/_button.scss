@@ -100,3 +100,11 @@
     }
   }
 }
+
+.btn-blue {
+  background-color: $blue-mejor !important;
+  border-radius: 5px;
+  a {
+    color: $white !important;
+  }
+}

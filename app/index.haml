@@ -26,18 +26,18 @@
               %p ¿Como funciona?
         .container.p-4
           %a.navbar-brand{:href => "#"} 
-            %img{ :src=>"assets/img/LOGO 1.jpg", :alt=>""}
+            %img{ :src=>"assets/img/logo.png", :alt=>""}
           %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.d-none-lg{"data-toggle" => "offcanvas", :type => "button"}
             %span.hamburger-box
               %span.hamburger-inner
           .offcanvas-collapse.fil#navbarNav
             %ul.navbar-nav
               %li.nav-item.active
-                %a.nav-link.active{:href => "#home-serviteca", "data-scroll" => ""} Categorías  Materiales
-              %li.nav-item
-                %a.nav-link{:href => "#team-about", "data-scroll" => ""} Cotiza Proyectos
+                %a.nav-link.active{:href => "#home-serviteca", "data-scroll" => ""} Materiales
               %li.nav-item
                 %a.nav-link{:href => "#home-serviteca", "data-scroll" => ""} Preguntas Frecuentes
+              %li.nav-item.cta-btn
+                %a.nav-link{:href => "#team-about", "data-scroll" => ""} Cotiza Proyectos
 
     %main.main-content
       %section.slideshow
@@ -232,7 +232,10 @@
     %section.section-padding
       .container-fluid
         .content-title
-          %h1.title-section ¿Porque comprar sus materiales en Mejor Cotiza Materiales?
+          %h1.title-section
+            ¿Por qué comprar sus materiales en 
+            %br 
+              Mejor Cotiza Materiales?
         .content-inf.content-inf-card
           .card-inf.card-inf-bg
             .card-inf-image
@@ -259,8 +262,9 @@
         .content-title
         .content-about
           .box-about
-            .box-img
-              %img{:src => " https://images.unsplash.com/photo-1521572267360-ee0c2909d518?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"}/
+            .box-content
+              .box-img
+                %img{:src => " https://images.unsplash.com/photo-1521572267360-ee0c2909d518?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"}/
              
             .box-content-description
               %h1 Andrés Prada
