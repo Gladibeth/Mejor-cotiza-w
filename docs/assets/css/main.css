@@ -2083,3 +2083,9 @@ footer {
     top: -15%;
   }
 }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .steps {
+    right: 15px;
+  }
+}
