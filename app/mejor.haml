@@ -1,3 +1,7 @@
+:ruby
+  def render(partial)
+    Haml::Engine.new(File.read(partial)).render
+  end
 !!!
 %html{lang: "en"}
   %head
@@ -11,46 +15,7 @@
     %link{rel: "stylesheet", href:"assets/css/animate.css"}/
     %link{rel: "stylesheet", href:"assets/css/main.css"}/
   %body
-    %section.home
-      %nav.navbar.navbar-expand-md.navbar-fixed-js
-        .top-header
-          .container.d-flex
-            .phone
-              %a.mr-3{ href: '#' }
-                %i.fa.fa-phone 
-                %span (+569) 8 904 32 64
-              %a{ href: '#' }
-                %i.fa.fa-envelope
-                %span Contacto@mejorcotiza.clya
-            .search
-              .search__container
-                %input.search__input{:placeholder => "Buscar", :type => "text"}/
-        .container
-          %a.navbar-brand{:href => "#"} 
-            %img{ :src=>"assets/img/LOGO 1.jpg", :alt=>""}
-          %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.d-none-lg{"data-toggle" => "offcanvas", :type => "button"}
-            %span.hamburger-box
-              %span.hamburger-inner
-          .offcanvas-collapse.fil#navbarNav
-            %ul.navbar-nav
-              %li.nav-item.active
-                %a.nav-link.active{:href => "#home-serviteca", "data-scroll" => ""} Pide tu cotización
-              %li.nav-item
-                %a.nav-link{:href => "#team-about", "data-scroll" => ""} Trabaja con nosotros
-
-      - slider = [{image: "assets/img/slider/0.jpg", title: 'Recibe nuestros presupuestos en solo tres paso y Gratis!', description: 'Recibe nuestros presupuestos en solo tres paso y Gratis!'}, {image: "assets/img/slider/2.jpeg", title: 'Mejor Cotiza', description: 'Recibe nuestros presupuestos en solo tres paso y Gratis!'},{image: "assets/img/slider/3.jpeg", title: 'Mejor Cotiza', description: 'Recibe nuestros presupuestos en solo tres paso y Gratis!'}]
-      .carousel-content
-        .carousel-divisor
-          .carrusel-slider
-            .single-item
-              - slider.each_with_index do |slide|
-                .item
-                  %img.img-responsive{:src => "#{slide[:image]}"}/
-                  .mask-item
-                    .banner-info
-                      -# %h1.title-banner.wow.animated.fadeInUp{ 'data-wow-duration' => '1500ms', 'data-wow-delay' => '.2s'  }= slide[:title]
-                      %p.wow.animated.fadeInUp{ 'data-wow-duration' => '1500ms', 'data-wow-delay' => '.9s'  }= slide[:description]
-                      %a.btn-slider.btn.btn-primary{ href: ''} Cotiza
+    = render ('app/partials/navbar.haml')
     %section.section-padding
       .container
         .content-title

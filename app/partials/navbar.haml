@@ -1,0 +1,27 @@
+%section.home
+  %nav.navbar.navbar-expand-md.navbar-fixed-js
+    .top-header
+      .d-flex.pl-4.pr-4
+        .phone
+          %a.mr-3{ href: '#' }
+            %i.fa.fa-phone 
+            %span (+569) 8 904 32 64
+          %a{ href: '#' }
+            %i.fa.fa-envelope
+            %span Contacto@mejorcotiza.cl
+        .text-top-header
+          %p ¿Como funciona?
+    .container-fluid
+      %a.navbar-brand{:href => "#"} 
+        %img{ :src=>"assets/img/logo.png", :alt=>""}
+      %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.d-none-lg{"data-toggle" => "offcanvas", :type => "button"}
+        %span.hamburger-box
+          %span.hamburger-inner
+      .offcanvas-collapse.fil#navbarNav
+        %ul.navbar-nav
+          %li.nav-item.active
+            %a.nav-link.active{:href => "#home-serviteca", "data-scroll" => ""} Materiales
+          %li.nav-item
+            %a.nav-link{:href => "#home-serviteca", "data-scroll" => ""} Preguntas Frecuentes
+          %li.nav-item.cta-btn
+            %a.nav-link{:href => "#team-about", "data-scroll" => ""} Cotiza Proyectos
