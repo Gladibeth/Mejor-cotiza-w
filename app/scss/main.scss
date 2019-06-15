@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   background-color: #FFF !important;
-  height: 115px;
+  height: 130px;
   position: fixed;
   width: 100%;
   transition: all ease .5s;
@@ -38,16 +38,8 @@
     justify-content: center;
   }
 
-  @include respond-to(md) {
-    padding: 0 50px 0px 0px;
-  }
-
-  @include respond-to(sm){
-    padding: 0 0px 0px 20px;
-  }
   @include respond-to(xs) {
-    background-color: $navbar !important;
-    padding: 0px;
+    height: 135px;
   }
   
   &.fixed {
@@ -58,6 +50,12 @@
     }
   }
 
+  .container-fluid{
+    padding: 40px;
+    @include respond-to(xs) {
+      padding: 0px;
+    }
+  }
   .navbar-brand {
     margin-left: 10px;
 
@@ -90,12 +88,18 @@
     display: none;
     transition: 0.3s ease-in-out;
   }
-  .container {
+  .d-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     .phone {
       padding-left: 15px;
+
+      @include respond-to(xs) {
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+      }
       a {
         color: $white;
         text-decoration: none;
@@ -115,6 +119,11 @@
     }
 
     .text-top-header {
+
+      @include respond-to(xs) {
+        display: none;
+      }
+
       p {
         font-family: $raleway;
         color:$white;
@@ -202,6 +211,12 @@
 		font-family: $roboto;
     position: relative;
     font-weight: 700;
+    font-size: 30px;
+
+    @include respond-to(xs) {
+      font-size: 25px;
+    }
+
 		&:after{
       content: '';
       position: absolute;
@@ -211,6 +226,18 @@
       border-radius: 50px;
       bottom: 0;
       left: 1.8%;
+
+      @include respond-to(md){
+        left: 2.5%;
+      }
+
+      @include respond-to(sm){
+        left: 3%;
+      }
+
+      @include respond-to(xs){
+        left: 5.8%;
+      }
     }
     
     &.title-product-after {
@@ -265,14 +292,29 @@
 }
 .content-inf {
 	display: grid;
-	grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  
+
+  @include respond-to(sm) {
+    grid-template-columns: 50% 50%;
+  }
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+  }
 
   &.content-inf-card {
     margin-top: 60px !important;
     padding: 20px;
   }
 	&.content-inf-services {
-		grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+    @include respond-to(sm) {
+      grid-template-columns: 50% 50%;
+    }
+    @include respond-to(xs) {
+      grid-template-columns: 100%;
+    }
 	}
 }
 
@@ -284,11 +326,36 @@
 	align-items: center;
 	justify-content: space-between;
 	height: 300px;
-	position: relative;
+  position: relative;
+  
+  @include respond-to(sm) {
+    margin-top: 20px;
+  }
+
+
+  @include respond-to(xs) {
+    margin-top: 10px;
+  }
 
 
   &.card-left {
     position: relative;
+
+    @include respond-to(sm) {
+      &:after {
+        display: none;
+      }
+    }
+
+    @include respond-to(xs) {
+      &:nth-child(1) {
+        padding: 40px 0px 0px 0px;
+        height: 150px;
+      }
+      &:after {
+        display: none;
+      }
+    }
 		&:after {
       position: absolute;
       content: '';
@@ -304,17 +371,21 @@
     
     h2 {
       margin-top: 20px;
-      font-size: 40px;
+      font-size: 30px;
       font-family: $roboto;
       position: relative;
       font-weight: 700;
+
+      @include respond-to(xs) {
+        font-size: 25px;
+      }
       &:after{
         content: '';
         position: absolute;
         width: 20%;
         height: 4px;
         background-color: #3D9BE9;
-        bottom: -10%;
+        bottom: -30%;
         left: 2%;
         border-radius: 50px;
       }
@@ -344,22 +415,25 @@
 	&.card-inf-bg {
 		background-color: $gray-mejor;
 		border-radius: 5px;
-		margin-right: 20px;
+    margin-right: 20px;
+    
+    @include respond-to(md) {
+      padding: 20px;
+    }
 	}
 }
 .card-inf-image {
-  height: 80px;
+  height: 100px;
   margin-bottom: 20px;
+
+  @include respond-to(md) {
+    height: 80px;
+  }
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-
-  // .steps {
-  //   font-size: 20px;
-  //   font-weight: 700;
-  // }
 }
 
 .card-inf-description{
@@ -402,7 +476,7 @@
 
 
 .slider-professional {
-  margin-top: 70px;
+  margin-top: 35px;
   padding: 20px;
 }
 .card-content-professional {
@@ -668,7 +742,7 @@ footer {
 }
 
 .container-partnerts {
-  margin-top: 85px;
+  margin-top: 35px;
   padding: 20px;
 }
 
@@ -680,6 +754,10 @@ footer {
 .content-products {
   display: grid;
   grid-template-columns: 50% 50%;
+
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+  }
 }
 .first-column-one {
   display: grid;
@@ -690,8 +768,12 @@ footer {
   display: grid;
   margin-right: 20px;
   grid-template-columns: 50% 50%;
+
 }
 
+.second-columns{
+  padding-left: 20px;
+}
 .second-column-two{
   display: grid; 
   grid-template-columns: 100%;
@@ -792,6 +874,10 @@ footer {
 .box-about{
   display: grid;
   grid-template-columns: 50% 50%;
+
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+  }
 }
 
 
@@ -803,6 +889,20 @@ footer {
     object-position: center;
     object-fit: cover;
     border-radius: 5px;
+
+    @include respond-to(md) {
+      width: 100%;
+    }
+    @include respond-to(sm) {
+      height: 400px;
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    @include respond-to(xs) {
+      width: 100%;
+    }
   }
 }
 
@@ -811,6 +911,20 @@ footer {
   align-items: self-start;
   flex-direction: column;
   justify-content: center;
+
+  @include respond-to(md) {
+    padding: 30px;
+  }
+  @include respond-to(sm) {
+    padding: 30px;
+  }
+
+  @include respond-to(xs) {
+    margin-top: 20px;
+    padding: 10px;
+    align-items: center;
+  }
+
   h1 {
     font-weight: 700;
     font-family: $raleway;
@@ -837,11 +951,21 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
   height: 100px;
-  
+
+  @include respond-to(xs) {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  } 
+
   p{
     color: $black;
     font-family: $raleway;
     font-weight: 700;
+
+    @include respond-to(xs) {
+      font-size: 15px;
+    }
   }
 }
 
@@ -859,7 +983,14 @@ footer {
 }
 
 .container-fluid{
-  padding: 50px;
+  padding: 40px;
+
+  @include respond-to(sm) {
+    padding: 0px;
+  }
+  @include respond-to(xs) {
+    padding: 0px;
+  }
 }
 
 .steps {
@@ -870,4 +1001,16 @@ footer {
   position: absolute;
   right: -2px;
   top: -35%;
+
+  @include respond-to(md) {
+    font-size: 7rem !important;
+    right: -2px;
+    top: 0%; 
+  }
+
+  @include respond-to(sm) {
+    font-size: 9rem !important;
+    right: 20px;
+    top: -15%; 
+  }
 }

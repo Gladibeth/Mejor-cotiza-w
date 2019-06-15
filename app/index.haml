@@ -8,13 +8,14 @@
     %link{rel: "stylesheet", href:"assets/css/slick.css"}/
     %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
     %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+    %link{rel: "stylesheet", href:"assets/css/cssanimation.css"}/
     %link{rel: "stylesheet", href:"assets/css/animate.css"}/
     %link{rel: "stylesheet", href:"assets/css/main.css"}/
   %body
     %section.home
       %nav.navbar.navbar-expand-md.navbar-fixed-js
         .top-header
-          .container.d-flex
+          .d-flex.pl-4.pr-4
             .phone
               %a.mr-3{ href: '#' }
                 %i.fa.fa-phone 
@@ -24,7 +25,7 @@
                 %span Contacto@mejorcotiza.cl
             .text-top-header
               %p ¿Como funciona?
-        .container.p-4
+        .container-fluid
           %a.navbar-brand{:href => "#"} 
             %img{ :src=>"assets/img/logo.png", :alt=>""}
           %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.d-none-lg{"data-toggle" => "offcanvas", :type => "button"}
@@ -48,24 +49,30 @@
                 .caption
                   .title No pierdas más tiempo y dinero
 
-                  %a.btn{:href => "#"}
+                  %a.btn-first.btn{:href => "#"}
                     %span.btn-inner ¿Que material estas buscando?
+                  %a.btn-second.btn.d-sm-none{:href => "#"}
+                    %span.btn-inner ¿Que material busca?
               .image-container
                 %img.image{:alt => "", :src => "assets/img/slider/slider-1.jpg"}/
             .slide
               .slide-content
                 .caption
                   .title Mejor cotiza te ofrece lo mejor
-                  %a.btn{:href => "#"}
+                  %a.btn-first.btn{:href => "#"}
                     %span.btn-inner ¿Que material estas buscando?
+                  %a.btn-second.btn.d-sm-none{:href => "#"}
+                    %span.btn-inner ¿Que material busca?
               .image-container
                 %img.image{:alt => "", :src => "assets/img/slider/slider-2.jpg"}/
             .slide
               .slide-content
                 .caption
                   .title Ven y aprovecha tenemos todo lo que necesitas
-                  %a.btn{:href => "#"}
+                  %a.btn-first.btn{:href => "#"}
                     %span.btn-inner ¿Que material estas buscando?
+                  %a.btn-second.btn.d-sm-none{:href => "#"}
+                    %span.btn-inner ¿Que material busca?
               .image-container
                 %img.image{:alt => "", :src => "assets/img/slider/slider-1.jpg"}/
             
@@ -106,7 +113,7 @@
               %img{:alt => "", :src => "assets/img/client_logo/client_logo-2.png"}/
             .item-partnert
               %img{:alt => "", :src => "assets/img/client_logo/client_logo-1.png"}
-    %section.section-padding.pt-4
+    %section
       .container-fluid
         .content-title
           %h1.title-section Productos
@@ -168,8 +175,10 @@
         .content-inf.content-inf-services
           .card-inf.card-left
             .content-inf.d-flex.flex-column
-              %h2 ¿Cómo funciona?
-              %p Sólo en tres sencillos pasos
+              %h2 
+                ¿Cómo funciona?
+              %p
+                Sólo en tres sencillos pasos
           .card-inf.card-left
             %p.steps
               1
@@ -233,23 +242,21 @@
       .container-fluid
         .content-title
           %h1.title-section
-            ¿Por qué comprar sus materiales en 
-            %br 
-              Mejor Cotiza Materiales?
+            ¿Por qué comprar sus materiales en Mejor Cotiza Materiales?
         .content-inf.content-inf-card
-          .card-inf.card-inf-bg
+          .card-inf.card-inf-bg.cssanimation.fadeInBottom
             .card-inf-image
               %img{:src => "assets/img/icons/6.svg"}/
             .card-inf-description
               %h3 En menos de 24 hrs.
               %p Todos los materiales de construcción, desde nuestros proveedores a su hogar.
-          .card-inf.card-inf-bg
+          .card-inf.card-inf-bg.cssanimation.fadeInBottom
             .card-inf-image
               %img{:src => "assets/img/icons/2.svg"}/
             .card-inf-description
               %h3 Ahorra tiempo y dinero!
               %p Compara el mismo producto en distintos proveedores de chile y escoge el mejor precio
-          .card-inf.card-inf-bg
+          .card-inf.card-inf-bg.cssanimation.fadeInBottom
             .card-inf-image
               %img{:src => "assets/img/icons/3.svg"}/
             .card-inf-description
@@ -267,7 +274,7 @@
                 %img{:src => " https://images.unsplash.com/photo-1521572267360-ee0c2909d518?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"}/
              
             .box-content-description
-              %h1 Andrés Prada
+              %h1.cssanimation.leFadeIn.sequence Andrés Prada
               %p 
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
@@ -289,10 +296,12 @@
     %script{src: "assets/js/jquery.min.js"}
     %script{src: "assets/js/slider-home.js"}
     %script{src:"https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"}
-    %script{src: "assets/js/bootstrap.min.js"}
+    %script{:src => "assets/js/letteranimation.js"}
+    %script{src: "assets/js/bootstrap.js"}
+    %script{src: "assets/js/offcanvas.js"}
     %script{src: "assets/js/slick.min.js"}
-    %script{src: "assets/js/wow.min.js"}
-    %script{src: "assets/js/wow-settings.js"}
+    -# %script{src: "assets/js/wow.min.js"}
+    -# %script{src: "assets/js/wow-settings.js"}
     %script{src: "assets/js/setting-slick.js"}
     %script{src: "assets/js/fonts.js"}
     %script{src: "assets/js/main.js"}

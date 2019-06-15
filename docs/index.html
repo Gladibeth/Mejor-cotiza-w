@@ -9,6 +9,7 @@
   <link href="assets/css/slick.css" rel="stylesheet">
   <link href="assets/css/slick-theme.css" rel="stylesheet">
   <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link href="assets/css/cssanimation.css" rel="stylesheet">
   <link href="assets/css/animate.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
@@ -17,7 +18,7 @@
   <section class="home">
     <nav class="navbar navbar-expand-md navbar-fixed-js">
       <div class="top-header">
-        <div class="container d-flex">
+        <div class="d-flex pl-4 pr-4">
           <div class="phone">
             <a class="mr-3" href="#">
                 <i class="fa fa-phone"></i>
@@ -33,7 +34,7 @@
           </div>
         </div>
       </div>
-      <div class="container p-4">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img alt="" src="assets/img/logo.png">
           </a>
@@ -66,8 +67,11 @@
             <div class="slide-content">
               <div class="caption">
                 <div class="title">No pierdas más tiempo y dinero</div>
-                <a class="btn" href="#">
+                <a class="btn-first btn" href="#">
                     <span class="btn-inner">¿Que material estas buscando?</span>
+                  </a>
+                <a class="btn-second btn d-sm-none" href="#">
+                    <span class="btn-inner">¿Que material busca?</span>
                   </a>
               </div>
             </div>
@@ -79,8 +83,11 @@
             <div class="slide-content">
               <div class="caption">
                 <div class="title">Mejor cotiza te ofrece lo mejor</div>
-                <a class="btn" href="#">
+                <a class="btn-first btn" href="#">
                     <span class="btn-inner">¿Que material estas buscando?</span>
+                  </a>
+                <a class="btn-second btn d-sm-none" href="#">
+                    <span class="btn-inner">¿Que material busca?</span>
                   </a>
               </div>
             </div>
@@ -92,8 +99,11 @@
             <div class="slide-content">
               <div class="caption">
                 <div class="title">Ven y aprovecha tenemos todo lo que necesitas</div>
-                <a class="btn" href="#">
+                <a class="btn-first btn" href="#">
                     <span class="btn-inner">¿Que material estas buscando?</span>
+                  </a>
+                <a class="btn-second btn d-sm-none" href="#">
+                    <span class="btn-inner">¿Que material busca?</span>
                   </a>
               </div>
             </div>
@@ -163,7 +173,7 @@
       </div>
     </div>
   </section>
-  <section class="section-padding pt-4">
+  <section>
     <div class="container-fluid">
       <div class="content-title">
         <h1 class="title-section">Productos</h1>
@@ -257,8 +267,12 @@
       <div class="content-inf content-inf-services">
         <div class="card-inf card-left">
           <div class="content-inf d-flex flex-column">
-            <h2>¿Cómo funciona?</h2>
-            <p>Sólo en tres sencillos pasos</p>
+            <h2>
+              ¿Cómo funciona?
+            </h2>
+            <p>
+              Sólo en tres sencillos pasos
+            </p>
           </div>
         </div>
         <div class="card-inf card-left">
@@ -353,13 +367,11 @@
     <div class="container-fluid">
       <div class="content-title">
         <h1 class="title-section">
-          ¿Por qué comprar sus materiales en
-          <br> Mejor Cotiza Materiales?
-          </br>
+          ¿Por qué comprar sus materiales en Mejor Cotiza Materiales?
         </h1>
       </div>
       <div class="content-inf content-inf-card">
-        <div class="card-inf card-inf-bg">
+        <div class="card-inf card-inf-bg cssanimation fadeInBottom">
           <div class="card-inf-image">
             <img src="assets/img/icons/6.svg">
           </div>
@@ -368,7 +380,7 @@
             <p>Todos los materiales de construcción, desde nuestros proveedores a su hogar.</p>
           </div>
         </div>
-        <div class="card-inf card-inf-bg">
+        <div class="card-inf card-inf-bg cssanimation fadeInBottom">
           <div class="card-inf-image">
             <img src="assets/img/icons/2.svg">
           </div>
@@ -377,7 +389,7 @@
             <p>Compara el mismo producto en distintos proveedores de chile y escoge el mejor precio</p>
           </div>
         </div>
-        <div class="card-inf card-inf-bg">
+        <div class="card-inf card-inf-bg cssanimation fadeInBottom">
           <div class="card-inf-image">
             <img src="assets/img/icons/3.svg">
           </div>
@@ -403,7 +415,7 @@
             </div>
           </div>
           <div class="box-content-description">
-            <h1>Andrés Prada</h1>
+            <h1 class="cssanimation leFadeIn sequence">Andrés Prada</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
             </p>
@@ -435,10 +447,10 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/slider-home.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/letteranimation.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/offcanvas.js"></script>
   <script src="assets/js/slick.min.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/wow-settings.js"></script>
   <script src="assets/js/setting-slick.js"></script>
   <script src="assets/js/fonts.js"></script>
   <script src="assets/js/main.js"></script>

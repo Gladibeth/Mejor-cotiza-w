@@ -108,3 +108,16 @@
     color: $white !important;
   }
 }
+
+.btn-first {
+  @include respond-to(xs) {
+    display: none;
+  }
+}
+
+.btn-second{
+  display: none;
+  @include respond-to(xs){
+    display: flex;
+  }
+}

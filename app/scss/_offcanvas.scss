@@ -17,14 +17,14 @@
     transform: translateX(100%);
     // padding: 15px;
     @include respond-to(xs) {
-      top: 75px;
+      top: 150px;
       padding: 40px 10px;
       overflow-y: scroll;
     }
   }
   .offcanvas-collapse.open {
     -webkit-transform: translateX(-1rem);
-    transform: translateX(0rem); /* Account for horizontal padding on navbar */
+    transform: translateX(0rem);
     
   }
 }
@@ -119,7 +119,7 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 35px;
   height: 3px;
-  background-color: $gray-mejor;
+  background-color: #695f5f;
   border-radius: 3px;
   position: absolute;
   transition-property: transform;
