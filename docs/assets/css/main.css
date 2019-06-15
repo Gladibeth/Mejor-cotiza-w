@@ -990,7 +990,7 @@ body.fixed-body {
 
 @media (min-width: 0px) and (max-width: 767px) {
   .slideshow .arrows .prev {
-    left: 0;
+    display: none;
   }
 }
 
@@ -1004,7 +1004,7 @@ body.fixed-body {
 
 @media (min-width: 0px) and (max-width: 767px) {
   .slideshow .arrows .next {
-    right: 0;
+    display: none;
   }
 }
 

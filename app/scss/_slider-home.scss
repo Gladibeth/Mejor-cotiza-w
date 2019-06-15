@@ -198,7 +198,7 @@
     .prev {
       left: 30px;
       @include respond-to(xs) {
-        left: 0;
+        display: none;
       }
 
       &:hover .svg {
@@ -210,7 +210,7 @@
       right: 30px;
 
       @include respond-to(xs) {
-        right: 0;
+        display: none;
       }
 
       &:hover .svg {
