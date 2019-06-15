@@ -19,7 +19,7 @@
 
 @media (max-width: 767px) and (min-width: 0px) and (max-width: 767px) {
   .offcanvas-collapse {
-    top: 150px;
+    top: 130px;
     padding: 40px 10px;
     overflow-y: scroll;
   }
@@ -635,6 +635,11 @@
 
 .content-partnerts .slick-dots li button:hover:before, .content-partnerts .slick-dots li button:focus:before {
   color: #00b050;
+}
+
+body.fixed-body {
+  position: fixed;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {

@@ -17,7 +17,7 @@
     transform: translateX(100%);
     // padding: 15px;
     @include respond-to(xs) {
-      top: 150px;
+      top: 130px;
       padding: 40px 10px;
       overflow-y: scroll;
     }
