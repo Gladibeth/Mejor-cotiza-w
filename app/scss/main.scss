@@ -6,6 +6,8 @@
 @import "body";
 @import "button";
 @import "slider-home";
+@import "contact";
+@import "steps";
 
 /*Navbar*/
 
@@ -120,15 +122,21 @@
 
     .text-top-header {
 
-      @include respond-to(xs) {
-        display: none;
-      }
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+        }
+        @include respond-to(xs) {
+          display: none;
+        }
 
-      p {
-        font-family: $raleway;
-        color:$white;
-        margin: 0px;
-        font-weight: 600;
+        p {
+          font-family: $raleway;
+          color:$white;
+          margin: 0px;
+          font-weight: 600;
+        }
       }
     }
   }
@@ -142,7 +150,7 @@
     .nav-link {
       color: $black;
       font-size: 17px;
-      font-family: $roboto;
+      font-family: $raleway;
       letter-spacing: 1px;
       transition: .5s ease-in-out;
       position: relative;
@@ -416,9 +424,18 @@
 		background-color: $gray-mejor;
 		border-radius: 5px;
     margin-right: 20px;
-    
+    transition: .3s ease-in-out;
     @include respond-to(md) {
       padding: 20px;
+    }
+
+    &:hover {
+      .card-inf-description {
+        h3 {
+          transition: .3s ease-in-out;
+          color: $blue-mejor;
+        }
+      }
     }
 	}
 }
@@ -443,6 +460,8 @@
     font-size: 18px;
     font-weight: 700;
     text-align: center;
+    transition: .3s ease-in-out;
+    margin-bottom: 10px;
   }
   &.card-description-left {
     p {
@@ -463,7 +482,8 @@
   }
 	p {
 		font-family: $raleway;
-		text-align: center;
+    text-align: center;
+    line-height: 1.5rem;
 	}
 }
 
@@ -624,6 +644,7 @@
 footer {
   padding: 40px 20px 0px 20px;
   background-color: #222222;
+  position: relative;
 }
 
 .footer-content{
@@ -859,7 +880,7 @@ footer {
   position: absolute;
   left: 0;
   transform: rotate(320deg);
-  bottom: 0;
+  // bottom: 0;
   img {
     width: 100px;
     opacity: 0.1;
@@ -929,6 +950,7 @@ footer {
     font-weight: 700;
     font-family: $raleway;
     position: relative;
+    font-size: 30px;
     &:after{
       content: '';
       position: absolute;
@@ -944,6 +966,7 @@ footer {
   p {
     font-family: $raleway;
     padding-top: 30px;
+    line-height: 1.5rem;
   }
 }
 .container-footer {
@@ -970,6 +993,7 @@ footer {
 }
 
 .box-redes {
+  margin-top: 15px;
   a {
     color: $black;
     font-size: 18px;

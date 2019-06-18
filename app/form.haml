@@ -1,0 +1,102 @@
+:ruby
+  def render(partial)
+    Haml::Engine.new(File.read(partial)).render
+  end
+!!!
+%html{lang: "en"}
+  = render ('app/partials/head.haml')
+  %body
+    = render ('app/partials/navbar.haml')
+    %section.form
+      .container-fluid
+        -# .content-title
+        -#   %h1.title-section Cotiza tu presupuesto en 3 pasos
+        #container
+          %section.multi_step_form
+            %form#msform
+              .tittle
+                %h2 Cotiza tu presupuesto en 3 pasos
+                -# %p In order to use this service, you have to complete this verification process
+        
+              %ul#progressbar
+                %li.active Datos del cliente
+                %li Que necesita
+                %li Datos de su zona
+              %fieldset
+                %h3 Llene los siguientes datos
+                .control.control-expanded.control-expen-form
+                  .control-label
+                    %label(for="") Nombre y Apellido
+                  %input.input.fade-background{:name => "name", :placeholder => "Nombre y Apellido", :type => "text"}/
+                .control.control-expanded.control-expen-form
+                  .control-label
+                    %label(for="") Correo
+                  %input.input.fade-background{:name => "email", :placeholder => "Correo", :type => "email"}/
+                .control.control-expanded.control-expen-form
+                  .control-label
+                    %label(for="") Teléfonos
+                  %input.input.fade-background{:name => "Teléfono", :placeholder => "Teléfono", :type => "number"}/
+                %button.btn.btn-gray.action-button.previous_button{:type => "button"} 
+                  %span.btn-inner Volver
+                %button.btn.btn-black.next.action-button{:type => "button"} 
+                  %span.btn-inner Continuar
+              %fieldset
+                -# %h3 
+                -# %h6 Please upload any of these documents to verify your Identity.
+                .form-group
+                  .control.control-expanded.control-expen-form
+                    .control-label
+                      %label(for="") Eligir Categorías
+                    %select.product_select
+                      %option{"data-display" => " 1. Construcción de cero"}  1. Construcción de cero
+                      %option 1. Ampliación
+                      %option 2. Pintura
+                      %option 3. Reparaciones
+                      %option 4. Trabajos de piso y Radier
+                      %option 5. Fletes y mudanza
+                  .control.control-expanded.control-expen-form
+                    .control-label
+                      %label(for="") Fecha para comenzar proyecto
+                    %input.input.fade-background{:name => "dia", :placeholder => "Fecha", :type => "date"}/
+                  .control.control-expanded.control-expen-form
+                    .control-label
+                      %label(for="") Rango de tiempo para comenzar
+                    .d-flex.mt-2
+                      .radio
+                        %input#radio-1{:checked => "checked", :name => "radio", :type => "radio"}/
+                        %label.radio-label{:for => "radio-1"} Una semana
+                      .radio
+                        %input#radio-2{:name => "radio", :type => "radio"}/
+                        %label.radio-label{:for => "radio-2"} Un mes
+                      .radio
+                        %input#radio-2{:name => "radio", :type => "radio"}/
+                        %label.radio-label{:for => "radio-3"} Más de un mes
+                %button.btn.btn-gray.action-button.previous.previous_button{:type => "button"} 
+                  %span.btn-inner Volver
+                %button.btn.btn-black.next.action-button{:type => "button"} 
+                  %span.btn-inner Continuar
+              %fieldset
+                %h3 Datos de su zona
+                -# %h6 Please update your account with security questions
+                .control.control-expanded.control-expen-form
+                  .control-label
+                    %label(for="") Región
+                  %select.product_select
+                    %option{"data-display" => "Región Metropolitana"}  Región Metropolitana
+                    %option Región de Arica
+                    %option Región Taracapá
+                .control.control-expanded.control-expen-form
+                  .control-label
+                    %label(for="") Dirección
+                  %textarea.fade-background{ :placeholder => "Escribe tú dirección"}
+                .control.control-expanded.control-expen-form
+                  .control-label
+                    %label(for="") Sobre el proyecto
+                  %textarea.fade-background{ :placeholder => "Escribenos sobre tú proyecto "}
+                %button.btn.btn-gray.action-button.previous.previous_button{:type => "button"} 
+                  %span.btn-inner Volver
+                
+                %a.btn.btn-black.action-button{:href => "#"} 
+                  %span.btn-inner Enviar su solicitud
+
+    = render ('app/partials/index/_footer.haml')

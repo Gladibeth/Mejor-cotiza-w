@@ -1,0 +1,116 @@
+.contact {
+  margin-top: 90px;
+}
+
+.content-description-info {
+  padding: 15px;
+  .text-info {
+    p {
+      color: #808080;
+      font-family: $raleway;
+    }
+  }
+}
+
+.text-address{
+  margin-top: 25px;
+}
+
+.info {
+  margin-bottom: 15px;
+  p{
+    font-weight: 700;
+    font-family: $roboto;
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+    span{
+      color: #333333;
+      font-family: $raleway;
+    }
+  }
+}
+.container-contact {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.control-expanded {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  align-items: flex-end;
+
+  &.control-expen-form {
+    align-items: center;
+  }
+  .control-label {
+    width: 80%;
+    text-align: left;
+    margin-bottom: 10px;
+    @include respond-to(xs) {
+      width: 100%;
+    }
+    label{
+      font-family: $raleway;
+      font-weight: 600;
+      color: $black !important;
+    }
+  }
+
+  input, textarea, select {
+    background-color: $white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 2px;
+    color: #565678;
+    max-width: 80%;
+    width: 80%;
+    padding: 10px;
+    resize: none;
+    outline: $blue-mejor;
+    font-family: $raleway;
+
+    @include respond-to(xs) {
+      max-width: 100%;
+      width: 100%;
+      background-color: transparent;
+    }
+    
+    &.fade-background{
+      &:active,
+      &:focus{
+        animation: background .55s ease-in forwards;
+        -webkit-animation: background .55s ease-in forwards;
+        -moz-animation: background .55s ease-in;
+        background: $blue-mejor; 
+        color: $white;
+        &::placeholder {
+          color: $white;
+        }
+
+      }
+    }
+    
+  }
+}
+
+
+@-webkit-keyframes background {
+  0%{
+   background: transparent;
+  }
+  66%{
+    background: $blue-mejor; 
+  }
+  
+  100%{
+    background: $blue-mejor; 
+  }
+}

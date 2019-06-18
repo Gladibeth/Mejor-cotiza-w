@@ -637,6 +637,10 @@
   color: #00b050;
 }
 
+body {
+  line-height: 1.5rem !important;
+}
+
 body.fixed-body {
   position: fixed;
   overflow: hidden;
@@ -691,6 +695,7 @@ body.fixed-body {
 .btn .btn-inner {
   position: relative;
   z-index: 2;
+  font-family: "Raleway", sans-serif;
 }
 
 .btn:hover {
@@ -730,6 +735,14 @@ body.fixed-body {
   color: #fff;
 }
 
+.btn-black a {
+  text-decoration: none;
+}
+
+.btn-black a:hover {
+  text-decoration: none;
+}
+
 .btn-black::after {
   transition: border 0.1s linear 0.05s;
 }
@@ -737,6 +750,7 @@ body.fixed-body {
 .btn-black .btn-inner {
   position: relative;
   z-index: 2;
+  font-family: "Raleway", sans-serif;
 }
 
 .btn-black:hover {
@@ -752,6 +766,53 @@ body.fixed-body {
 }
 
 .btn-black:hover::after {
+  transition: border 0.1s linear 0s;
+}
+
+.btn-gray {
+  border: 1px solid #ccc;
+  color: #565678;
+}
+
+.btn-gray::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  z-index: 1;
+  opacity: 0;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn-gray::after {
+  transition: border 0.1s linear 0.05s;
+}
+
+.btn-gray .btn-inner {
+  position: relative;
+  z-index: 2;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn-gray:hover {
+  color: #fff !important;
+  transition: color 0.1s linear 0s;
+}
+
+.btn-gray:hover::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+
+.btn-gray:hover::after {
   transition: border 0.1s linear 0s;
 }
 
@@ -1025,6 +1086,570 @@ body.fixed-body {
   top: 80px !important;
 }
 
+.contact {
+  margin-top: 90px;
+}
+
+.content-description-info {
+  padding: 15px;
+}
+
+.content-description-info .text-info p {
+  color: #808080;
+  font-family: "Raleway", sans-serif;
+}
+
+.text-address {
+  margin-top: 25px;
+}
+
+.info {
+  margin-bottom: 15px;
+}
+
+.info p {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+.info a {
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: none;
+}
+
+.info a span {
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+}
+
+.container-contact {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.control-expanded {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  align-items: flex-end;
+}
+
+.control-expanded.control-expen-form {
+  align-items: center;
+}
+
+.control-expanded .control-label {
+  width: 80%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .control-expanded .control-label {
+    width: 100%;
+  }
+}
+
+.control-expanded .control-label label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #000 !important;
+}
+
+.control-expanded input, .control-expanded textarea, .control-expanded select {
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 2px;
+  color: #565678;
+  max-width: 80%;
+  width: 80%;
+  padding: 10px;
+  resize: none;
+  outline: #3D9BE9;
+  font-family: "Raleway", sans-serif;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .control-expanded input, .control-expanded textarea, .control-expanded select {
+    max-width: 100%;
+    width: 100%;
+    background-color: transparent;
+  }
+}
+
+.control-expanded input.fade-background:active, .control-expanded input.fade-background:focus, .control-expanded textarea.fade-background:active, .control-expanded textarea.fade-background:focus, .control-expanded select.fade-background:active, .control-expanded select.fade-background:focus {
+  animation: background .55s ease-in forwards;
+  -webkit-animation: background .55s ease-in forwards;
+  -moz-animation: background .55s ease-in;
+  background: #3D9BE9;
+  color: #fff;
+}
+
+.control-expanded input.fade-background:active::placeholder, .control-expanded input.fade-background:focus::placeholder, .control-expanded textarea.fade-background:active::placeholder, .control-expanded textarea.fade-background:focus::placeholder, .control-expanded select.fade-background:active::placeholder, .control-expanded select.fade-background:focus::placeholder {
+  color: #fff;
+}
+
+@-webkit-keyframes background {
+  0% {
+    background: transparent;
+  }
+
+  66% {
+    background: #3D9BE9;
+  }
+
+  100% {
+    background: #3D9BE9;
+  }
+}
+
+.form {
+  margin-top: 90px;
+  background: #f6f9fb;
+}
+
+.multi_step_form {
+  display: block;
+  overflow: hidden;
+}
+
+.multi_step_form #msform {
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+  min-height: 820px;
+  max-width: 810px;
+  margin: 0 auto;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.multi_step_form #msform .tittle {
+  text-align: center;
+  padding-bottom: 55px;
+}
+
+.multi_step_form #msform .tittle h2 {
+  font: 500 24px/35px "Roboto", sans-serif;
+  color: #3f4553;
+  padding-bottom: 5px;
+}
+
+.multi_step_form #msform .tittle p {
+  font: 400 16px/28px "Roboto", sans-serif;
+  color: #5f6771;
+}
+
+.multi_step_form #msform fieldset {
+  border: 0;
+  padding: 20px 105px 0;
+  position: relative;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.multi_step_form #msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+.multi_step_form #msform fieldset h3 {
+  font: 500 18px/35px "Roboto", sans-serif;
+  color: #3f4553;
+}
+
+.multi_step_form #msform fieldset h6 {
+  font: 400 15px/28px "Roboto", sans-serif;
+  color: #5f6771;
+  padding-bottom: 30px;
+}
+
+.multi_step_form #msform fieldset .intl-tel-input {
+  display: block;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.multi_step_form #msform fieldset .intl-tel-input .flag-container .selected-flag {
+  padding: 0 20px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  width: 65px;
+}
+
+.multi_step_form #msform fieldset .intl-tel-input .flag-container .selected-flag .iti-arrow {
+  border: 0;
+}
+
+.multi_step_form #msform fieldset .intl-tel-input .flag-container .selected-flag .iti-arrow:after {
+  content: "\f35f";
+  position: absolute;
+  top: 0;
+  right: 0;
+  font: normal normal normal 24px/7px Ionicons;
+  color: #5f6771;
+}
+
+.multi_step_form #msform fieldset #phone {
+  padding-left: 80px;
+}
+
+.multi_step_form #msform fieldset .form-group {
+  padding: 0 10px;
+}
+
+.multi_step_form #msform fieldset .fg_2, .multi_step_form #msform fieldset .fg_3 {
+  padding-top: 10px;
+  display: block;
+  overflow: hidden;
+}
+
+.multi_step_form #msform fieldset .fg_3 {
+  padding-bottom: 70px;
+}
+
+.multi_step_form #msform fieldset .form-control, .multi_step_form #msform fieldset .product_select {
+  border-radius: 3px;
+  border: 1px solid #d8e1e7;
+  padding: 0 20px;
+  height: auto;
+  font: 400 15px/48px "Roboto", sans-serif;
+  color: #5f6771;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+}
+
+.multi_step_form #msform fieldset .form-control.placeholder, .multi_step_form #msform fieldset .product_select.placeholder {
+  color: #5f6771;
+}
+
+.multi_step_form #msform fieldset .form-control:-moz-placeholder, .multi_step_form #msform fieldset .product_select:-moz-placeholder {
+  color: #5f6771;
+}
+
+.multi_step_form #msform fieldset .form-control::-moz-placeholder, .multi_step_form #msform fieldset .product_select::-moz-placeholder {
+  color: #5f6771;
+}
+
+.multi_step_form #msform fieldset .form-control::-webkit-input-placeholder, .multi_step_form #msform fieldset .product_select::-webkit-input-placeholder {
+  color: #5f6771;
+}
+
+.multi_step_form #msform fieldset .form-control:hover, .multi_step_form #msform fieldset .form-control:focus, .multi_step_form #msform fieldset .product_select:hover, .multi_step_form #msform fieldset .product_select:focus {
+  border-color: #ccc;
+}
+
+.multi_step_form #msform fieldset .form-control:focus.placeholder, .multi_step_form #msform fieldset .product_select:focus.placeholder {
+  color: transparent;
+}
+
+.multi_step_form #msform fieldset .form-control:focus:-moz-placeholder, .multi_step_form #msform fieldset .product_select:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.multi_step_form #msform fieldset .form-control:focus::-moz-placeholder, .multi_step_form #msform fieldset .product_select:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.multi_step_form #msform fieldset .form-control:focus::-webkit-input-placeholder, .multi_step_form #msform fieldset .product_select:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.multi_step_form #msform fieldset .product_select {
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 2px;
+  color: #565678;
+  max-width: 80%;
+  width: 80%;
+  padding: 10px;
+  resize: none;
+  outline: transparent;
+}
+
+.multi_step_form #msform fieldset .product_select:after {
+  display: none;
+}
+
+.multi_step_form #msform fieldset .product_select:before {
+  content: "\f35f";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: #5f6771;
+}
+
+.multi_step_form #msform fieldset .product_select .list {
+  width: 100%;
+}
+
+.multi_step_form #msform fieldset .done_text {
+  padding-top: 40px;
+}
+
+.multi_step_form #msform fieldset .done_text .don_icon {
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  font-size: 22px;
+  margin-bottom: 10px;
+  background: #3D9BE9;
+  display: inline-block;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.multi_step_form #msform fieldset .done_text h6 {
+  line-height: 23px;
+}
+
+.multi_step_form #msform fieldset .code_group {
+  margin-bottom: 60px;
+}
+
+.multi_step_form #msform fieldset .code_group .form-control {
+  border: 0;
+  border-bottom: 1px solid #a1a7ac;
+  border-radius: 0;
+  display: inline-block;
+  width: 30px;
+  font-size: 30px;
+  color: #5f6771;
+  padding: 0;
+  margin-right: 7px;
+  text-align: center;
+  line-height: 1;
+}
+
+.multi_step_form #msform fieldset .passport {
+  margin-top: -10px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.multi_step_form #msform fieldset .passport .don_icon {
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  font-size: 22px;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background: #3D9BE9;
+  display: inline-block;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.multi_step_form #msform fieldset .passport h4 {
+  font: 500 15px/23px "Roboto", sans-serif;
+  color: #5f6771;
+  padding: 0;
+}
+
+.multi_step_form #msform fieldset .input-group {
+  padding-bottom: 40px;
+}
+
+.multi_step_form #msform fieldset .input-group .custom-file {
+  width: 100%;
+  height: auto;
+}
+
+.multi_step_form #msform fieldset .input-group .custom-file .custom-file-label {
+  width: 168px;
+  border-radius: 5px;
+  cursor: pointer;
+  font: 700 14px/40px "Roboto", sans-serif;
+  border: 1px solid #99a2a8;
+  text-align: center;
+  transition: all 300ms linear 0s;
+  color: #5f6771;
+}
+
+.multi_step_form #msform fieldset .input-group .custom-file .custom-file-label i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.multi_step_form #msform fieldset .input-group .custom-file .custom-file-label:hover, .multi_step_form #msform fieldset .input-group .custom-file .custom-file-label:focus {
+  background: #3D9BE9;
+  border-color: #3D9BE9;
+  color: #fff;
+}
+
+.multi_step_form #msform fieldset .input-group .custom-file input {
+  display: none;
+}
+
+.multi_step_form #msform fieldset .file_added {
+  text-align: left;
+  padding-left: 190px;
+  padding-bottom: 60px;
+}
+
+.multi_step_form #msform fieldset .file_added li {
+  font: 400 15px/28px "Roboto", sans-serif;
+  color: #5f6771;
+}
+
+.multi_step_form #msform fieldset .file_added li a {
+  color: #3D9BE9;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+}
+
+.multi_step_form #msform fieldset .file_added li a i {
+  font-size: 22px;
+  padding-right: 8px;
+  position: absolute;
+  left: 0;
+  transform: rotate(20deg);
+}
+
+.multi_step_form #msform #progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.multi_step_form #msform #progressbar li {
+  list-style-type: none;
+  color: #99a2a8;
+  font-size: 9px;
+  width: calc(100%/3);
+  float: left;
+  position: relative;
+  font: 500 13px/1 "Raleway", sans-serif;
+}
+
+.multi_step_form #msform #progressbar li:nth-child(2):before {
+  content: "2";
+  font-family: "Raleway", sans-serif;
+}
+
+.multi_step_form #msform #progressbar li:nth-child(3):before {
+  content: "3";
+  font-family: "Raleway", sans-serif;
+}
+
+.multi_step_form #msform #progressbar li:before {
+  content: "1";
+  font-family: "Raleway", sans-serif;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  background: #eaf0f4;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  font-size: 25px;
+}
+
+.multi_step_form #msform #progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  background: #eaf0f4;
+  position: absolute;
+  left: -50%;
+  top: 21px;
+  z-index: -1;
+}
+
+.multi_step_form #msform #progressbar li:last-child:after {
+  width: 150%;
+}
+
+.multi_step_form #msform #progressbar li.active {
+  color: #3D9BE9;
+}
+
+.multi_step_form #msform #progressbar li.active:before, .multi_step_form #msform #progressbar li.active:after {
+  background: #3D9BE9;
+  color: white;
+}
+
+.multi_step_form #msform .previous_button {
+  background: transparent;
+  color: #99a2a8;
+  border-color: #99a2a8;
+}
+
+.multi_step_form #msform .previous_button:hover, .multi_step_form #msform .previous_button:focus {
+  color: #fff;
+}
+
+.radio {
+  margin: 0.5rem;
+}
+
+.radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio input[type="radio"] + .radio-label {
+  font-family: "Raleway", sans-serif;
+}
+
+.radio input[type="radio"] + .radio-label:before {
+  content: '';
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid #bfbfbf;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: -0.2em;
+  margin-right: 1em;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+
+.radio input[type="radio"]:checked + .radio-label:before {
+  background-color: #3D9BE9;
+  box-shadow: inset 0 0 0 4px #fff;
+}
+
+.radio input[type="radio"]:focus + .radio-label:before {
+  outline: none;
+  border-color: #3D9BE9;
+}
+
+.radio input[type="radio"]:disabled + .radio-label:before {
+  box-shadow: inset 0 0 0 4px #fff;
+  border-color: #bfbfbf;
+  background: #bfbfbf;
+}
+
+.radio input[type="radio"] + .radio-label:empty:before {
+  margin-right: 0;
+}
+
+.action-button {
+  margin-top: 20px;
+}
+
 /*Navbar*/
 .home {
   background-position: center;
@@ -1157,13 +1782,21 @@ body.fixed-body {
   color: #fff;
 }
 
+.top-header .d-flex .text-top-header a {
+  text-decoration: none;
+}
+
+.top-header .d-flex .text-top-header a:hover {
+  text-decoration: none;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
-  .top-header .d-flex .text-top-header {
+  .top-header .d-flex .text-top-header a {
     display: none;
   }
 }
 
-.top-header .d-flex .text-top-header p {
+.top-header .d-flex .text-top-header a p {
   font-family: "Raleway", sans-serif;
   color: #fff;
   margin: 0px;
@@ -1177,7 +1810,7 @@ body.fixed-body {
 .navbar-nav .nav-item .nav-link {
   color: #000;
   font-size: 17px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 1px;
   transition: .5s ease-in-out;
   position: relative;
@@ -1447,12 +2080,18 @@ body.fixed-body {
   background-color: #F3F3F3;
   border-radius: 5px;
   margin-right: 20px;
+  transition: .3s ease-in-out;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .card-inf.card-inf-bg {
     padding: 20px;
   }
+}
+
+.card-inf.card-inf-bg:hover .card-inf-description h3 {
+  transition: .3s ease-in-out;
+  color: #3D9BE9;
 }
 
 .card-inf-image {
@@ -1477,6 +2116,8 @@ body.fixed-body {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+  transition: .3s ease-in-out;
+  margin-bottom: 10px;
 }
 
 .card-inf-description.card-description-left p {
@@ -1499,6 +2140,7 @@ body.fixed-body {
 .card-inf-description p {
   font-family: "Raleway", sans-serif;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 .card-inf-professional {
@@ -1651,6 +2293,7 @@ body.fixed-body {
 footer {
   padding: 40px 20px 0px 20px;
   background-color: #222222;
+  position: relative;
 }
 
 .footer-content {
@@ -1898,7 +2541,6 @@ footer {
   position: absolute;
   left: 0;
   transform: rotate(320deg);
-  bottom: 0;
 }
 
 .mask img {
@@ -1985,6 +2627,7 @@ footer {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   position: relative;
+  font-size: 30px;
 }
 
 .box-content-description h1:after {
@@ -2001,6 +2644,7 @@ footer {
 .box-content-description p {
   font-family: "Raleway", sans-serif;
   padding-top: 30px;
+  line-height: 1.5rem;
 }
 
 .container-footer {
@@ -2028,6 +2672,10 @@ footer {
   .container-footer p {
     font-size: 15px;
   }
+}
+
+.box-redes {
+  margin-top: 15px;
 }
 
 .box-redes a {

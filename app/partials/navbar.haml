@@ -10,7 +10,8 @@
             %i.fa.fa-envelope
             %span Contacto@mejorcotiza.cl
         .text-top-header
-          %p ¿Como funciona?
+          %a{:href => "#function", "data-scroll" => ""}
+            %p ¿Como funciona?
     .container-fluid
       %a.navbar-brand{:href => "#"} 
         %img{ :src=>"assets/img/logo.png", :alt=>""}
@@ -24,4 +25,4 @@
           %li.nav-item
             %a.nav-link{:href => "#home-serviteca", "data-scroll" => ""} Preguntas Frecuentes
           %li.nav-item.cta-btn
-            %a.nav-link{:href => "#team-about", "data-scroll" => ""} Cotiza Proyectos
+            %a.nav-link{:href => "form.html", "data-scroll" => ""} Cotiza Proyectos

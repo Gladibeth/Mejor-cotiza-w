@@ -1,0 +1,62 @@
+:ruby
+  def render(partial)
+    Haml::Engine.new(File.read(partial)).render
+  end
+!!!
+%html{lang: "en"}
+  = render ('app/partials/head.haml')
+  %body{ "data-spy" => "scroll","data-target" => "#navbarNav" }
+    = render ('app/partials/navbar.haml')
+    %section.contact
+      .container-fluid
+        .container-contact
+          .content-info
+            .content-title
+              %h1.title-section Información de contacto
+              
+            .content-description-info
+              .text-info
+                %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odio maxime nostrum iure corporis delectus? 
+              .text-address
+                .info
+                  %p Correos
+                  %a{ href: '#' }
+                    %i.fa.fa-envelope
+                    %span Contacto@mejorcotiza.cl
+                .info
+                  %a{ href: '#' }
+                    %i.fa.fa-envelope
+                    %span Materiales@mejorcotiza.cl
+                .info
+                  %p Teléfono
+                  %a.mr-3{ href: '#' }
+                    %i.fa.fa-phone 
+                    %span (+569) 8 904 32 64
+                .info
+                  %p Dirección
+                  %a.mr-3{ href: '#' }
+                    %i.fa.fa-pink
+                    %span Av. Apoquindo 6410, of. 605, Las conde, Santiago, Chile.
+
+          .content-form
+            %form
+              .control.control-expanded
+                .control-label
+                  %label(for="") Nombre y Apellido
+                %input.input.fade-background{:name => "name", :placeholder => "Nombre y Apellido", :type => "text"}/
+              .control.control-expanded
+                .control-label
+                  %label(for="") Correo
+                %input.input.fade-background{:name => "email", :placeholder => "Correo", :type => "email"}/
+              .control.control-expanded
+                .control-label
+                  %label(for="") Asunto
+                %input.input.fade-background{:name => "asunto", :placeholder => "Asunto", :type => "text"}/
+              .control.control-expanded
+                .control-label
+                  %label(for="") Mensaje
+                %textarea.fade-background{ :placeholder => "Escribe tú mensaje"}
+            .float-right
+              %button.btn.btn-gray{:href => "#"}
+                %span.btn-inner Enviar
+    = render ('app/partials/index/_footer.haml')

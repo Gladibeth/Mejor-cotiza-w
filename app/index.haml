@@ -5,7 +5,7 @@
 !!!
 %html{lang: "en"}
   = render ('app/partials/head.haml')
-  %body
+  %body{ "data-spy" => "scroll","data-target" => "#navbarNav" }
     = render ('app/partials/navbar.haml')
 
     = render ('app/partials/index/_slider-home.haml')
