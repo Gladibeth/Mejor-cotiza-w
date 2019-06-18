@@ -2713,7 +2713,7 @@ footer {
   opacity: 0.1;
   position: absolute;
   right: -2px;
-  top: -35%;
+  top: 0%;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {

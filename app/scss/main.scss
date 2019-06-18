@@ -1024,7 +1024,7 @@ footer {
   opacity: 0.1;
   position: absolute;
   right: -2px;
-  top: -35%;
+  top: 0%;
 
   @include respond-to(md) {
     font-size: 7rem !important;
