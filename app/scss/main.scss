@@ -983,6 +983,7 @@ footer {
     align-items: center;
   } 
 
+  
   p{
     color: $black;
     font-family: $raleway;
@@ -990,6 +991,10 @@ footer {
 
     @include respond-to(xs) {
       font-size: 15px;
+    }
+
+    a {
+      cursor: pointer;
     }
   }
 }

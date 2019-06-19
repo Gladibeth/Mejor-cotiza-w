@@ -15,3 +15,31 @@ body {
   border-radius: 5px;
   background: #9E9E9E;
 }
+
+.modal-dialog{
+  max-width: 600px !important;
+}
+
+.modal-content {
+  padding: 10px;
+}
+
+.modal-header {
+  border-bottom: 1px solid transparent;
+}
+
+.modal-footer {
+  border-top: 1px solid transparent;
+}
+
+.modal-title {
+  text-transform: uppercase;
+  font-family: $raleway;
+  font-weight: 700;
+}
+
+.modal-body {
+  p {
+    font-family: $raleway;
+  }
+}

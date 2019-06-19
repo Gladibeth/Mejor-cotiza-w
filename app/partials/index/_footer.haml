@@ -4,7 +4,27 @@
   .container-fluid
     .container-footer
       %p Av. apoquindo 6410, of. 605, las condes, santiago
-      %p Derechos reservados
+      %p 
+        Derechos reservados /
+        %a{ "data-target" => "#politicas", "data-toggle" => "modal" }
+          Políticas de la empresa
+
+/ Modal
+#politicas.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLongTitle", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %h5.modal-title Políticas de la empresa
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        %p Mejor Cotiza no participa ni es responsable de ningún ámbito de la propuesta, ni en la ejecución del proyecto, siendo 100% responsable la empresa contratada, de su correcta ejecución.
+        %p Mejor Cotiza cuenta con los mejores profesionales del país, por lo que un gran inconveniente en la ejecución del proyecto resultará en la desvinculación de la empresa contratada de nuestra red de profesionales.
+      .modal-footer
+        .float-right
+          %button.btn.btn-black{:href => "#"}
+            %span.btn-inner Aceptar
+
 %script{src: "assets/js/jquery.min.js"}
 %script{src: "assets/js/slider-home.js"}
 %script{src:"https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"}
