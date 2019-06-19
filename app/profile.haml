@@ -1,0 +1,79 @@
+:ruby
+  def render(partial)
+    Haml::Engine.new(File.read(partial)).render
+  end
+!!!
+%html{lang: "en"}
+  = render ('app/partials/head.haml')
+  %body{ "data-spy" => "scroll","data-target" => "#navbarNav" }
+    = render ('app/partials/navbar.haml')
+  %section.questions
+    .container-fluid
+      .content-profile
+        .image-profile
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/2.jpg"}
+        .content-name
+          %h2 Gladibeth Franco
+          %h4 Constructor
+          %p Profesional de la construcción con mas de 20 años de experiencia en el rubro.
+        .content-name.content-two-profile
+          .content-address
+            %span Area Geográfica
+            %span Región Metropolitana y Región de Valparaíso, Chile.
+          .float-right
+            %button.btn.btn-black{:href => "#"}
+              %span.btn-inner Pide tu cotización
+
+  %section
+    .container-fluid
+      .content-title
+        %h1.title-section Servicios    
+      .container-products
+        .content-products
+          .first-columns
+            .first-column-one
+              %a.content-img.content-images-first{ href: 'show.html' }
+                .container-img
+                  .mask-img
+                  %img{:alt => "", :src => "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"}/
+                  .content-text
+                    %p Casas
+          .second-columns
+            .second-column-one
+              .content-img.content-images-second.pt-4.pl-0.pr-0
+                .container-img
+                  .mask-img
+                  %img{:alt => "", :src => "https://images.unsplash.com/photo-1460882465669-a48bf0ac17d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"}/
+                  .content-text
+                    %p Cabañas
+              .content-img.content-images-second.pt-4.pr-0
+                .container-img
+                  .mask-img
+                  %img{:alt => "", :src => "https://images.unsplash.com/photo-1507039811923-55de7d4366ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=757&q=80"}/
+                  .content-text
+                    %p Muros de piedra
+            .second-column-two
+              .content-img.content-images-three.pt-4.pl-0.pr-4
+                .container-img
+                  .mask-img
+                  %img{:alt => "", :src => "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80g"}/
+                  .content-text
+                    %p Lozas
+
+
+  %section
+    .container-fluid
+      .content-title
+        %h1.title-section Proyectos realizados
+      .slider-professional
+        .card-inf-professional.card-projects
+          %img.img-fluid.rounded{:alt => "image", :src => "https://images.unsplash.com/photo-1495433324511-bf8e92934d90?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"}/
+        .card-inf-professional.card-projects
+          %img.img-fluid.rounded{:alt => "image", :src => "https://images.unsplash.com/photo-1560185010-2a290b0cd4cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=772&q=80"}/
+        .card-inf-professional.card-projects
+          %img.img-fluid.rounded{:alt => "image", :src => "https://images.unsplash.com/photo-1495433324511-bf8e92934d90?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"}/
+        .card-inf-professional.card-projects
+          %img.img-fluid.rounded{:alt => "image", :src => "https://images.unsplash.com/photo-1560185009-dddeb820c7b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"}/
+        .card-inf-professional.card-projects
+          %img.img-fluid.rounded{:alt => "image", :src => "https://images.unsplash.com/photo-1495433324511-bf8e92934d90?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"}/
+    = render ('app/partials/index/_footer.haml')

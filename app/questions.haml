@@ -1,0 +1,66 @@
+:ruby
+  def render(partial)
+    Haml::Engine.new(File.read(partial)).render
+  end
+!!!
+%html{lang: "en"}
+  = render ('app/partials/head.haml')
+  %body{ "data-spy" => "scroll","data-target" => "#navbarNav" }
+    = render ('app/partials/navbar.haml')
+
+    %section.questions
+      .container-fluid  
+        .questions-top
+          %form
+            .control.control-expanded.control-questions
+              .control-label
+                %label(for="") Escribenos tú duda
+              %input.input.fade-background{:name => "questions", :placeholder => "Qué duda tienes", :type => "text"}/
+              .float-right
+                %button.btn.btn-gray{:href => "#", style: "padding: 15px 20px;"}
+                  %span.btn-inner Publicar
+        .content-questions
+          .content-title
+            %h1.title-section Preguntas Frecuentes
+          .content-listing-questions
+            .card-questions
+              .card-quesions-top
+                .card-images-questions
+                  %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/2.jpg"}
+                .card-text
+                  %p 18 junio 2019
+              .card-questions-description
+                %p ¿Comó puedo obtener información para pedir un presupuesto de construcción desde cero? 
+            .card-questions
+              .card-quesions-top
+                .card-images-questions
+                  %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/1.jpg"}
+                .card-text
+                  %p 18 junio 2019
+              .card-questions-description
+                %p ¿Comó puedo cotizar de una manera fácil? 
+            .card-questions
+              .card-quesions-top
+                .card-images-questions
+                  %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/3.jpg"}
+                .card-text
+                  %p 18 junio 2019
+              .card-questions-description
+                %p ¿Comó solicitar un presupesto por un profesional?
+            .card-questions
+              .card-quesions-top
+                .card-images-questions
+                  %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/4.jpg"}
+                .card-text
+                  %p 19 junio 2019
+              .card-questions-description
+                %p ¿Comó puedo hacer seguimiento de los materiales cotizados?
+            .card-questions
+              .card-quesions-top
+                .card-images-questions
+                  %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/3.jpg"}
+                .card-text
+                  %p 19 junio 2019
+              .card-questions-description
+                %p ¿Comó califico al profesional que me atendio?
+    = render ('app/partials/index/_footer.haml')

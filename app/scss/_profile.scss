@@ -1,0 +1,52 @@
+.image-profile{
+    width: 200px;
+}
+
+.content-profile {
+  display: grid;
+  grid-template-columns: 20% 45% 35%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
+  border-radius: 5px;
+}
+
+.content-name {
+  margin-left: 20px;
+  
+  h3 {
+    font-family: $raleway;
+  }
+
+  h2 {
+    font-family: $raleway;
+    font-weight: 700;
+  }
+}
+
+.content-address {
+  display: flex;
+  flex-direction: column;
+  
+  span {
+    font-family: $raleway;
+    &:first-child {
+      font-weight: 700;
+      
+    }
+  }
+}
+
+.content-two-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.card-projects {
+  img {
+    height: 300px;
+    object-fit: cover;
+  }
+}

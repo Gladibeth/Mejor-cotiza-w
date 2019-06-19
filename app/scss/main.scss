@@ -8,6 +8,8 @@
 @import "slider-home";
 @import "contact";
 @import "steps";
+@import "questions";
+@import "profile";
 
 /*Navbar*/
 
@@ -228,7 +230,7 @@
 		&:after{
       content: '';
       position: absolute;
-      width: 8%;
+      width: 5%;
       height: 4px;
       background-color: #3D9BE9;
       border-radius: 50px;
@@ -792,9 +794,9 @@ footer {
 
 }
 
-.second-columns{
-  padding-left: 20px;
-}
+// .second-columns{
+//   padding-left: 20px;
+// }
 .second-column-two{
   display: grid; 
   grid-template-columns: 100%;

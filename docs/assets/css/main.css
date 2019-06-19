@@ -941,6 +941,7 @@ body.fixed-body {
   font-size: 40px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
+  line-height: 2.5rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -1140,6 +1141,10 @@ body.fixed-body {
 
 .control-expanded.control-expen-form {
   align-items: center;
+}
+
+.control-expanded.control-questions {
+  display: inline;
 }
 
 .control-expanded .control-label {
@@ -1650,6 +1655,113 @@ body.fixed-body {
   margin-top: 20px;
 }
 
+.questions {
+  margin-top: 90px;
+}
+
+.content-questions {
+  margin-top: 70px;
+}
+
+.questions-top {
+  background-color: #f6f9fb;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 15px;
+}
+
+.content-listing-questions {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.card-questions {
+  height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
+}
+
+.card-quesions-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-quesions-top .card-text {
+  font-family: "Raleway", sans-serif;
+}
+
+.card-images-questions {
+  width: 75px;
+}
+
+.card-images-questions img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-questions-description {
+  margin-top: 20px;
+}
+
+.card-questions-description p {
+  font-family: "Raleway", sans-serif;
+}
+
+.image-profile {
+  width: 200px;
+}
+
+.content-profile {
+  display: grid;
+  grid-template-columns: 20% 45% 35%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
+  border-radius: 5px;
+}
+
+.content-name {
+  margin-left: 20px;
+}
+
+.content-name h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+.content-name h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.content-address {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-address span {
+  font-family: "Raleway", sans-serif;
+}
+
+.content-address span:first-child {
+  font-weight: 700;
+}
+
+.content-two-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.card-projects img {
+  height: 300px;
+  object-fit: cover;
+}
+
 /*Navbar*/
 .home {
   background-position: center;
@@ -1868,7 +1980,7 @@ body.fixed-body {
 .content-title .title-section:after {
   content: '';
   position: absolute;
-  width: 8%;
+  width: 5%;
   height: 4px;
   background-color: #3D9BE9;
   border-radius: 50px;
@@ -2451,10 +2563,6 @@ footer {
   display: grid;
   margin-right: 20px;
   grid-template-columns: 50% 50%;
-}
-
-.second-columns {
-  padding-left: 20px;
 }
 
 .second-column-two {
