@@ -794,9 +794,12 @@ footer {
 
 }
 
-// .second-columns{
-//   padding-left: 20px;
-// }
+.second-columns{
+  @include respond-to(xs) {
+    padding-left: 20px;
+  }
+}
+
 .second-column-two{
   display: grid; 
   grid-template-columns: 100%;

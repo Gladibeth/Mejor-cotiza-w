@@ -1708,6 +1708,12 @@ input[type=number] {
   margin-top: 90px;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .questions {
+    margin-top: 160px;
+  }
+}
+
 .content-questions {
   margin-top: 70px;
 }
@@ -1764,6 +1770,12 @@ input[type=number] {
   width: 200px;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .image-profile {
+    margin-bottom: 20px;
+  }
+}
+
 .content-profile {
   display: grid;
   grid-template-columns: 20% 45% 35%;
@@ -1771,6 +1783,16 @@ input[type=number] {
   background-color: #fff;
   box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
   border-radius: 5px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .content-profile {
+    grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
 .content-name {
@@ -1804,6 +1826,12 @@ input[type=number] {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .content-two-profile {
+    align-items: center;
+  }
 }
 
 .card-projects img {
@@ -2612,6 +2640,12 @@ footer {
   display: grid;
   margin-right: 20px;
   grid-template-columns: 50% 50%;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .second-columns {
+    padding-left: 20px;
+  }
 }
 
 .second-column-two {

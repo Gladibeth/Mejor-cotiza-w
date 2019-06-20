@@ -1,5 +1,9 @@
 .questions {
   margin-top: 90px;
+
+  @include respond-to(xs) {
+    margin-top: 160px;
+  }
 }
 
 .content-questions {

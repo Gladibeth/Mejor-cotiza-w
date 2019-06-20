@@ -1,5 +1,9 @@
 .image-profile{
-    width: 200px;
+  width: 200px;
+
+  @include respond-to(xs) {
+    margin-bottom: 20px;
+  }  
 }
 
 .content-profile {
@@ -9,6 +13,14 @@
   background-color: #fff;
   box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
   border-radius: 5px;
+
+  @include respond-to(xs){
+    grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
 .content-name {
@@ -42,6 +54,10 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
+
+  @include respond-to(xs) {
+    align-items: center;
+  }
 }
 
 .card-projects {
