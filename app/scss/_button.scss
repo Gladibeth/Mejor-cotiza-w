@@ -13,6 +13,7 @@
   text-transform: uppercase;
   transition: color 0.1s linear 0.05s;
   border: 1px solid $white;
+  font-weight: 900;
 
   &::before {
     content: "";
@@ -57,8 +58,8 @@
 }
 
 .btn-black {
-  border: 1px solid $black;
-  color: $black;
+  background: $blue-mejor;
+  
 
   &::before {
     content: "";
@@ -68,11 +69,11 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background: $black;
+    border: 2px solid $blue-mejor;
     z-index: 1;
     opacity: 0;
     transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
-    color: $white;
+    border-radius: 5px;
   }
 
   a {
@@ -94,7 +95,7 @@
   }
 
   &:hover {
-    color: $white !important;
+    color: $blue-mejor !important;
     transition: color 0.1s linear 0s;
 
     &::before {

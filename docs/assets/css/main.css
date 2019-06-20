@@ -698,6 +698,7 @@ body.fixed-body {
   text-transform: uppercase;
   transition: color 0.1s linear 0.05s;
   border: 1px solid #fff;
+  font-weight: 900;
 }
 
 .btn::before {
@@ -742,8 +743,7 @@ body.fixed-body {
 }
 
 .btn-black {
-  border: 1px solid #000;
-  color: #000;
+  background: #3D9BE9;
 }
 
 .btn-black::before {
@@ -754,11 +754,11 @@ body.fixed-body {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #000;
+  border: 2px solid #3D9BE9;
   z-index: 1;
   opacity: 0;
   transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
-  color: #fff;
+  border-radius: 5px;
 }
 
 .btn-black a {
@@ -780,7 +780,7 @@ body.fixed-body {
 }
 
 .btn-black:hover {
-  color: #fff !important;
+  color: #3D9BE9 !important;
   transition: color 0.1s linear 0s;
 }
 
@@ -1286,6 +1286,12 @@ body.fixed-body {
   right: 0;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .multi_step_form #msform fieldset {
+    padding: 20px 20px 0;
+  }
+}
+
 .multi_step_form #msform fieldset:not(:first-of-type) {
   display: none;
 }
@@ -1409,6 +1415,13 @@ body.fixed-body {
   padding: 10px;
   resize: none;
   outline: transparent;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .multi_step_form #msform fieldset .product_select {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .multi_step_form #msform fieldset .product_select:after {
@@ -1596,7 +1609,7 @@ body.fixed-body {
 .multi_step_form #msform #progressbar li:after {
   content: '';
   width: 100%;
-  height: 10px;
+  height: 8px;
   background: #eaf0f4;
   position: absolute;
   left: -50%;
@@ -1681,6 +1694,16 @@ body.fixed-body {
   margin-top: 20px;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .questions {
   margin-top: 90px;
 }
@@ -1690,7 +1713,7 @@ body.fixed-body {
 }
 
 .questions-top {
-  background-color: #f6f9fb;
+  box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
   border-radius: 5px;
   padding: 20px;
   margin: 15px;

@@ -23,7 +23,7 @@
                 %li Que necesita
                 %li Datos de su zona
               %fieldset
-                %h3 Llene los siguientes datos
+                -# %h3 Llene los siguientes datos
                 .control.control-expanded.control-expen-form
                   .control-label
                     %label(for="") Nombre y Apellido
@@ -49,11 +49,11 @@
                       %label(for="") Eligir Categorías
                     %select.product_select
                       %option{"data-display" => " 1. Construcción de cero"}  1. Construcción de cero
-                      %option 1. Ampliación
-                      %option 2. Pintura
-                      %option 3. Reparaciones
-                      %option 4. Trabajos de piso y Radier
-                      %option 5. Fletes y mudanza
+                      %option 2. Ampliación
+                      %option 3. Pintura
+                      %option 4. Reparaciones
+                      %option 5. Trabajos de piso y Radier
+                      %option 6. Fletes y mudanza
                   .control.control-expanded.control-expen-form
                     .control-label
                       %label(for="") Fecha para comenzar proyecto
@@ -76,7 +76,7 @@
                 %button.btn.btn-black.next.action-button{:type => "button"} 
                   %span.btn-inner Continuar
               %fieldset
-                %h3 Datos de su zona
+                -# %h3 Datos de su zona
                 -# %h6 Please update your account with security questions
                 .control.control-expanded.control-expen-form
                   .control-label
@@ -97,6 +97,7 @@
                   %span.btn-inner Volver
                 
                 %a.btn.btn-black.action-button{:href => "#"} 
-                  %span.btn-inner Enviar su solicitud
+                  %span.btn-inner Enviar solicitud
+    
 
     = render ('app/partials/index/_footer.haml')
