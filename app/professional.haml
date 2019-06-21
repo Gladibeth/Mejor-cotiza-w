@@ -1,0 +1,72 @@
+:ruby
+  def render(partial)
+    Haml::Engine.new(File.read(partial)).render
+  end
+!!!
+%html{lang: "en"}
+  = render ('app/partials/head.haml')
+  %body{ "data-spy" => "scroll","data-target" => "#navbarNav" }
+    = render ('app/partials/navbar.haml')
+  %section.questions
+    .container-fluid
+      .content-title
+        %h1.title-section Encuentra un profesional según tu zona
+      .content-professional
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/1.jpg"}/
+          .card-content-professional
+            %h3
+              %strong Alejandro Gutierrez
+            %p Constructor
+            %p VIII Región concepción
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/2.jpg"}/
+          .card-content-professional
+            %h3
+              %strong Genaro Castillo
+            %p Constructor
+            %p Rm Santiago
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/3.jpg"}/
+          .card-content-professional
+            %h3
+              %strong Juan Baschmann
+            %p Constructor
+            %p V Región Valparaíso
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/4.jpg"}/
+          .card-content-professional
+            %h3
+              %strong Raúl Valdés
+            %p Constructor
+            %p IV Región Coquimbo
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/2.jpg"}/
+          .card-content-professional
+            %h3
+              %strong Genaro Castillo
+            %p Constructor
+            %p Rm Santiago
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/4.jpg"}/
+          .card-content-professional
+            %h3
+              %strong Raúl Valdés
+            %p Constructor
+            %p IV Región Coquimbo
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/1.jpg"}/
+          .card-content-professional
+            %h3
+              %strong Alejandro Gutierrez
+            %p Constructor
+            %p VIII Región 
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/people/3.jpg"}/
+          .card-content-professional
+            %h3
+              %strong Juan Baschmann
+            %p Constructor
+            %p V Región Valparaíso
+  
+    = render ('app/partials/index/_footer.haml')

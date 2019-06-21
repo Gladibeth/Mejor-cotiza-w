@@ -10,6 +10,7 @@
 @import "steps";
 @import "questions";
 @import "profile";
+@import "professionals";
 
 /*Navbar*/
 
@@ -161,6 +162,9 @@
 
       @include respond-to(xs) {
         color: $black;
+      }
+      @include respond-to(sm) {
+        font-size: 13px;
       }
       &.dropdown-toggle {
         &:after {
@@ -491,6 +495,12 @@
 
 .card-inf-professional {
   padding: 10px;
+  color: #222222;
+  text-decoration: none;
+  &:hover {
+    color: #222222;
+    text-decoration: none;
+  }
   &:focus {
     outline: none;
   }
@@ -980,6 +990,10 @@ footer {
   align-items: flex-end;
   height: 100px;
 
+  @include respond-to(sm) {
+    padding: 20px;
+  }
+
   @include respond-to(xs) {
     flex-direction: column;
     width: 100%;
@@ -992,8 +1006,13 @@ footer {
     font-family: $raleway;
     font-weight: 700;
 
+    @include respond-to(sm){
+      font-size: 15px;
+    }
+
     @include respond-to(xs) {
       font-size: 15px;
+      text-align: center;
     }
 
     a {

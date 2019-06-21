@@ -1,6 +1,9 @@
 .questions {
   margin-top: 90px;
 
+  @include respond-to(sm) {
+    margin-top: 160px;
+  }
   @include respond-to(xs) {
     margin-top: 160px;
   }
@@ -15,6 +18,10 @@
   border-radius: 5px;
   padding: 20px;
   margin: 15px;
+
+  @include respond-to(sm){
+    padding: 7px;
+  }
 }
 
 .content-listing-questions {
@@ -22,6 +29,14 @@
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-gap: 20px;
   padding: 20px;
+
+  @include respond-to(sm){
+    grid-template-columns: 50% 50%;
+  }
+
+  @include respond-to(xs){
+    grid-template-columns: 100%;
+  }
 }
 
 

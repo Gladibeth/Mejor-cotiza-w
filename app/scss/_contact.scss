@@ -1,5 +1,15 @@
 .contact {
   margin-top: 90px;
+
+  @include respond-to(sm){
+    margin-top: 160px;
+    padding: 20px;
+  }
+  
+  @include respond-to(xs){
+    margin-top: 160px;
+    padding: 20px;
+  }
 }
 
 .content-description-info {
@@ -38,6 +48,14 @@
 .container-contact {
   display: grid;
   grid-template-columns: 50% 50%;
+
+  @include respond-to(sm) {
+    grid-template-columns: 100%;
+  }
+
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+  }
 }
 
 .control-expanded {
@@ -51,6 +69,14 @@
   }
   &.control-questions {
     display: inline;
+
+    @include respond-to(sm){
+      display: inline;
+    }
+    @include respond-to(xs){
+      display: flex;
+      align-items: flex-end;
+    }
   }
   .control-label {
     width: 80%;

@@ -1117,6 +1117,20 @@ body.fixed-body {
   margin-top: 90px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact {
+    margin-top: 160px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .contact {
+    margin-top: 160px;
+    padding: 20px;
+  }
+}
+
 .content-description-info {
   padding: 15px;
 }
@@ -1158,6 +1172,18 @@ body.fixed-body {
   grid-template-columns: 50% 50%;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-contact {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .container-contact {
+    grid-template-columns: 100%;
+  }
+}
+
 .control-expanded {
   display: flex;
   flex-direction: column;
@@ -1171,6 +1197,19 @@ body.fixed-body {
 
 .control-expanded.control-questions {
   display: inline;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .control-expanded.control-questions {
+    display: inline;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .control-expanded.control-questions {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .control-expanded .control-label {
@@ -1708,6 +1747,12 @@ input[type=number] {
   margin-top: 90px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .questions {
+    margin-top: 160px;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .questions {
     margin-top: 160px;
@@ -1725,11 +1770,29 @@ input[type=number] {
   margin: 15px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .questions-top {
+    padding: 7px;
+  }
+}
+
 .content-listing-questions {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-gap: 20px;
   padding: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .content-listing-questions {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .content-listing-questions {
+    grid-template-columns: 100%;
+  }
 }
 
 .card-questions {
@@ -1770,6 +1833,18 @@ input[type=number] {
   width: 200px;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .image-profile {
+    width: 175px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .image-profile {
+    width: 155px;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .image-profile {
     margin-bottom: 20px;
@@ -1783,6 +1858,12 @@ input[type=number] {
   background-color: #fff;
   box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
   border-radius: 5px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .content-profile {
+    grid-template-columns: 20% 45% 35%;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1837,6 +1918,33 @@ input[type=number] {
 .card-projects img {
   height: 300px;
   object-fit: cover;
+}
+
+.content-professional {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .content-professional {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .content-professional {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .content-professional {
+    grid-template-columns: 100%;
+  }
+}
+
+.content-professional {
+  padding: 20px;
 }
 
 /*Navbar*/
@@ -2010,6 +2118,12 @@ input[type=number] {
 @media (min-width: 0px) and (max-width: 767px) {
   .navbar-nav .nav-item .nav-link {
     color: #000;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 13px;
   }
 }
 
@@ -2334,6 +2448,13 @@ input[type=number] {
 
 .card-inf-professional {
   padding: 10px;
+  color: #222222;
+  text-decoration: none;
+}
+
+.card-inf-professional:hover {
+  color: #222222;
+  text-decoration: none;
 }
 
 .card-inf-professional:focus {
@@ -2845,6 +2966,12 @@ footer {
   height: 100px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-footer {
+    padding: 20px;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .container-footer {
     flex-direction: column;
@@ -2859,9 +2986,16 @@ footer {
   font-weight: 700;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-footer p {
+    font-size: 15px;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .container-footer p {
     font-size: 15px;
+    text-align: center;
   }
 }
 

@@ -1,6 +1,15 @@
 .image-profile{
   width: 200px;
 
+
+  @include respond-to(md){
+    width: 175px;
+  }
+
+  @include respond-to(sm){
+    width: 155px;
+  }
+
   @include respond-to(xs) {
     margin-bottom: 20px;
   }  
@@ -14,6 +23,10 @@
   box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
   border-radius: 5px;
 
+   @include respond-to(md){
+    grid-template-columns: 20% 45% 35%;
+  }
+
   @include respond-to(xs){
     grid-template-columns: 100%;
     display: flex;
@@ -21,6 +34,8 @@
     align-items: center;
     margin-bottom: 20px;
   }
+
+
 }
 
 .content-name {
