@@ -2372,10 +2372,6 @@ input[type=checkbox]:checked:disabled + label:before {
   }
 }
 
-.navbar .container-fluid {
-  padding: 40px;
-}
-
 @media (min-width: 0px) and (max-width: 767px) {
   .navbar .container-fluid {
     padding: 0px;
