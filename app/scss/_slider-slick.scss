@@ -1,5 +1,5 @@
+/** Slick professionals**/
 .slider-professional {
-
   width: 100%;
   height: 100%; 
   margin: 0 auto;
@@ -93,8 +93,10 @@
   }
 }
 
-.content-partnerts{
 
+/** Slick partnerst**/
+
+.content-partnerts{
   width: 100%;
   height: 100%; 
   margin: 0 auto;
@@ -133,7 +135,7 @@
     display: flex;
     position: absolute;
     bottom: -120%;
-    right: 59%;
+    right: 50%;
     width: 0%;
 
     @include respond-to(md) {

@@ -2,7 +2,6 @@
 @import "variables";
 @import "offcanvas";
 @import "setting-slick";
-@import "category-slick";
 @import "body";
 @import "button";
 @import "slider-home";
@@ -12,6 +11,7 @@
 @import "profile";
 @import "professionals";
 @import "team";
+@import "slider-slick";
 
 /*Navbar*/
 
@@ -77,7 +77,7 @@
       margin-left: 0;
     }
     img {
-      width: 115px;
+      width: 150px;
     }
   }
  
@@ -130,6 +130,7 @@
         text-decoration: none;
         &:hover {
           text-decoration: none;
+          cursor: pointer;
         }
         @include respond-to(xs) {
           display: none;
@@ -151,6 +152,7 @@
   
   .nav-item{
     padding: 0 5px;
+    // width: 18%;
     .nav-link {
       color: $black;
       font-size: 17px;
@@ -330,7 +332,17 @@
     @include respond-to(xs) {
       grid-template-columns: 100%;
     }
-	}
+  }
+  &.content-inf-functions {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    
+    @include respond-to(sm) {
+      grid-template-columns: 50% 50%;
+    }
+    @include respond-to(xs) {
+      grid-template-columns: 100%;
+    }
+  }
 }
 
 .card-inf {
@@ -509,7 +521,7 @@
 
 
 .slider-professional {
-  margin-top: 35px;
+  margin-top: 10px;
   padding: 20px;
 }
 .card-content-professional {
@@ -535,10 +547,6 @@
   background-color: $gray-mejor;
 }
 
-
-.section-padding {
-  // padding:80px 0 0px 0px;
-}
 .content-services {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -654,10 +662,17 @@
 }
 
 
-footer {
+.card-bidding {
+  img {
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+
+.footer {
   padding: 40px 20px 0px 20px;
-  background-color: #222222;
-  position: relative;
+  position: relative !important;
 }
 
 .footer-content{
@@ -786,9 +801,19 @@ footer {
   }
 
   img {
-    width: 100px;
+    width: 90px;
   }
 }
+
+
+.containers-btn-functions {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+
 .content-products {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -900,7 +925,7 @@ footer {
   position: absolute;
   left: 0;
   transform: rotate(320deg);
-  // bottom: 0;
+  bottom: 0;
   img {
     width: 100px;
     opacity: 0.1;
@@ -1041,7 +1066,7 @@ footer {
 }
 
 .container-fluid{
-  padding: 40px 20px;
+  padding: 20px 20px;
 
   @include respond-to(sm) {
     padding: 0px;

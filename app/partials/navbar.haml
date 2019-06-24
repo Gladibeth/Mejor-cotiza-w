@@ -9,9 +9,11 @@
           %a{ href: '#' }
             %i.fa.fa-envelope
             %span Contacto@mejorcotiza.cl
-        .text-top-header
-          %a{:href => "#function", "data-scroll" => ""}
-            %p ¿Como funciona?
+        .text-top-header.d-flex
+          %a{"data-target" => "#politicas", "data-toggle" => "modal"}
+            %p Políticas de empresa
+          %a.ml-4{:href => "questions.html", "data-scroll" => ""} 
+            %p Preguntas Frecuentes
     .container-fluid
       %a.navbar-brand{:href => "#"} 
         %img{ :src=>"assets/img/logo.png", :alt=>""}
@@ -21,10 +23,12 @@
       .offcanvas-collapse.fil
         %ul.navbar-nav
           %li.nav-item.active
-            %a.nav-link.active{:href => "#materiales", "data-scroll" => ""} Materiales
+            %a.nav-link.active{:href => "#materiales", "data-scroll" => ""} Categorías de Materiales
           %li.nav-item
-            %a.nav-link{:href => "questions.html", "data-scroll" => ""} Preguntas Frecuentes
+            %a.nav-link{:href => "professional.html", "data-scroll" => ""} Nuestros distribuidores
           %li.nav-item
-            %a.nav-link{:href => "professional.html", "data-scroll" => ""} Profesionales
+            %a.nav-link{:href => "#function", "data-scroll" => ""} Como Funciona
+          %li.nav-item
+            %a.nav-link{:href => "questions.html", "data-scroll" => ""} Trabaja con nosotros
           %li.nav-item.cta-btn
             %a.nav-link{:href => "form.html", "data-scroll" => ""} Cotiza Proyectos

@@ -58,7 +58,7 @@ $(document).ready(function () {
 
   $('.slider-professional').slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     dots: false,
     arrows: true,
@@ -148,7 +148,7 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    dots: true,
+    dots: false,
     arrows: false,
     responsive: [
       {

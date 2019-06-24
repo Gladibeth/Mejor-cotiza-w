@@ -1,13 +1,13 @@
 .footer
   .mask
     %img{:alt => "", :src => "assets/img/brocha.png"}/
-  .container-fluid
-    .container-footer
-      %p Av. apoquindo 6410, of. 605, las condes, santiago
-      %p 
-        Derechos reservados /
-        %a{ "data-target" => "#politicas", "data-toggle" => "modal" }
-          Políticas de la empresa
+  
+  .container-footer
+    %p Av. apoquindo 6410, of. 605, las condes, santiago
+    %p 
+      Derechos reservados /
+      %a{ "data-target" => "#politicas", "data-toggle" => "modal" }
+        Políticas de la empresa
 
 / Modal
 #politicas.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLongTitle", :role => "dialog", :tabindex => "-1"}
@@ -22,7 +22,7 @@
         %p Mejor Cotiza cuenta con los mejores profesionales del país, por lo que un gran inconveniente en la ejecución del proyecto resultará en la desvinculación de la empresa contratada de nuestra red de profesionales.
       .modal-footer
         .float-right
-          %button.btn.btn-black{:href => "#"}
+          %button.btn.btn-blue{:href => "#"}
             %span.btn-inner Aceptar
 
 %script{src: "assets/js/jquery.min.js"}

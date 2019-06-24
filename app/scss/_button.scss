@@ -23,7 +23,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background: $white;
+    // background: $white;
     z-index: 1;
     opacity: 0;
     transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
@@ -57,9 +57,9 @@
   }
 }
 
-.btn-black {
+
+.btn-blue {
   background: $blue-mejor;
-  
 
   &::before {
     content: "";
@@ -162,7 +162,7 @@
 }
 
 
-.btn-blue {
+.btn-blue-nav {
   background-color: $blue-mejor !important;
   border-radius: 5px;
   a {
@@ -184,3 +184,56 @@
 }
 
 
+.btn-white {
+  background: $white;
+  color: $blue-mejor;
+  border: 1px transparent;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border: 1px transparent;
+    z-index: 1;
+    opacity: 0;
+    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+    border-radius: 5px;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &::after {
+    transition:border 0.1s linear 0.05s;
+  }
+
+  .btn-inner {
+    position: relative;
+    z-index: 2;
+    font-family: $raleway;
+  }
+
+  &:hover {
+    color: $white !important;
+    transition: color 0.1s linear 0s;
+
+    &::before {
+      top: 0;
+      height: 100%;
+      opacity: 1;
+      transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+    }
+
+    &::after {
+      transition:border 0.1s linear 0s;
+    }
+  }
+}
