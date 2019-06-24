@@ -11,6 +11,7 @@
 @import "questions";
 @import "profile";
 @import "professionals";
+@import "team";
 
 /*Navbar*/
 
@@ -317,7 +318,7 @@
   }
 
   &.content-inf-card {
-    margin-top: 60px !important;
+    margin-top: 15px !important;
     padding: 20px;
   }
 	&.content-inf-services {
@@ -775,13 +776,17 @@ footer {
 }
 
 .container-partnerts {
-  margin-top: 35px;
+  margin-top: 15px;
   padding: 20px;
 }
 
 .item-partnert {
   &:focus {
     outline: none;
+  }
+
+  img {
+    width: 100px;
   }
 }
 .content-products {
@@ -1036,7 +1041,7 @@ footer {
 }
 
 .container-fluid{
-  padding: 40px;
+  padding: 40px 20px;
 
   @include respond-to(sm) {
     padding: 0px;

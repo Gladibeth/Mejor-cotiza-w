@@ -20,6 +20,27 @@
 
     = render ('app/partials/index/_best.haml')
 
-    = render ('app/partials/index/_about.haml') 
+    -# = render ('app/partials/index/_about.haml') 
+    - teams = [{image: "assets/img/people/1.jpg", name: 'Andrés Prado', phone: '(+569) 8 904 32 64'}, {image: "assets/img/people/2.jpg",  name: 'Matias ', phone: '(+569) 8 904 32 64'}, {image: "assets/img/people/3.jpg",  name: 'Yonnys Quintero ', phone: '(+569) 8 904 32 64'}, {image: "assets/img/people/4.jpg", name: 'Roberto Vargas', phone: '(+569) 8 904 32 64'}]
+    %section.our_team_area
+      .container-fluid
+        .content-title
+          %h1.title-section
+            Quienes somos
+        .team_row.team-carousel
+          - teams.each do |team|
+            .content-member-team
+              .team_membar
+                %img.rounded{:src=>"#{team[:image]}", :alt=>""}
+                .team_content
+                  %ul
+                    %li
+                      %a{ hrerf: ''}
+                        %i.fa.fa-facebook
+                    %li
+                      %a{ hrerf: ''}
+                        %i.fa.fa-instagram
+                  .name= team[:name]
+                  %h6= team[:phone]
 
     = render ('app/partials/index/_footer.haml')
