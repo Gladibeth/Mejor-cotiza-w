@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='UTF-8'>
+  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+  <title>Mejor Cotiza</title>
+  <link href='assets/css/bootstrap.min.css' rel='stylesheet'>
+  <link href='assets/css/slick.css' rel='stylesheet'>
+  <link href='assets/css/slick-theme.css' rel='stylesheet'>
+  <link href='assets/css/font-awesome.css' rel='stylesheet'>
+  <link href='assets/css/cssanimation.css' rel='stylesheet'>
+  <link href='assets/css/animate.css' rel='stylesheet'>
+  <link href='assets/css/main.css' rel='stylesheet'>
+  <link href='assets/img/favicon.png' rel='icon'>
+</head>
+
+<body>
+  <section class='home'>
+    <nav class='navbar navbar-expand-md navbar-fixed-js' id='navbarNav'>
+      <div class='top-header'>
+        <div class='d-flex pl-4 pr-4'>
+          <div class='phone'>
+            <a class='mr-3' href='#'>
+                <i class='fa fa-phone'></i>
+                <span>(+569) 8 904 32 64</span>
+              </a>
+            <a href='#'>
+                <i class='fa fa-envelope'></i>
+                <span>Contacto@mejorcotiza.cl</span>
+              </a>
+          </div>
+          <div class='text-top-header d-flex'>
+            <a data-target='#politicas' data-toggle='modal'>
+              <p>Políticas de empresa</p>
+            </a>
+            <a class='ml-4' data-scroll='' href='questions.html'>
+              <p>Preguntas Frecuentes</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class='container-fluid'>
+        <a class='navbar-brand' href='index.html'>
+            <img alt='' src='assets/img/logo.png'>
+          </a>
+        <button class='navbar-toggler p-2 border-0 hamburger hamburger--elastic d-none-lg' data-toggle='offcanvas' type='button'>
+            <span class='hamburger-box'>
+              <span class='hamburger-inner'></span>
+            </span>
+          </button>
+        <div class='offcanvas-collapse fil'>
+          <ul class='navbar-nav'>
+            <li class='nav-item active'>
+              <a class='nav-link active' data-scroll='' href='#materiales'>Categorías de Materiales</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' data-scroll='' href='distributor.html'>Nuestros distribuidores</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' data-scroll='' href='#function'>Como Funciona</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' data-scroll='' href='work.html'>Trabaja con nosotros</a>
+            </li>
+            <li class='nav-item cta-btn'>
+              <a class='nav-link' data-scroll='' href='form.html'>Cotiza Proyectos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section class="contact">
+    <div class="container-fluid">
+      <div id="container">
+        <section class="multi_step_form">
+          <form id="msform">
+            <div class="tittle">
+              <h2>
+                Indica tus Preferencias de Trabajo
+              </h2>
+              <p>Estimado, con el objetivo de enviarle las solicitudes que mas se acomoden a usted, indíquenos sus preferencias de Trabajo.</p>
+            </div>
+            <div class="control control-expanded control-expen-form">
+              <div class="control-label">
+                <label for="">Correo</label>
+              </div>
+              <input class="input fade-background" name="email" placeholder="Correo" type="email">
+            </div>
+            <div class="control control-expanded control-expen-form">
+              <div class="control-label">
+                <label for="">Nombre Completo</label>
+              </div>
+              <input class="input fade-background" name="name" placeholder="Nombre y Apellido" type="text">
+            </div>
+            <div class="control control-expanded control-expen-form">
+              <div class="control-label">
+                <label for="">Dirección</label>
+              </div>
+              <textarea class="fade-background" placeholder="Escribe tú dirección"></textarea>
+            </div>
+            <div class="control control-expanded control-expen-form">
+              <div class="control-label">
+                <label for="">Rut</label>
+              </div>
+              <input class="input fade-background" name="rut" placeholder="rut" type="text">
+            </div>
+            <div class="control control-expanded control-expen-form">
+              <div class="control-label">
+                <label for="">Teléfono</label>
+              </div>
+              <input class="input fade-background" name="Teléfono" placeholder="Teléfono" type="number">
+            </div>
+            <div class="control control-expanded control-expen-form">
+              <div class="control-label">
+                <label for="">En que región le interesa trabajar</label>
+                <div class="d-flex mt-2 container-radio-input">
+                  <div class="radio">
+                    <input checked="checked" id="radio-1" name="radio" type="radio">
+                    <label class="radio-label" for="radio-1">Región de Arica y Parinacota: Arica</label>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-2" name="radio" type="radio">
+                    <label class="radio-label" for="radio-2">Región de Tarapacá: Iquique</label>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-2" name="radio" type="radio">
+                    <label class="radio-label" for="radio-3">Región de Antofagasta: Antofagasta</label>
+                  </div>
+                  <div class="radio">
+                    <input checked="checked" id="radio-1" name="radio" type="radio">
+                    <label class="radio-label" for="radio-4">Región de Atacama: Copiapó</label>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-2" name="radio" type="radio">
+                    <label class="radio-label" for="radio-5">Región de Coquimbo: La Serena</label>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-2" name="radio" type="radio">
+                    <label class="radio-label" for="radio-6">Región de Valparaíso: Valparaíso</label>
+                  </div>
+                  <div class="radio">
+                    <input checked="checked" id="radio-1" name="radio" type="radio">
+                    <label class="radio-label" for="radio-7">Región de Ohiggins: Rancagua</label>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-2" name="radio" type="radio">
+                    <label class="radio-label" for="radio-8">Región del Maule: Talca</label>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-2" name="radio" type="radio">
+                    <label class="radio-label" for="radio-9">Región del Bío-Bío: Concepción</label>
+                  </div>
+                  <div class="radio">
+                    <input checked="checked" id="radio-1" name="radio" type="radio">
+                    <label class="radio-label" for="radio-10">Región de la Araucanía: Temuco</label>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-2" name="radio" type="radio">
+                    <label class="radio-label" for="radio-11">Región de los Ríos: Valdivia</label>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-2" name="radio" type="radio">
+                    <label class="radio-label" for="radio-12">Región de los Lagos: Puerto Montt</label>
+                  </div>
+                  <div class="radio">
+                    <input checked="checked" id="radio-1" name="radio" type="radio">
+                    <label class="radio-label" for="radio-13">Región de Aysen: Coyhaique</label>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-2" name="radio" type="radio">
+                    <label class="radio-label" for="radio-14">Región de Magallanes: Punta Arenas</label>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-2" name="radio" type="radio">
+                    <label class="radio-label" for="radio-15">Región Metropolitana: Santiago</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="control control-expanded control-expen-form">
+              <div class="control-label">
+                <label for="">En que región le interesa trabajar</label>
+                <div class="d-flex mt-2 container-radio-input">
+                  <div class="radio">
+                    <input id="fruit1" name="categories-1" type="checkbox" value="#">
+                    <label for="fruit1">Construcción desde Cero</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-" type="checkbox" value="#">
+                    <label for="fruit1">Ampliación</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-2" type="checkbox" value="#">
+                    <label for="fruit1">Pintura</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-3" type="checkbox" value="#">
+                    <label for="fruit1">Reparaciones</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-4" type="checkbox" value="#">
+                    <label for="fruit1">Trabajos de Piso y Radier</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-5" type="checkbox" value="#">
+                    <label for="fruit1">Fletes y Mudanzas</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-6" type="checkbox" value="#">
+                    <label for="fruit1">Construcción de Piscinas</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-7" type="checkbox" value="#">
+                    <label for="fruit1">Construcción de Quinchos y Cobertizos</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-8" type="checkbox" value="#">
+                    <label for="fruit1">Locales Comerciales</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-8" type="checkbox" value="#">
+                    <label for="fruit1">Arquitecto</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-9" type="checkbox" value="#">
+                    <label for="fruit1">Paisajismo y Jardín</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-10" type="checkbox" value="#">
+                    <label for="fruit1">Gasfitería</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-11" type="checkbox" value="#">
+                    <label for="fruit1">Electricidad</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-12" type="checkbox" value="#">
+                    <label for="fruit1">Sistema de Climatización</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-13" type="checkbox" value="#">
+                    <label for="fruit1">Baño cocina</label>
+                  </div>
+                  <div class="radio">
+                    <input id="fruit1" name="categories-14" type="checkbox" value="#">
+                    <label for="fruit1">Otros</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="control control-expanded control-expen-form">
+              <div class="control-label">
+                <label for="">Comentarios o Consultas para MejorCotiza.cl</label>
+              </div>
+              <textarea class="fade-background" placeholder="Comentarios o Consulta"></textarea>
+              <a class="btn btn-blue action-button" href="#">
+                  <span class="btn-inner">Enviar</span>
+                </a>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </section>
+  <div class='footer'>
+    <div class='mask'>
+      <img alt='' src='assets/img/brocha.png'>
+    </div>
+    <div class='container-footer'>
+      <p>Av. apoquindo 6410, of. 605, las condes, santiago</p>
+      <p>
+        Derechos reservados /
+        <a data-target='#politicas' data-toggle='modal'>
+            Políticas de la empresa
+          </a>
+      </p>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div aria-hidden='true' aria-labelledby='exampleModalLongTitle' class='modal fade' id='politicas' role='dialog' tabindex='-1'>
+    <div class='modal-dialog' role='document'>
+      <div class='modal-content'>
+        <div class='modal-header'>
+          <h5 class='modal-title'>Políticas de la empresa</h5>
+          <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+              <span aria-hidden='true'>×</span>
+            </button>
+        </div>
+        <div class='modal-body'>
+          <p>Mejor Cotiza no participa ni es responsable de ningún ámbito de la propuesta, ni en la ejecución del proyecto, siendo 100% responsable la empresa contratada, de su correcta ejecución.</p>
+          <p>Mejor Cotiza cuenta con los mejores profesionales del país, por lo que un gran inconveniente en la ejecución del proyecto resultará en la desvinculación de la empresa contratada de nuestra red de profesionales.</p>
+        </div>
+        <div class='modal-footer'>
+          <div class='float-right'>
+            <button class='btn btn-blue' href='#'>
+                <span class='btn-inner'>Aceptar</span>
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='assets/js/jquery.min.js'></script>
+  <script src='assets/js/slider-home.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+  <script src='assets/js/letteranimation.js'></script>
+  <script src='assets/js/bootstrap.js'></script>
+  <script src='assets/js/offcanvas.js'></script>
+  <script src='assets/js/slick.min.js'></script>
+  <script src='assets/js/wow.min.js'></script>
+  <script src='assets/js/wow-settings.js'></script>
+  <script src='assets/js/setting-slick.js'></script>
+  <script src='assets/js/fonts.js'></script>
+  <script src='assets/js/smooth-scroll.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+  <script src='assets/js/steps.js'></script>
+  <script src='assets/js/main.js'></script>
+  <script>
+    smoothScroll.init({
+      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+      speed: 2000, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutCubic', // Easing pattern to use
+      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+      callback: function(anchor, toggle) {} // Function to run after scrolling
+    });
+  </script>
+</body>
+
+</html>

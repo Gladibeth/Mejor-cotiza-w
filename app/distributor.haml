@@ -1,0 +1,72 @@
+:ruby
+  def render(partial)
+    Haml::Engine.new(File.read(partial)).render
+  end
+!!!
+%html{lang: "en"}
+  = render ('app/partials/head.haml')
+  %body{ "data-spy" => "scroll","data-target" => "#navbarNav" }
+    = render ('app/partials/navbar.haml')
+  %section.questions
+    .container-fluid
+      .content-title
+        %h1.title-section Conoce a nuestros distribuidores
+      .content-professional
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/trucks/trucks-1.jpeg"}/
+          .card-content-professional
+            %h3
+              %strong Alejandro Gutierrez
+            %p Su ruta
+            %p Patente
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/trucks/trucks-2.jpeg"}/
+          .card-content-professional
+            %h3
+              %strong Genaro Castillo
+            %p Su ruta
+            %p Patente
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/trucks/trucks-1.jpeg"}/
+          .card-content-professional
+            %h3
+              %strong Juan Baschmann
+            %p Su ruta
+            %p Patente
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/trucks/trucks-2.jpeg"}/
+          .card-content-professional
+            %h3
+              %strong Raúl Valdés
+            %p Su ruta
+            %p Patente
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/trucks/trucks-1.jpeg"}/
+          .card-content-professional
+            %h3
+              %strong Genaro Castillo
+            %p Su ruta
+            %p Patente
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/trucks/trucks-2.jpeg"}/
+          .card-content-professional
+            %h3
+              %strong Raúl Valdés
+            %p Su ruta
+            %p Patente
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/trucks/trucks-1.jpeg"}/
+          .card-content-professional
+            %h3
+              %strong Alejandro Gutierrez
+            %p Su ruta
+            %p Patente
+        %a.card-inf-professional{ href: 'profile.html'}
+          %img.img-fluid.rounded{:alt => "image", :src => "assets/img/trucks/trucks-2.jpeg"}/
+          .card-content-professional
+            %h3
+              %strong Juan Baschmann
+            %p Su ruta
+            %p Patente
+  
+    = render ('app/partials/index/_footer.haml')

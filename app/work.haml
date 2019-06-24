@@ -1,0 +1,152 @@
+:ruby
+  def render(partial)
+    Haml::Engine.new(File.read(partial)).render
+  end
+!!!
+%html{lang: "en"}
+  = render ('app/partials/head.haml')
+  %body
+    = render ('app/partials/navbar.haml')
+    %section.contact
+      .container-fluid
+        -# .content-title
+        -#   %h1.title-section Cotiza tu presupuesto en 3 pasos
+        #container
+          %section.multi_step_form
+            %form#msform
+              .tittle
+                %h2 
+                  Indica tus Preferencias de Trabajo
+                %p Estimado, con el objetivo de enviarle las solicitudes que mas se acomoden a usted, indíquenos sus preferencias de Trabajo.
+              .control.control-expanded.control-expen-form
+                .control-label
+                  %label(for="") Correo
+                %input.input.fade-background{:name => "email", :placeholder => "Correo", :type => "email"}/
+              .control.control-expanded.control-expen-form
+                .control-label
+                  %label(for="") Nombre Completo
+                %input.input.fade-background{:name => "name", :placeholder => "Nombre y Apellido", :type => "text"}/
+              .control.control-expanded.control-expen-form
+                .control-label
+                  %label(for="") Dirección
+                %textarea.fade-background{ :placeholder => "Escribe tú dirección"}
+              .control.control-expanded.control-expen-form
+                .control-label
+                  %label(for="") Rut
+                %input.input.fade-background{:name => "rut", :placeholder => "rut", :type => "text"}/
+              .control.control-expanded.control-expen-form
+                .control-label
+                  %label(for="") Teléfono
+                %input.input.fade-background{:name => "Teléfono", :placeholder => "Teléfono", :type => "number"}/
+              .control.control-expanded.control-expen-form
+                .control-label
+                  %label(for="") En que región le interesa trabajar
+                  .d-flex.mt-2.container-radio-input
+                    .radio
+                      %input#radio-1{:checked => "checked", :name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-1"} Región de Arica y Parinacota: Arica
+                    .radio
+                      %input#radio-2{:name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-2"} Región de Tarapacá: Iquique
+                    .radio
+                      %input#radio-2{:name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-3"} Región de Antofagasta: Antofagasta
+                    .radio
+                      %input#radio-1{:checked => "checked", :name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-4"} Región de Atacama: Copiapó
+                    .radio
+                      %input#radio-2{:name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-5"} Región de Coquimbo: La Serena
+                    .radio
+                      %input#radio-2{:name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-6"} Región de Valparaíso: Valparaíso
+                    .radio
+                      %input#radio-1{:checked => "checked", :name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-7"} Región de Ohiggins: Rancagua
+                    .radio
+                      %input#radio-2{:name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-8"} Región del Maule: Talca
+                    .radio
+                      %input#radio-2{:name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-9"} Región del Bío-Bío: Concepción
+                    .radio
+                      %input#radio-1{:checked => "checked", :name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-10"} Región de la Araucanía: Temuco
+                    .radio
+                      %input#radio-2{:name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-11"} Región de los Ríos: Valdivia
+                    .radio
+                      %input#radio-2{:name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-12"} Región de los Lagos: Puerto Montt
+                    .radio
+                      %input#radio-1{:checked => "checked", :name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-13"} Región de Aysen: Coyhaique
+                    .radio
+                      %input#radio-2{:name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-14"} Región de Magallanes: Punta Arenas
+                    .radio
+                      %input#radio-2{:name => "radio", :type => "radio"}/
+                      %label.radio-label{:for => "radio-15"} Región Metropolitana: Santiago
+              .control.control-expanded.control-expen-form
+                .control-label
+                  %label(for="") En que región le interesa trabajar
+                  .d-flex.mt-2.container-radio-input
+                    .radio
+                      %input#fruit1{:name => "categories-1", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Construcción desde Cero
+                    .radio
+                      %input#fruit1{:name => "categories-", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Ampliación
+                    .radio
+                      %input#fruit1{:name => "categories-2", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Pintura
+                    .radio
+                      %input#fruit1{:name => "categories-3", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Reparaciones
+                    .radio
+                      %input#fruit1{:name => "categories-4", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Trabajos de Piso y Radier
+                    .radio
+                      %input#fruit1{:name => "categories-5", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Fletes y Mudanzas
+                    .radio
+                      %input#fruit1{:name => "categories-6", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Construcción de Piscinas
+                    .radio
+                      %input#fruit1{:name => "categories-7", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Construcción de Quinchos y Cobertizos
+                    .radio
+                      %input#fruit1{:name => "categories-8", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Locales Comerciales
+                    .radio
+                      %input#fruit1{:name => "categories-8", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Arquitecto
+                    .radio
+                      %input#fruit1{:name => "categories-9", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Paisajismo y Jardín
+                    .radio
+                      %input#fruit1{:name => "categories-10", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Gasfitería
+                    .radio
+                      %input#fruit1{:name => "categories-11", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Electricidad
+                    .radio
+                      %input#fruit1{:name => "categories-12", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Sistema de Climatización
+                    .radio
+                      %input#fruit1{:name => "categories-13", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Baño cocina
+                    .radio
+                      %input#fruit1{:name => "categories-14", :type => "checkbox", :value => "#"}/
+                      %label{:for => "fruit1"} Otros
+
+              .control.control-expanded.control-expen-form
+                .control-label
+                  %label(for="") Comentarios o Consultas para MejorCotiza.cl
+                %textarea.fade-background{ :placeholder => "Comentarios o Consulta"}
+               
+                %a.btn.btn-blue.action-button{:href => "#"} 
+                  %span.btn-inner Enviar 
+    
+
+    = render ('app/partials/index/_footer.haml')

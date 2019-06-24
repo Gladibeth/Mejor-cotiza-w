@@ -211,13 +211,11 @@
 }
 
 .categories {
-	padding: 100px 0 100px 0;
+	padding: 100px 0 0px 0;
 	background-color: #f9f9f9;
 }
 
 .content-title {
-  // display: flex;
-  // justify-content: center;
   &.content-title-d {
     display: flex !important;
     justify-content: space-between;
@@ -517,6 +515,11 @@
   &:focus {
     outline: none;
   }
+
+  img {
+    height: 300px;
+    object-fit: cover;
+  }
 }
 
 
@@ -525,7 +528,7 @@
   padding: 20px;
 }
 .card-content-professional {
-	padding: 35px;
+	padding: 25px;
 	box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
 	display: flex;
 	flex-direction: column;
@@ -534,7 +537,11 @@
 		font-family: $raleway;
 		font-size: 18px;
   }
-  
+
+  p {
+    font-family: $raleway;
+  }
+
   &.card-content-products {
     border-radius: 5px;
     align-items: flex-start;
