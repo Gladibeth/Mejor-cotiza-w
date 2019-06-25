@@ -2407,7 +2407,7 @@ input[type=checkbox]:checked:disabled + label:before {
 }
 
 .navbar .navbar-brand {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
