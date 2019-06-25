@@ -211,8 +211,8 @@
 }
 
 .categories {
-	padding: 100px 0 0px 0;
-	background-color: #f9f9f9;
+	// padding: 100px 0 0px 0;
+	background-color: $gray-mejor;
 }
 
 .content-title {
@@ -282,6 +282,9 @@
 }
 .category-column {
 
+  &:focus{
+    outline: none;
+  }
 	.category {
 		padding: 12px;
 		height: 200px;
@@ -293,8 +296,17 @@
 		margin: 20px 10px;
     border-radius: 5px;
     box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
-		
+    transition: .3s ease-in-out;
+    &:hover {
+      transform: translateY(-10px);
+      transition: .3s ease-in-out;
+      p{
+        color: $blue-mejor;
+        transition: .3s ease-in-out;
+      }
+    }
 		p {
+      transition: .3s ease-in-out;
 			margin-top: 10px;
 			font-family: $raleway;
 		}
@@ -658,7 +670,7 @@
     height: 100%;
     object-fit: cover;
   }
-  
+
   .title-services {
     position: absolute;
     bottom: 10%;
