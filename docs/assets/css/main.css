@@ -2355,6 +2355,7 @@ input[type=checkbox]:checked:disabled + label:before {
 
 .dropdown-menu {
   left: 10% !important;
+  top: 127px;
 }
 
 .dropdown-header {
