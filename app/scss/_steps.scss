@@ -439,6 +439,7 @@ input[type=checkbox] + label:before {
   vertical-align: bottom;
   color: transparent;
   transition: .2s;
+  margin-right: 15px;
 }
 
 input[type=checkbox] + label:active:before {

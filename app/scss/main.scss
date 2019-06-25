@@ -657,8 +657,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    // padding: 20px 10px 10px 10px;
   }
+  
   .title-services {
     position: absolute;
     bottom: 10%;
@@ -669,6 +669,12 @@
 }
 
 
+/** Our bidding**/
+
+.bidding{
+  overflow: hidden;
+}
+
 .card-bidding {
   img {
     height: 400px;
@@ -676,9 +682,9 @@
   }
 }
 
-
+/** Footer **/
 .footer {
-  padding: 40px 20px 0px 20px;
+  padding: 0px 20px 0px 20px;
   position: relative !important;
 }
 
