@@ -49,6 +49,13 @@
         flex-direction: column;
         justify-content: space-between;
         height: 200px;
+
+        @include respond-to(md) {
+          height: 50%;
+        }
+        @include respond-to(xs) {
+          height: 60%;
+        }
       }
     }
 
@@ -117,6 +124,7 @@
       }
       @include respond-to(xs) {
         font-size:25px;
+        line-height: 2rem;
       }
     }
 
@@ -153,6 +161,7 @@
 
     @include respond-to(xs){
       left: 30%;
+      display: none;
     }
 
     .item { 
@@ -208,9 +217,9 @@
 
     .prev {
       left: 30px;
-      // @include respond-to(xs) {
-      //   display: none;
-      // }
+      @include respond-to(xs) {
+        display: none;
+      }
 
       &:hover .svg {
         left: -10px;
@@ -220,9 +229,9 @@
     .next {
       right: 30px;
 
-      // @include respond-to(xs) {
-      //   display: none;
-      // }
+      @include respond-to(xs) {
+        display: none;
+      }
 
       &:hover .svg {
         left: 10px;

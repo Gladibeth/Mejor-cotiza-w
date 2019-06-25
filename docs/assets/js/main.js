@@ -1,5 +1,5 @@
 $(window).scroll(function () {
-    if ($(document).scrollTop() > 90 && ($(window).width() >= 0)) {
+    if ($(document).scrollTop() > 90 && ($(window).width() >= 767)) {
         $('.navbar').addClass('fixed')
         $('.top-header').addClass('top-header-deleted');
         $('.cta-btn').addClass('btn-blue-nav');
