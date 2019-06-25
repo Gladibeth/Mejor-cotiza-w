@@ -70,6 +70,7 @@
     width: 100%;
     height: 1px;
     border: 2px solid $blue-mejor;
+    background: white;
     z-index: 1;
     opacity: 0;
     transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
