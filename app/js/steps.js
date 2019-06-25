@@ -98,21 +98,21 @@
         })
     };
 
-    //* Add Phone no select
-    function phoneNoselect() {
-        if ($('#msform').length) {
-            $("#phone").intlTelInput();
-            $("#phone").intlTelInput("setNumber", "+880");
-        };
-    };
+    // //* Add Phone no select
+    // function phoneNoselect() {
+    //     if ($('#msform').length) {
+    //         $("#phone").intlTelInput();
+    //         $("#phone").intlTelInput("setNumber", "+880");
+    //     };
+    // };
     //* Select js
-    function nice_Select() {
-        if ($('.product_select').length) {
-            $('select').niceSelect();
-        };
-    };
+    // function nice_Select() {
+    //     if ($('.product_select').length) {
+    //         $('select').niceSelect();
+    //     };
+    // };
     /*Function Calls*/
     verificationForm();
-    phoneNoselect();
-    nice_Select();
+    // phoneNoselect();
+    // nice_Select();
 })(jQuery); 
