@@ -1,0 +1,157 @@
+%section.home
+  %nav.navbar.navbar-expand-md.navbar-fixed-js#navbarNav
+    .top-header
+      .d-flex.pl-4.pr-4
+        .phone
+          %a.mr-3{ href: '#' }
+            %i.fa.fa-phone 
+            %span (+569) 8 904 32 64
+          %a{ href: '#' }
+            %i.fa.fa-envelope
+            %span Contacto@mejorcotiza.cl
+        .text-top-header.d-flex
+          .search__container
+            %input.search__input{:placeholder => "¿Que material estas buscando?", :type => "text"}/
+          -# %a{"data-target" => "#politicas", "data-toggle" => "modal"}
+          -#   %p Políticas de empresa
+          -# %a.ml-4{:href => "questions.html", "data-scroll" => ""} 
+          -#   %p Preguntas Frecuentes
+    .container-fluid
+      %a.navbar-brand{:href => "index.html"} 
+        %img{ :src=>"assets/img/logo.png", :alt=>""}
+      %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.d-none-lg{"data-toggle" => "offcanvas", :type => "button"}
+        %span.hamburger-box
+          %span.hamburger-inner
+      .offcanvas-collapse.fil
+        %ul.navbar-nav          
+          %li.nav-item.active.dropdown.dropdown-large
+            %a.nav-link.active.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Categorías de Materiales
+              %span
+              %b.caret
+            %ul.dropdown-menu.multi-column.columns-3
+              .row
+                .col-sm-3
+                  %ul.multi-column-dropdown
+                    %li.dropdown-header Construcción de cero
+                    %li.divider
+                    %li
+                      %a{:href => ""}
+                        Madera y tableros
+                    %li
+                      %a{:href => ""}
+                        Bloques, ladrillos cemento
+                    %li
+                      %a{:href => ""}
+                        Tabiquería
+                    %li
+                      %a{:href => ""}
+                        Ver más
+                    %li.dropdown-header Pisos  
+                    %li
+                      %a{:href => ""}
+                        Cerámicas
+                    %li
+                      %a{:href => ""}
+                        Pisos de madera
+                    %li
+                      %a{:href => ""}
+                        Porcelanato
+                    %li
+                      %a{:href => ""}
+                        Ver más
+                .col-sm-3
+                  %ul.multi-column-dropdown
+                    %li.dropdown-header Gastiferia 
+                    %li.divider
+                    %li
+                      %a{:href => ""}
+                        Griferias
+                    %li
+                      %a{:href => ""}
+                        Fosas y estanques
+                    %li
+                      %a{:href => ""}
+                        Ver más
+                      
+                    %li.dropdown-header Piscinas
+                    %li.divider
+                    %li
+                      %a{:href => "FiberOpticPatchPanel.php"}
+                        Piscinas Estructurales
+                    %li
+                      %a{:href => "MediaConverter.php"}
+                        Piscinas Inflables
+                    %li
+                      %a{:href => "19NetworkRack.php"}
+                        Equipoas para piscina
+                    %li
+                      %a{:href => ""}
+                        Ver más
+                    
+                .col-sm-3
+                  %ul.multi-column-dropdown
+                    %li.dropdown-header Electricidad
+                    %li.divider
+                    %li
+                      %a{:href => ""}
+                        Enchufes, placas y volantes
+                    %li
+                      %a{:href => ""}
+                        Temporizadires, timbres y sensores
+                    %li
+                      %a{:href => ""}
+                        Ver más
+                    %li.dropdown-header Pinturas
+                    %li.divider
+                    %li
+                      %a{:href => ""}
+                        Pinturas de interior y exterior
+                    %li
+                      %a{:href => ""}
+                        Pintura para proctectores
+                    %li
+                      %a{:href => ""}
+                        Pintura para especiales
+                    %li
+                      %a{:href => ""}
+                        Ver más
+                .col-sm-3
+                  %ul.multi-column-dropdown
+                    %li.dropdown-header Baños y cocina
+                    %li.divider
+                    %li
+                      %a{:href => ""}
+                        Muebles de cocina
+                    %li
+                      %a{:href => ""}
+                        Lavaplatos
+                    %li
+                      %a{:href => ""}
+                        Duchas y Cabinas
+                    %li
+                      %a{:href => ""}
+                        Espejos y Botiquines
+                    %li
+                      %a{:href => ""}
+                        Ver más
+                    %li.dropdown-header Maquinarias 
+                    %li.divider
+                    %li
+                      %a{:href => ""}
+                        Betoneras, Trompos y Rotomartillos
+                    %li
+                      %a{:href => ""}
+                        Carretillas y Ruedas
+                    %li
+                      %a{:href => ""}
+                        Ver más
+                
+          %li.nav-item
+            %a.nav-link{:href => "distributor.html", "data-scroll" => ""} Nuestros distribuidores
+          %li.nav-item
+            %a.nav-link{:href => "#function", "data-scroll" => ""} Como Funciona
+          %li.nav-item
+            %a.nav-link{:href => "work.html", "data-scroll" => ""} Trabaja con nosotros
+          %li.nav-item.cta-btn
+            %a.nav-link{:href => "form.html", "data-scroll" => ""} Cotiza Proyectos
