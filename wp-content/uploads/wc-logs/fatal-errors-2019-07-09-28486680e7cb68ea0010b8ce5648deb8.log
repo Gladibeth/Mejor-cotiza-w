@@ -1,0 +1,16 @@
+2019-07-09T19:52:59+00:00 CRITICAL syntax error, unexpected '/', expecting end of file in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/functions.php on line 193
+
+2019-07-09T19:53:00+00:00 CRITICAL syntax error, unexpected '/', expecting end of file in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/functions.php on line 193
+
+2019-07-09T20:05:11+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/functions.php on line 193
+
+2019-07-09T21:26:11+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION), expecting '(' in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/functions.php on line 196
+
+2019-07-09T21:26:13+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION), expecting '(' in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/functions.php on line 196
+
+2019-07-09T21:26:16+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION), expecting '(' in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/functions.php on line 196
+
+2019-07-09T21:26:16+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION), expecting '(' in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/functions.php on line 196
+
+2019-07-09T21:27:22+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION), expecting '(' in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/functions.php on line 197
+
