@@ -4,7 +4,7 @@
 <head>
   <meta charset='UTF-8'>
   <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-  <title>Mejor Cotiza</title>
+  <title></title>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/magnific-popup.css" />
   <link href='<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css' rel='stylesheet'>
   <link href='<?php echo get_template_directory_uri(); ?>/assets/css/slick.css' rel='stylesheet'>
@@ -16,6 +16,9 @@
   <link href='<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png' rel='icon'>
 </head>
 <body data-spy="scroll" data-target="#navbarNav">
+  <?php $current_file =  $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];?> 
+
+ 
   <section class='home'>
     <nav class='navbar navbar-expand-md navbar-fixed-js' id='navbarNav'>
       <div class='top-header'>
@@ -23,7 +26,7 @@
           <div class='phone'>
             <a class='mr-3' href='#'>
                 <i class='fa fa-phone'></i>
-                <span>(+569) 8 904 32 64</span>
+                <span><?php var_dump($current_file); ?></span>
               </a>
             <a href='#'>
                 <i class='fa fa-envelope'></i>
@@ -40,11 +43,13 @@
               </a>
             </div>
             <?php else: ?>
-              <div class='text-top-header d-flex'>
-                <div class='search__container'>
-                  <input class='search__input' placeholder='¿Que material estas buscando?' type='text'>
+              <form action="<?php bloginfo('url'); ?>">
+                <div class='text-top-header d-flex'>
+                  <div class='search__container'>
+                    <input class='search__input' placeholder='¿Que material estas buscando?' type='text' name:>
+                  </div>
                 </div>
-              </div>
+              </form>
           <?php endif; ?>
         </div>
       </div>

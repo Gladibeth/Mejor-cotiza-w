@@ -35,69 +35,7 @@
           </div>
         </div>
       <?php endwhile; ?>
-      <!-- <div class='content-member-team'>
-        <div class='team_membar'>
-          <img alt='' class='rounded' src='<?php echo get_template_directory_uri(); ?>/assets/img/people/2.jpg'>
-          <div class='team_content'>
-            <ul>
-              <li>
-                <a hrerf=''>
-                    <i class='fa fa-facebook'></i>
-                  </a>
-              </li>
-              <li>
-                <a hrerf=''>
-                    <i class='fa fa-instagram'></i>
-                  </a>
-              </li>
-            </ul>
-            <div class='name'>Matías</div>
-            <h6>(+569) 8 904 32 64</h6>
-          </div>
-        </div>
-      </div>
-      <div class='content-member-team'>
-        <div class='team_membar'>
-          <img alt='' class='rounded' src='<?php echo get_template_directory_uri(); ?>/assets/img/people/3.jpg'>
-          <div class='team_content'>
-            <ul>
-              <li>
-                <a hrerf=''>
-                    <i class='fa fa-facebook'></i>
-                  </a>
-              </li>
-              <li>
-                <a hrerf=''>
-                    <i class='fa fa-instagram'></i>
-                  </a>
-              </li>
-            </ul>
-            <div class='name'>Yonnys Quintero</div>
-            <h6>(+569) 8 904 32 64</h6>
-          </div>
-        </div>
-      </div>
-      <div class='content-member-team'>
-        <div class='team_membar'>
-          <img alt='' class='rounded' src='<?php echo get_template_directory_uri(); ?>/assets/img/people/4.jpg'>
-          <div class='team_content'>
-            <ul>
-              <li>
-                <a hrerf=''>
-                    <i class='fa fa-facebook'></i>
-                  </a>
-              </li>
-              <li>
-                <a hrerf=''>
-                    <i class='fa fa-instagram'></i>
-                  </a>
-              </li>
-            </ul>
-            <div class='name'>Roberto Vargas</div>
-            <h6>(+569) 8 904 32 64</h6>
-          </div>
-        </div>
-      </div> -->
+  
     </div>
   </div>
 </section>

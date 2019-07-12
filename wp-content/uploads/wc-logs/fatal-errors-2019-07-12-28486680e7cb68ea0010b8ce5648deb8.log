@@ -1,0 +1,20 @@
+2019-07-12T15:25:57+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/archive-product.php:32
+Stack trace:
+#0 /var/www/html/Mejor-cotiza/wp-content/plugins/woocommerce/includes/wc-core-functions.php(249): include()
+#1 /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/taxonomy-product_cat.php(22): wc_get_template('archive-product...')
+#2 /var/www/html/Mejor-cotiza/wp-includes/template-loader.php(78): include('/var/www/html/M...')
+#3 /var/www/html/Mejor-cotiza/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#4 /var/www/html/Mejor-cotiza/index.php(17): require('/var/www/html/M...')
+#5 {main}
+  thrown in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/archive-product.php on line 32
+
+2019-07-12T15:26:34+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/archive-product.php:32
+Stack trace:
+#0 /var/www/html/Mejor-cotiza/wp-content/plugins/woocommerce/includes/wc-core-functions.php(249): include()
+#1 /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/taxonomy-product_cat.php(22): wc_get_template('archive-product...')
+#2 /var/www/html/Mejor-cotiza/wp-includes/template-loader.php(78): include('/var/www/html/M...')
+#3 /var/www/html/Mejor-cotiza/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#4 /var/www/html/Mejor-cotiza/index.php(17): require('/var/www/html/M...')
+#5 {main}
+  thrown in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/archive-product.php on line 32
+
