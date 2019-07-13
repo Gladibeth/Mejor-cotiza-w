@@ -31,3 +31,8 @@
 .frm_message {
   font-family: "Raleway", sans-serif !important;
 }
+
+.deleted-title .product_title,
+.deleted-title .price {
+  display: none !important;
+}

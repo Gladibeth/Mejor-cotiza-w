@@ -15,6 +15,7 @@
   <link href='<?php echo get_template_directory_uri(); ?>/assets/css/main.css' rel='stylesheet'>
   <link href='<?php echo get_template_directory_uri(); ?>/assets/css/woocommerce.css' rel='stylesheet'>
   <link href='<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png' rel='icon'>
+  <?php wp_head(); ?>
 </head>
 <body data-spy="scroll" data-target="#navbarNav">
   <?php $current_file =  $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];?> 

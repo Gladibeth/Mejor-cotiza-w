@@ -61,6 +61,7 @@
       callback: function(anchor, toggle) {} // Function to run after scrolling
     });
   </script>
+  <?php wp_footer();?>
 </body>
 
 </html>

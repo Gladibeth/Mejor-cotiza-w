@@ -33,9 +33,8 @@ do_action( 'woocommerce_before_main_content' );
 <section class="questions">
   <div class="container-fluid">
     <div class="content-professional">
-      <?php $args = array( 'post_type' => 'product'); ?>   
-      <?php $loop = new WP_Query( $args ); ?>
-      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+     
+      <?php while ( have_posts() ) : the_post(); ?>
         <a class="card-inf-professional" href="profile.html">
           <img alt="image" class="img-fluid rounded" src="<?php echo get_the_post_thumbnail_url(); ?>">
           <div class="card-content-professional">

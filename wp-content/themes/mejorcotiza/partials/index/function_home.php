@@ -32,16 +32,16 @@
       </div>
     </div>
     <div class='containers-btn containers-btn-functions'>
-      <a class='btn btn-blue btn-first' href='mejor.html'>
+      <a class='btn btn-blue btn-first' href='<?php echo bloginfo('url') ?>/index.php/mejor'>
           <span class='btn-inner'>Cotizar proyectos de construcción</span>
         </a>
-      <a class='btn btn-blue ml-4 btn-first' href='materials.html'>
+      <a class='btn btn-blue ml-4 btn-first' href='<?php echo bloginfo('url') ?>/index.php/materials'>
           <span class='btn-inner'>Cotizar materiales de construcción</span>
         </a>
-      <a class='btn btn-blue btn-second' href='mejr.html'>
+      <a class='btn btn-blue btn-second' href='<?php echo bloginfo('url') ?>/index.php/materials'>
           <span class='btn-inner'>Cotizar proyectos</span>
         </a>
-      <a class='btn btn-blue mt-3 btn-second' href='materials.html'>
+      <a class='btn btn-blue mt-3 btn-second' href='<?php echo bloginfo('url') ?>/index.php/mejor'>
           <span class='btn-inner'>Cotizar materiales</span>
         </a>
     </div>
