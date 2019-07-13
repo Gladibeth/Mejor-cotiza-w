@@ -25,11 +25,11 @@
       <div class='top-header'>
         <div class='d-flex pl-4 pr-4'>
           <div class='phone'>
-            <a class='mr-3' href='#'>
+            <a class='mr-3' href= 'tel:+569 89043264' target ="_blank">
                 <i class='fa fa-phone'></i>
-                <span> 6789</span>
+                <span>(+569) 89043264</span>
               </a>
-            <a href='#'>
+            <a href='mailto:contacto@mejorcotiza.cl''>
                 <i class='fa fa-envelope'></i>
                 <span>Contacto@mejorcotiza.cl</span>
               </a>
