@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div id="container">
       <section class="multi_step_form">
-        <form id="msform">
+        <div id="msform">
           <div class="tittle">
             <h2>
               Indica tus Preferencias de Trabajo
@@ -188,7 +188,7 @@
                 <span class="btn-inner">Enviar</span>
               </a>
           </div> -->
-        </form>
+  </div>
       </section>
     </div>
   </div>

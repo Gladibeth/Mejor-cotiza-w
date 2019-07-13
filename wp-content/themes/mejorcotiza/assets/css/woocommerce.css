@@ -5,3 +5,25 @@
 #main {
   margin-top: 150px;
 }
+
+.woocommerce-breadcrumb {
+  padding: 40px !important;
+}
+
+
+.content-detail-product {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+.content-title-product {
+  font-family: "Raleway", sans-serif;
+}
+
+.content-details-img {
+  padding-left: 40px;
+}
+
+.frm_message {
+  font-family: "Raleway", sans-serif !important;
+}
