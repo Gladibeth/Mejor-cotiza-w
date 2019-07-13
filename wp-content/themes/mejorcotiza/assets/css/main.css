@@ -1937,6 +1937,16 @@ input[type=checkbox]:checked:disabled+label:before {
 .content-professional {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+
+
+}
+
+.card-content-professional.content-post {
+  align-items: flex-start !important;
+}
+
+.content-post-description {
+  text-align: justify !important;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
