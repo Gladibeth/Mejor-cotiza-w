@@ -1975,6 +1975,8 @@ input[type=checkbox]:checked:disabled+label:before {
 
 .card-content-professional.content-post {
   align-items: flex-start !important;
+  min-height: 235px;
+  max-height: 235px;
 }
 
 .content-post-description {

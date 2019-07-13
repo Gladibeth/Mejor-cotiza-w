@@ -10,6 +10,10 @@
   padding: 40px !important;
 }
 
+.price-detail {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
 
 .content-detail-product {
   font-family: "Raleway", sans-serif;
