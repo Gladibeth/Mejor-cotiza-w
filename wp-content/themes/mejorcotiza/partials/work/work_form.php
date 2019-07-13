@@ -9,7 +9,9 @@
             </h2>
             <p>Estimado, con el objetivo de enviarle las solicitudes que mas se acomoden a usted, indíquenos sus preferencias de Trabajo.</p>
           </div>
-          <div class="control control-expanded control-expen-form">
+
+          <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 2, 'title' => true, 'description' => false ) ); ?>
+          <!-- <div class="control control-expanded control-expen-form">
             <div class="control-label">
               <label for="">Correo</label>
             </div>
@@ -174,8 +176,8 @@
                   <input id="category-16" name="categories-14" type="checkbox" value="#">
                   <label for="category-16">Otros</label>
                 </div>
-              </div>
-            </div>
+              </div> -->
+          <!--   </div>
           </div>
           <div class="control control-expanded control-expen-form">
             <div class="control-label">
@@ -185,7 +187,7 @@
             <a class="btn btn-blue action-button" href="#">
                 <span class="btn-inner">Enviar</span>
               </a>
-          </div>
+          </div> -->
         </form>
       </section>
     </div>

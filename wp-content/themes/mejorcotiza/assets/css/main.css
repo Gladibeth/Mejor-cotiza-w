@@ -1118,86 +1118,86 @@ body.fixed-body {
   }
 }
 
-.control-expanded {
+#frm_form_2_container {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
   align-items: flex-end;
 }
 
-.control-expanded.control-expen-form {
+#frm_form_2_container.control-expen-form {
   align-items: center;
 }
 
-.control-expanded.control-questions {
+#frm_form_2_container.control-questions {
   display: inline;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .control-expanded.control-questions {
+  #frm_form_2_container.control-questions {
     display: inline;
   }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  .control-expanded.control-questions {
+  #frm_form_2_container.control-questions {
     display: flex;
     align-items: flex-end;
   }
 }
 
-.control-expanded .control-label {
+#frm_form_2_container .control-label {
   width: 80%;
   text-align: left;
   margin-bottom: 10px;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  .control-expanded .control-label {
+  #frm_form_2_container .control-label {
     width: 100%;
   }
 }
 
-.control-expanded .control-label label {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+#frm_form_2_container .control-label label {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 600 !important;
   color: #000 !important;
 }
 
-.control-expanded input,
-.control-expanded textarea,
-.control-expanded select {
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #ccc;
-  border-radius: 2px;
-  color: #565678;
-  max-width: 80%;
-  width: 80%;
-  padding: 10px;
-  resize: none;
-  outline: #3D9BE9;
-  font-family: "Raleway", sans-serif;
+#frm_form_2_container input,
+#frm_form_2_container textarea,
+#frm_form_2_container select {
+  background-color: #fff !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #ccc !important;
+  border-radius: 2px !important;
+  color: #565678 !important;
+  max-width: 80% !important;
+  width: 80% !important;
+  padding: 10px !important;
+  resize: none !important;
+  outline: #3D9BE9 !important;
+  font-family: "Raleway", sans-serif !important;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
 
-  .control-expanded input,
-  .control-expanded textarea,
-  .control-expanded select {
+  #frm_form_2_container input,
+  #frm_form_2_container textarea,
+  #frm_form_2_container select {
     max-width: 100%;
     width: 100%;
     background-color: transparent;
   }
 }
 
-.control-expanded input.fade-background:active,
-.control-expanded input.fade-background:focus,
-.control-expanded textarea.fade-background:active,
-.control-expanded textarea.fade-background:focus,
-.control-expanded select.fade-background:active,
-.control-expanded select.fade-background:focus {
+#frm_form_2_container input.fade-background:active,
+#frm_form_2_container input.fade-background:focus,
+#frm_form_2_container textarea.fade-background:active,
+#frm_form_2_container textarea.fade-background:focus,
+#frm_form_2_container select.fade-background:active,
+#frm_form_2_container select.fade-background:focus {
   animation: background .55s ease-in forwards;
   -webkit-animation: background .55s ease-in forwards;
   -moz-animation: background .55s ease-in;
@@ -1205,12 +1205,16 @@ body.fixed-body {
   color: #fff;
 }
 
-.control-expanded input.fade-background:active::placeholder,
-.control-expanded input.fade-background:focus::placeholder,
-.control-expanded textarea.fade-background:active::placeholder,
-.control-expanded textarea.fade-background:focus::placeholder,
-.control-expanded select.fade-background:active::placeholder,
-.control-expanded select.fade-background:focus::placeholder {
+#frm_verify_2, .frm_screen_reader{
+  display: none !important;
+}
+
+#frm_form_2_container input.fade-background:active::placeholder,
+#frm_form_2_container input.fade-background:focus::placeholder,
+#frm_form_2_container textarea.fade-background:active::placeholder,
+#frm_form_2_container textarea.fade-background:focus::placeholder,
+#frm_form_2_container select.fade-background:active::placeholder,
+#frm_form_2_container select.fade-background:focus::placeholder {
   color: #fff;
 }
 
@@ -3327,32 +3331,32 @@ input[type=checkbox]:checked:disabled+label:before {
   margin-top: 20px;
 }
 
-.content-form .control-expanded {
+.content-form #frm_form_2_container {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
   align-items: flex-end;
 }
 
-.content-form .control-expanded .control-label {
+.content-form #frm_form_2_container .control-label {
   width: 80%;
   text-align: left;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  .content-form .control-expanded .control-label {
+  .content-form #frm_form_2_container .control-label {
     width: 100%;
   }
 }
 
-.content-form .control-expanded .control-label label {
+.content-form #frm_form_2_container .control-label label {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: #fff;
 }
 
-.content-form .control-expanded input,
-.content-form .control-expanded textarea {
+.content-form #frm_form_2_container input,
+.content-form #frm_form_2_container textarea {
   background-color: #fff;
   border-width: 1px;
   border-style: solid;
@@ -3369,8 +3373,8 @@ input[type=checkbox]:checked:disabled+label:before {
 
 @media (min-width: 0px) and (max-width: 767px) {
 
-  .content-form .control-expanded input,
-  .content-form .control-expanded textarea {
+  .content-form #frm_form_2_container input,
+  .content-form #frm_form_2_container textarea {
     max-width: 100%;
     width: 100%;
     background-color: transparent;
