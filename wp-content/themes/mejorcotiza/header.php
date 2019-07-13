@@ -13,6 +13,7 @@
   <link href='<?php echo get_template_directory_uri(); ?>/assets/css/cssanimation.css' rel='stylesheet'>
   <link href='<?php echo get_template_directory_uri(); ?>/assets/css/animate.css' rel='stylesheet'>
   <link href='<?php echo get_template_directory_uri(); ?>/assets/css/main.css' rel='stylesheet'>
+  <link href='<?php echo get_template_directory_uri(); ?>/assets/css/woocommerce.css' rel='stylesheet'>
   <link href='<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png' rel='icon'>
 </head>
 <body data-spy="scroll" data-target="#navbarNav">
@@ -26,7 +27,7 @@
           <div class='phone'>
             <a class='mr-3' href='#'>
                 <i class='fa fa-phone'></i>
-                <span><?php var_dump($current_file); ?></span>
+                <span> 6789</span>
               </a>
             <a href='#'>
                 <i class='fa fa-envelope'></i>
