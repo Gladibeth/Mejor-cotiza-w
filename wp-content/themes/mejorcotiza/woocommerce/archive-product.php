@@ -41,7 +41,7 @@ do_action( 'woocommerce_before_main_content' );
             <h3>
               <strong><?php the_title(); ?></strong>
             </h3>
-            <p><?php the_content(); ?></p>
+            <p><?php echo excerpt('20'); ?></p>
           </div>
         </a>
       <?php endwhile; ?>

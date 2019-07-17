@@ -1173,22 +1173,7 @@ body.fixed-body {
   color: #000 !important;
 }
 
-.form-field input,
-.form-field textarea,
-.form-field select {
-  background-color: #fff !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  border-color: #ccc !important;
-  border-radius: 2px !important;
-  color: #565678 !important;
-  max-width: 80% !important;
-  width: 80% !important;
-  padding: 10px !important;
-  resize: none !important;
-  outline: #3D9BE9 !important;
-  font-family: "Raleway", sans-serif !important;
-}
+
 
 @media (min-width: 0px) and (max-width: 767px) {
 
@@ -1246,9 +1231,24 @@ body.fixed-body {
   }
 }
 
+
+.content-btn-div {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-btn-div button:nth-child(1) {
+  margin-right: 10px !important;
+}
+
 .form {
   margin-top: 90px;
-  background: #f6f9fb;
+  /* background: #f6f9fb; */
+}
+
+.btn-first-steps {
+  margin-left: 140px !important;
 }
 
 .multi_step_form {
@@ -1285,7 +1285,7 @@ body.fixed-body {
 
 .multi_step_form #msform fieldset {
   border: 0;
-  padding: 20px 105px 0;
+  padding: 20px 60px 0;
   position: relative;
   width: 100%;
   left: 0;
@@ -1714,8 +1714,8 @@ body.fixed-body {
 }
 
 .frm_radio label:before input[type="radio"]:focus {
-  outline: none;
-  border-color: #3D9BE9;
+  outline: none !important;
+  border-color: #3D9BE9 !important;
 }
 
 .frm_radio label:before input[type="radio"]:disabled {
@@ -1756,7 +1756,7 @@ label input[type=checkbox] {
 }
 
 label input[type=checkbox] {
-  display: none;
+  display: none !important;
 }
 
 .frm_checkbox label:before {
@@ -3376,54 +3376,83 @@ a.content-category {
   font-family: "Raleway", sans-serif;
 }
 
-.content-form {
+.control-expanded {
   margin-top: 20px;
 }
 
-.content-form .form-field {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 0;
-  align-items: flex-end;
+.content-btn-work {
+  width: 90% !important;
+  display: flex !important;
+  justify-content: flex-end !important;
 }
 
-..content-form field_g1jbw.control-label {
-  width: 80%;
-  text-align: left;
+.control-expanded.form-field {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 10px 0 !important;
+  align-items: flex-end !important;
+}
+
+.form-field .control-label {
+  width: 80% !important;
+  text-align: left !important;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 600;
+  color: #333333 !important;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  ..content-form field_g1jbw.control-label {
-    width: 100%;
+  .form-field .control-label {
+    width: 100% !important;
   }
 }
 
-..content-form field_g1jbw.control-label label {
+.form-field .control-label label {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: #fff;
 }
 
-.content-form .form-field input,
-.content-form .form-field textarea {
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #ccc;
-  border-radius: 2px;
-  color: #565678;
-  max-width: 80%;
-  width: 80%;
-  padding: 10px;
-  resize: none;
-  outline: #ccc;
-  font-family: "Raleway", sans-serif;
+
+.form-field input,
+.form-field select {
+  background-color: #fff !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #ccc !important;
+  border-radius: 2px !important;
+  color: #565678 !important;
+  max-width: 80% !important;
+  width: 80% !important;
+  padding: 10px !important;
+  resize: none !important;
+  outline: #ccc !important;
+  font-family: "Raleway", sans-serif !important;
+  height: 40px !important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) !important;
+}
+
+.form-field textarea {
+  background-color: #fff !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #ccc !important;
+  border-radius: 2px !important;
+  color: #565678 !important;
+  max-width: 80% !important;
+  width: 80% !important;
+  padding: 10px !important;
+  resize: none !important;
+  outline: #ccc !important;
+  font-family: "Raleway", sans-serif !important;
+  height: 100px !important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) !important;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
 
-  .content-form .form-field input,
-  .content-form .form-field textarea {
+  .form-field input,
+  .form-field textarea {
     max-width: 100%;
     width: 100%;
     background-color: transparent;

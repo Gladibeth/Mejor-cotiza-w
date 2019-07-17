@@ -1,3 +1,4 @@
+
 <?php get_header(); ?>
 <?php
 /**
@@ -16,7 +17,7 @@
  * @version 1.0
  */
 ?>	
-<div class="container">
+<div class="container cart-custom">
 	<?php echo do_shortcode('[woocommerce_cart]'); ?>
 </div>
 <?php get_footer(); ?>

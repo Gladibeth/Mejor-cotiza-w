@@ -24,21 +24,23 @@ defined( 'ABSPATH' ) || exit;
 		<h3><?php esc_html_e( 'Billing &amp; Shipping', 'woocommerce' ); ?></h3>
 
 	<?php else : ?>
-
-		<h3><?php esc_html_e( 'Billing details', 'woocommerce' ); ?></h3>
+		<div class="title-order">
+			<h3><?php esc_html_e( 'Detalles de facturación', 'woocommerce' ); ?></h3>
+		</div>
 
 	<?php endif; ?>
 
 	<?php do_action( 'woocommerce_before_checkout_billing_form', $checkout ); ?>
+	<div class="content-wo-billing">
+		<div class="woocommerce-billing-fields__field-wrapper">
+			<?php
+			$fields = $checkout->get_checkout_fields( 'billing' );
 
-	<div class="woocommerce-billing-fields__field-wrapper">
-		<?php
-		$fields = $checkout->get_checkout_fields( 'billing' );
-
-		foreach ( $fields as $key => $field ) {
-			woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
-		}
-		?>
+			foreach ( $fields as $key => $field ) {
+				woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
+			}
+			?>
+		</div>
 	</div>
 
 	<?php do_action( 'woocommerce_after_checkout_billing_form', $checkout ); ?>

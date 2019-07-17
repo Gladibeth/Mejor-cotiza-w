@@ -25,22 +25,35 @@ if ( $max_value && $min_value === $max_value ) {
 	<?php
 } else {
 	/* translators: %s: Quantity. */
-	$label = ! empty( $args['product_name'] ) ? sprintf( __( '%s quantity', 'woocommerce' ), wp_strip_all_tags( $args['product_name'] ) ) : __( 'Quantity', 'woocommerce' );
+	$label = ! empty( $args['product_name'] ) ? sprintf( _( '%s quantity', 'woocommerce' ), wp_strip_all_tags( $args['product_name'] ) ) : _( 'Quantity', 'woocommerce' );
 	?>
-	<div class="quantity">
-		<label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php echo esc_attr( $label ); ?></label>
-		<input
-			type="number"
-			id="<?php echo esc_attr( $input_id ); ?>"
-			class="<?php echo esc_attr( join( ' ', (array) $classes ) ); ?>"
-			step="<?php echo esc_attr( $step ); ?>"
-			min="<?php echo esc_attr( $min_value ); ?>"
-			max="<?php echo esc_attr( 0 < $max_value ? $max_value : '' ); ?>"
-			name="<?php echo esc_attr( $input_name ); ?>"
-			value="<?php echo esc_attr( $input_value ); ?>"
-			title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ); ?>"
-			size="4"
-			inputmode="<?php echo esc_attr( $inputmode ); ?>" />
-	</div>
-	<?php
+<div class="quantity">
+    <label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></label>
+    <input type="button" value="-" class="qty_button minus number-input" />
+    <input
+        type="number"
+        id="<?php echo esc_attr( $input_id ); ?>"
+        class="input-text qty text quantity"
+        step="<?php echo esc_attr( $step ); ?>"
+        min="<?php echo esc_attr( $min_value ); ?>"
+        max="<?php echo esc_attr( 0 < $max_value ? $max_value : '' ); ?>"
+        name="<?php echo esc_attr( $input_name ); ?>"
+        value="<?php echo esc_attr( $input_value ); ?>"
+        title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ); ?>"
+        size="4"
+        pattern="<?php echo esc_attr( $pattern ); ?>"
+        inputmode="<?php echo esc_attr( $inputmode ); ?>"
+        aria-labelledby="<?php echo esc_attr( $labelledby ); ?>"
+        style="    font-family: sans-serif;
+								    max-width: 50px;
+								    padding: 2.5px;
+								    border: solid #ddd;
+								    border-width: 2px 2px;
+								    font-size: 15px;
+								    color: #555555;
+								    height: 45px;
+								    text-align: center;" />
+    <input type="button" value="+" class="qty_button plus number-input" />
+</div>
+<?php
 }

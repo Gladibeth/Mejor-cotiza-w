@@ -2,6 +2,11 @@
   display: none !important;
 }
 
+.woocommerce {
+  margin-top: 200px !important;
+  min-height: 50vh !important;
+}
+
 #main {
   margin-top: 150px;
 }
@@ -34,5 +39,175 @@
 
 .deleted-title .product_title,
 .deleted-title .price {
+  display: none !important;
+}
+
+.form-cart {
+  display: flex !important;
+}
+
+.product-large-gallery {
+  margin: 0 0 0rem !important;
+}
+
+.flex-control-thumbs {
+  display: flex !important;
+  list-style: none !important;
+  padding: 0px !important;
+}
+
+.flex-control-thumbs li {
+  width: 500px !important;
+}
+
+.flex-control-thumbs li img {
+  width: 100% !important;
+  padding: 10px !important;
+}
+
+.deleted-title .entry-summary .product_meta {
+  display: none !important;
+}
+
+.price-detail p a {
+  color: #333 !important;
+  font-family: "Raleway", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+}
+
+td.product-thumbnail a img {
+  width: 150px !important;
+}
+
+td.product-name a {
+  color: #333 !important;
+}
+
+tr td.actions {
+  display: none !important;
+}
+
+tr.shipping {
+  display: none !important;
+}
+
+.content-wo-billing .woocommerce-billing-fields__field-wrapper p.form-row {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.content-wo-billing .woocommerce-billing-fields__field-wrapper p.form-row .woocommerce-input-wrapper input,
+.content-wo-billing .woocommerce-billing-fields__field-wrapper p.form-row .woocommerce-input-wrapper .select2-selection__rendered,
+.shipping_address .woocommerce-shipping-fields__field-wrapper p.form-row input,
+.shipping_address .woocommerce-shipping-fields__field-wrapper p.form-row .select2-selection__rendered,
+.woocommerce-form-login .form-row input,
+.lost_reset_password .form-row input {
+  background-color: transparent !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #ccc !important;
+  border-radius: 2px !important;
+  color: #565678 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 10px !important;
+  resize: none !important;
+  outline: #ccc !important;
+  font-family: "Raleway",
+    sans-serif !important;
+  height: 40px !important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) !important;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: transparent !important;
+  border: 1px transparent !important;
+  border-radius: 0px !important;
+}
+
+.content-wo-billing .woocommerce-billing-fields__field-wrapper p.form-row label,
+.shipping_address .woocommerce-shipping-fields__field-wrapper p.form-row label,
+.woocommerce-form-login .form-row label,
+.lost_reset_password .form-row label {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 600 !important;
+  color: #000 !important;
+}
+
+.woocommerce-additional-fields__field-wrapper p {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.woocommerce-additional-fields__field-wrapper p .woocommerce-input-wrapper textarea {
+  background-color: transparent !important;
+  border-width: 1px !im;
+  border-style: solid !import0nt;
+  border-color: #ccc !important;
+  border-radius: 2px !important;
+  color: #565678 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 10px !important;
+  resize: none !important;
+  outline: #ccc !important;
+  font-family: "Raleway",
+    sans-serif !important;
+  height: 90px !important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) !important;
+}
+
+.woocommerce-additional-fields__field-wrapper p label {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 600 !important;
+  color: #000 !important;
+}
+
+.title-order h3 {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 600 !important;
+  color: #000 !important;
+}
+
+.content-order {
+  padding: 20px !important;
+}
+
+.shipping_address .woocommerce-shipping-fields__field-wrapper p.form-row {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.woocommerce-form-login {
+  border: 1px solid transparent !important;
+  padding: 20px 150px !important;
+}
+
+.woocommerce .woocommerce-form-login .woocommerce-form-login__submit {
+  margin-right: 0 !important;
+}
+
+.lost_reset_password .form-row label {}
+
+.content-login-full {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.form-login-btn {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.form-lost-full {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.message-lost {
   display: none !important;
 }

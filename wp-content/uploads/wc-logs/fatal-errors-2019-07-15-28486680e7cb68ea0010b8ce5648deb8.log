@@ -1,0 +1,33 @@
+2019-07-15T21:02:04+00:00 CRITICAL Uncaught Error: Call to undefined function wc_categories() in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/content-single-product.php:51
+Stack trace:
+#0 /var/www/html/Mejor-cotiza/wp-includes/template.php(724): require()
+#1 /var/www/html/Mejor-cotiza/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/var/www/html/M...', false)
+#2 /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Mejor-cotiza/wp-includes/template-loader.php(78): include('/var/www/html/M...')
+#4 /var/www/html/Mejor-cotiza/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Mejor-cotiza/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/content-single-product.php on line 51
+
+2019-07-15T21:02:29+00:00 CRITICAL Uncaught Error: Call to undefined function get_wcategories() in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/content-single-product.php:51
+Stack trace:
+#0 /var/www/html/Mejor-cotiza/wp-includes/template.php(724): require()
+#1 /var/www/html/Mejor-cotiza/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/var/www/html/M...', false)
+#2 /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Mejor-cotiza/wp-includes/template-loader.php(78): include('/var/www/html/M...')
+#4 /var/www/html/Mejor-cotiza/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Mejor-cotiza/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/content-single-product.php on line 51
+
+2019-07-15T21:02:37+00:00 CRITICAL Uncaught Error: Call to undefined function get_wcategories() in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/content-single-product.php:51
+Stack trace:
+#0 /var/www/html/Mejor-cotiza/wp-includes/template.php(724): require()
+#1 /var/www/html/Mejor-cotiza/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/var/www/html/M...', false)
+#2 /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Mejor-cotiza/wp-includes/template-loader.php(78): include('/var/www/html/M...')
+#4 /var/www/html/Mejor-cotiza/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Mejor-cotiza/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown in /var/www/html/Mejor-cotiza/wp-content/themes/mejorcotiza/woocommerce/content-single-product.php on line 51
+
