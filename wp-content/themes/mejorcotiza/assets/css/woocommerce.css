@@ -7,6 +7,12 @@
   min-height: 50vh !important;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .woocommerce {
+    margin-top: 100px !important;
+  }
+}
+
 #main {
   margin-top: 150px;
 }
@@ -102,7 +108,8 @@ tr.shipping {
 .shipping_address .woocommerce-shipping-fields__field-wrapper p.form-row input,
 .shipping_address .woocommerce-shipping-fields__field-wrapper p.form-row .select2-selection__rendered,
 .woocommerce-form-login .form-row input,
-.lost_reset_password .form-row input {
+.lost_reset_password .form-row input,
+.checkout_coupon p.form-row input {
   background-color: transparent !important;
   border-width: 1px !important;
   border-style: solid !important;
