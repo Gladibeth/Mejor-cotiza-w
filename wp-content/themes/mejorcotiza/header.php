@@ -74,16 +74,28 @@
                 </a>
               <ul class='dropdown-menu multi-column columns-3'>
                 <div class='row'>
-                  <div class='col-sm-3'>
+                  <div class='col-sm-12'>
                     <ul class='multi-column-dropdown'>
-                      <li class='dropdown-header'>Construcción de cero</li>
-                      <li class='divider'></li>
-                      <li>
-                        <a href=''>
-                            Madera y tableros
-                          </a>
-                      </li>
-                      <li>
+                      <!-- <li class='dropdown-header'>Construcción de cero</li>
+                      <li class='divider'></li> -->
+                      <?php $args = array(
+                          'orderby' => 'slug',
+                          'order' => 'ASC'
+                          );
+                          $product_categories = get_terms('product_cat', $args);
+
+                      foreach ($product_categories as $product_category): ?>
+                                
+                              <?php $thumbnail_id = get_woocommerce_term_meta($product_category->term_id, 'thumbnail_id', true);
+
+                                    $images = wp_get_attachment_image_src($thumbnail_id, 'thumbnail'); ?>
+                        <li>
+                          <a href=''>
+                              <?php echo $product_category->name;?>
+                            </a>
+                        </li>
+                      <?php endforeach; ?>
+                      <!-- <li>
                         <a href=''>
                             Bloques, ladrillos cemento
                           </a>
@@ -118,10 +130,10 @@
                         <a href=''>
                             Ver más
                           </a>
-                      </li>
+                      </li> -->
                     </ul>
                   </div>
-                  <div class='col-sm-3'>
+                  <!-- <div class='col-sm-3'>
                     <ul class='multi-column-dropdown'>
                       <li class='dropdown-header'>Gastiferia</li>
                       <li class='divider'></li>
@@ -254,7 +266,7 @@
                           </a>
                       </li>
                     </ul>
-                  </div>
+                  </div> -->
                 </div>
               </ul>
             </li>
