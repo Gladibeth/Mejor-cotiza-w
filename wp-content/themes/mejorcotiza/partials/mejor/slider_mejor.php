@@ -1,98 +1,23 @@
-<main class='main-content'>
-  <section class='slideshow'>
-    <div class='slideshow-inner'>
-      <?php $args = array( 'post_type' => 'banner_mejor'); ?>   
-      <?php $loop = new WP_Query( $args ); ?>
-      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-        <div class='slides'>
-          <div class='slide is-active'>
-            <div class='slide-content'>
-              <div class='caption caption-home'>
-                <div class='container-title'>
-                  <div class='title title-bold mb-3'><?php the_title(); ?></div>
-                  <div class='title'><?php the_content(); ?></div>
-                </div>
-                <div class='containers-btn'>
-                  <a class='btn btn-white' href='<?php echo bloginfo('url'); ?>/index.php/form'>
-                      <span class='btn-inner'>Pide tu cotización</span>
-                    </a>
-                </div>
+
+<div class='carousel-content'>
+  <div class='carousel-divisor'>
+    <div class='carrusel-slider'>
+      <div class='single-item'>
+        <?php $args = array( 'post_type' => 'banner_mejor'); ?>   
+        <?php $loop = new WP_Query( $args ); ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+          <div class='item'>
+            <img class='img-responsive' src='<?php echo get_the_post_thumbnail_url(); ?>'>
+            <div class='mask-item'>
+              <div class='banner-info'>
+                <h1 class='title-banner wow animated fadeInUp' data-wow-delay='.2s' data-wow-duration='1500ms'><?php the_title(); ?></h1>
+                <p class='wow animated fadeInUp' data-wow-delay='.9s' data-wow-duration='1500ms'><?php the_content(); ?></p>
               </div>
-            </div>
-            <div class='image-container'>
-              <img alt='' class='image' src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80'>
             </div>
           </div>
         <?php endwhile; ?>
-        <!-- <div class='slide'>
-          <div class='slide-content'>
-            <div class='caption caption-home'>
-              <div class='container-title'>
-                <div class='title title-bold mb-3'>RECIBE HASTA 3 PRESUPUESTOS</div>
-                <div class='title'>en solo 3 pasos y Gratis!</div>
-              </div>
-              <div class='containers-btn'>
-                <a class='btn btn-white' href='form.html'>
-                    <span class='btn-inner'>Pide tu cotización</span>
-                  </a>
-              </div>
-            </div>
-          </div>
-          <div class='image-container'>
-            <img alt='' class='image' src='https://images.unsplash.com/photo-1475855581690-80accde3ae2b?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80'>
-          </div>
-        </div>
-        <div class='slide'>
-          <div class='slide-content'>
-            <div class='caption caption-home'>
-              <div class='container-title'>
-                <div class='title title-bold mb-3'>RECIBE HASTA 3 PRESUPUESTOS</div>
-                <div class='title'>en solo 3 pasos y Gratis!</div>
-              </div>
-              <div class='containers-btn'>
-                <a class='btn btn-white' href='form.html'>
-                    <span class='btn-inner'>Pide tu cotización</span>
-                  </a>
-              </div>
-            </div>
-          </div>
-          <div class='image-container'>
-            <img alt='' class='image' src='https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=746&amp;q=80'>
-          </div>
-        </div>
-      </div> -->
-
-
-      <!-- <div class='pagination'>
-        <div class='item is-active'>
-          <span class='icon'>1</span>
-        </div>
-        <div class='item'>
-          <span class='icon'>2</span>
-        </div>
-        <div class='item'>
-          <span class='icon'>3</span>
-        </div>
-      </div>-->
-      <div class='arrows'>
-        <div class='arrow prev'>
-          <span class='svg svg-arrow-left'>
-              <svg enable-background='new 0 0 14 26' height='26px' id='svg4-Layer_1' version='1.1' viewbox='0 0 14 26' width='14px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
-                <path d='M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z'></path>
-              </svg>
-              <span class='alt sr-only'></span>
-          </span>
-        </div>
-        <div class='arrow next'>
-          <span class='svg svg-arrow-right'>
-              <svg enable-background='new 0 0 14 26' height='26px' id='svg5-Layer_1' version='1.1' viewbox='0 0 14 26' width='14px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
-                <path d='M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z'>
-                  <span class='alt sr-only'></span>
-          </path>
-          </svg>
-          </span>
-        </div>
-      </div> 
+      </div>
     </div>
-  </section>
-</main>
+  </div>
+</div>
+

@@ -5,7 +5,7 @@
   <meta charset='UTF-8'>
   <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   <title></title>
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/magnific-popup.css" />
+  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/magnific-popup.css" /> -->
   <link href='<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css' rel='stylesheet'>
   <link href='<?php echo get_template_directory_uri(); ?>/assets/css/slick.css' rel='stylesheet'>
   <link href='<?php echo get_template_directory_uri(); ?>/assets/css/slick-theme.css' rel='stylesheet'>
@@ -30,7 +30,7 @@
                 <i class='fa fa-phone'></i>
                 <span>(+569) 89043264</span>
               </a>
-            <a href='mailto:contacto@mejorcotiza.cl''>
+            <a href='mailto:contacto@mejorcotiza.cl'>
                 <i class='fa fa-envelope'></i>
                 <span>Contacto@mejorcotiza.cl</span>
               </a>

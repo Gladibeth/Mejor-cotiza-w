@@ -1,3 +1,265 @@
+/* ===== Settings Slick ====== */
+.carousel-content {
+  width: 100%;
+  background: #FFF;
+  margin-top: 8vh;
+}
+
+.carousel-content .redes-social {
+  display: flex;
+  width: 110px;
+  position: absolute;
+  left: 7%;
+  bottom: 5%;
+  flex-direction: column;
+}
+
+@media (min-width: 0px) and (max-width: 340px) {
+  .carousel-content .redes-social {
+    bottom: 15%;
+    left: 6%;
+  }
+}
+
+@media (min-width: 341px) and (max-width: 350px) {
+  .carousel-content .redes-social {
+    bottom: 15%;
+    left: 6%;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 375px) {
+  .carousel-content .redes-social {
+    bottom: 15%;
+    left: 5%;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 450px) {
+  .carousel-content .redes-social {
+    bottom: 15%;
+    left: 6%;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 550px) {
+  .carousel-content .redes-social {
+    bottom: 15%;
+    left: 6%;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 650px) {
+  .carousel-content .redes-social {
+    bottom: 15%;
+    left: 6%;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 767px) {
+  .carousel-content .redes-social {
+    bottom: 15%;
+    left: 5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-content .redes-social {
+    bottom: 15%;
+  }
+}
+
+.carousel-content .redes-social i {
+  margin-top: 15px;
+  font-size: 20px;
+  transition: .5s ease-in-out;
+  color: #000;
+}
+
+.carousel-content .redes-social i:hover {
+  color: #0c9ee9;
+  transition: .5s ease-in-out;
+}
+
+.carousel-content .carousel-divisor {
+  width: 100%;
+  background-color: white;
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-prev {
+  right: 90px !important;
+  z-index: 2;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  top: 87%;
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-prev:before {
+  font-size: 25px;
+  color: #fff;
+  content: "\f053";
+  font-family: 'FontAwesome';
+  z-index: 3;
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-next {
+  right: 20px !important;
+  z-index: 2;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  top: 87%;
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-next:before {
+  font-size: 25px;
+  color: #fff;
+  content: "\f054";
+  font-family: 'FontAwesome';
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-dots {
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  right: 53%;
+  width: 0%;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-content .carousel-divisor .carrusel-slider .single-item .slick-dots {
+    left: 45%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-content .carousel-divisor .carrusel-slider .single-item .slick-dots {
+    left: 45%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .carousel-content .carousel-divisor .carrusel-slider .single-item .slick-dots {
+    left: 35%;
+  }
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-dots .slick-active button:before {
+  color: #00b050;
+  opacity: 0.75;
+  width: 35px;
+  margin: 0;
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-dots li {
+  margin: 0 10px;
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-dots li button:before {
+  color: gray;
+  content: '';
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background: #0c9ee9;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-dots li button:hover:before,
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-dots li button:focus:before {
+  color: #00b050;
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-slide {
+  height: 100vh !important;
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-slide img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-slide .mask-item {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-slide .banner-info {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .carousel-content .carousel-divisor .carrusel-slider .single-item .slick-slide .banner-info {
+    padding: 70px 70px 10px 30px;
+  }
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-slide .banner-info .title-banner {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  /* margin-bottom: 20px;
+font-weight: 700;
+position: absolute;
+top: 38%;
+left: 20%; */
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .carousel-content .carousel-divisor .carrusel-slider .single-item .slick-slide .banner-info .title-banner {
+    font-size: 45px;
+    color: #fff;
+    font-weight: 700;
+    left: 3%;
+  }
+}
+
+.carousel-content .carousel-divisor .carrusel-slider .single-item .slick-slide .banner-info p {
+  color: #fff;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  /* width: 65%;
+ position: absolute;
+ top: 52%;
+ left: 17%;
+ line-height: 30px;
+ text-align: center; */
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .carousel-content .carousel-divisor .carrusel-slider .single-item .slick-slide .banner-info p {
+    font-size: 20px;
+    color: #fff;
+    width: 80%;
+    left: 3%;
+  }
+}
+
 @media (max-width: 767px) {
   .offcanvas-collapse {
     position: fixed;
@@ -374,7 +636,7 @@
 }
 
 .carousel-content .carousel-divisor .carrusel-slider .single-item .slick-slide {
-  height: 65vh !important;
+  height: 87vh !important;
 }
 
 .carousel-content .carousel-divisor .carrusel-slider .single-item .slick-slide img {
@@ -396,6 +658,13 @@
   z-index: 1;
 }
 
+.containers-btn {
+  position: absolute;
+  bottom: 60px;
+  z-index: 99;
+  left: 17%;
+}
+
 .carousel-content .carousel-divisor .carrusel-slider .single-item .slick-slide .banner-info {
   height: 100%;
   width: 100%;
@@ -412,11 +681,11 @@
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 55px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  position: absolute;
-  top: 38%;
-  left: 11%;
+  /* margin-bottom: 20px;
+font-weight: 700;
+position: absolute;
+top: 38%;
+left: 20% !important; */
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -432,10 +701,11 @@
   color: #fff;
   font-size: 30px;
   font-family: "Roboto", sans-serif;
-  width: 100%;
-  position: absolute;
-  top: 40%;
-  left: 24%;
+  /* width: 65%;
+position: absolute;
+top: 55%;
+left: 17%;
+text-align: center; */
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -506,14 +776,14 @@ body.fixed-body {
   text-decoration: none;
   position: relative;
   background: transparent;
-  border: 1px solid #e1e1e1;
+  /* border: 1px solid #e1e1e1; */
   font: 12px/1.2 "Oswald", sans-serif;
   letter-spacing: 0.4em;
   text-align: center;
   text-indent: 2px;
   text-transform: uppercase;
   transition: color 0.1s linear 0.05s;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   font-weight: 900;
 }
 
@@ -960,7 +1230,7 @@ body.fixed-body {
   background-color: #fff;
 }
 
-.slideshow .arrows .arrow {
+.slideshow .arrows {
   margin: -33px 0 0;
   padding: 20px;
   position: absolute;
@@ -3496,12 +3766,12 @@ a.content-category {
   width: 90px;
 }
 
-.containers-btn-functions {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 35px;
-}
+/* .containers-btn-functions {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 35px;
+} */
 
 @media (min-width: 0px) and (max-width: 767px) {
   .containers-btn-functions {

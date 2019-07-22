@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".single-item").slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     speed: 500,
     infinite: true,
@@ -8,26 +8,43 @@ $(document).ready(function () {
     fade: true,
     arrows: false,
     dots: false,
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
 
-        }
       }
-    ]
+    }]
   });
+  $(".single-materials").slick({
+    autoplay: false,
+    autoplaySpeed: 3000,
+    speed: 500,
+    infinite: true,
+    cssEase: 'linear',
+    fade: true,
+    arrows: false,
+    dots: false,
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+
+      }
+    }]
+  });
+
   $('.content-categories').slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
     dots: true,
     arrows: true,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
@@ -62,8 +79,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: false,
     arrows: true,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
@@ -99,8 +115,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: false,
     arrows: true,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
@@ -137,8 +152,7 @@ $(document).ready(function () {
     dots: true,
     arrows: false,
     autoplay: true,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 4,
@@ -187,8 +201,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: false,
     arrows: false,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
@@ -218,5 +231,3 @@ $(document).ready(function () {
   });
 
 });
-
-
