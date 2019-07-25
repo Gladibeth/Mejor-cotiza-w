@@ -30,6 +30,7 @@ if ( post_password_required() ) {
 	echo get_the_password_form(); // WPCS: XSS ok.
 	return;
 }
+// require 'simple_html_dom.php';
 ?>
 
 <div class="container-fluid">
@@ -45,7 +46,7 @@ if ( post_password_required() ) {
 	do_action( 'woocommerce_before_single_product_summary' );
 	?>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 details-description">
       <h2><?php the_title(); ?></h2>
       <div class="price-detail">
         <p> <?php echo $product->get_categories(); ?></p>
@@ -83,14 +84,40 @@ if ( post_password_required() ) {
 
     </div>
   </div>
-
   <section class="questions">
-    <div class="content-title">
-      
-    </div>
     <div class="container-fluid">
+      <div class='title-head'>
+        <h2>
+          Productos a comparar
+        </h2>
+      </div>
+
       <div class="content-professional ">
-        <?php $args = array( 'post_type' => 'product'); ?>   
+        <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4); ?>   
+        <?php $loop = new WP_Query( $args ); ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+          <a class="card-inf-professional" href="<?php the_permalink();?>">
+            <img alt="image" class="img-fluid rounded" src="<?php echo get_the_post_thumbnail_url(); ?>">
+            <div class="card-content-professional content-post">
+              <h3>
+                <strong><?php the_title(); ?></strong>
+              </h3>
+              <p class="content-post-description"><?php echo excerpt('20'); ?></p>
+            </div>
+          </a>
+        <?php endwhile; ?>
+      </div>
+    </div>
+  </section>
+  <section class="questions">
+    <div class="container-fluid">
+      <div class='title-head'>
+        <h2>
+          Productos relacionados
+        </h2>
+      </div>
+      <div class="content-professional ">
+        <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4); ?>   
         <?php $loop = new WP_Query( $args ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <a class="card-inf-professional" href="<?php the_permalink();?>">

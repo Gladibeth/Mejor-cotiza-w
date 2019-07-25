@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div class='containers-btn containers-btn-functions'>
+    <div class=' containers-btn-functions'>
       <a class='btn btn-blue btn-first' href='<?php echo bloginfo('url') ?>/index.php/mejor'>
           <span class='btn-inner'>Cotizar proyectos de construcción</span>
         </a>

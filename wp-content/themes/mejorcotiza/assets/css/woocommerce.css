@@ -7,15 +7,33 @@
   min-height: 50vh !important;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
-  .woocommerce {
-    margin-top: 100px !important;
-  }
-}
 
 #main {
   margin-top: 150px;
 }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .woocommerce {
+    margin-top: 100px !important;
+  }
+
+  #main {
+    margin-top: 0px;
+  }
+
+  .details-description {
+    padding: 0 40px !important;
+  }
+
+  .title-head {
+    padding: 20px;
+  }
+
+  .form-cart {
+    flex-direction: column;
+  }
+}
+
 
 .woocommerce-breadcrumb {
   padding: 40px !important;
@@ -62,12 +80,13 @@
   padding: 0px !important;
 }
 
-.flex-control-thumbs li {
+/* .flex-control-thumbs li {
   width: 500px !important;
-}
+} */
 
 .flex-control-thumbs li img {
-  width: 100% !important;
+  width: 100px !important;
+  height: 100px !important;
   padding: 10px !important;
 }
 

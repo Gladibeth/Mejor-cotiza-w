@@ -239,9 +239,119 @@ function Banner() {
 }
 add_action( 'init', 'Banner', 0 );
 
+// Register Custom Post Type
+function Banner_materials() {
+
+	$labels = array(
+		'name'                  => _x( 'Banner materiales', 'Post Type General Name', 'mejor_cotiza' ),
+		'singular_name'         => _x( 'Banner materiales', 'Post Type Singular Name', 'mejor_cotiza' ),
+		'menu_name'             => __( 'Banner Materiales', 'mejor_cotiza' ),
+		'name_admin_bar'        => __( 'Post Type', 'mejor_cotiza' ),
+		'archives'              => __( 'Archivo', 'mejor_cotiza' ),
+		'attributes'            => __( 'Atributos', 'mejor_cotiza' ),
+		'parent_item_colon'     => __( 'Artículo principal', 'mejor_cotiza' ),
+		'all_items'             => __( 'Todos los artículos', 'mejor_cotiza' ),
+		'add_new_item'          => __( 'Agregar ítem nuevo', 'mejor_cotiza' ),
+		'add_new'               => __( 'Añadir nuevo', 'mejor_cotiza' ),
+		'new_item'              => __( 'Nuevo artículo', 'mejor_cotiza' ),
+		'edit_item'             => __( 'Editar elemento', 'mejor_cotiza' ),
+		'update_item'           => __( 'Actualizar artículo', 'mejor_cotiza' ),
+		'view_item'             => __( 'Ver ítem', 'mejor_cotiza' ),
+		'view_items'            => __( 'Ver artículos', 'mejor_cotiza' ),
+		'search_items'          => __( 'Buscar artículo', 'mejor_cotiza' ),
+		'not_found'             => __( 'Extraviado', 'mejor_cotiza' ),
+		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'mejor_cotiza' ),
+		'featured_image'        => __( 'Foto principal', 'mejor_cotiza' ),
+		'set_featured_image'    => __( 'Establecer imagen destacada', 'mejor_cotiza' ),
+		'remove_featured_image' => __( 'Remove featured image', 'mejor_cotiza' ),
+		'use_featured_image'    => __( 'Usar como imagen destacada', 'mejor_cotiza' ),
+		'insert_into_item'      => __( 'Insertar en el elemento', 'mejor_cotiza' ),
+		'uploaded_to_this_item' => __( 'Subido a este artículo', 'mejor_cotiza' ),
+		'items_list'            => __( 'Lista de artículos', 'mejor_cotiza' ),
+		'items_list_navigation' => __( 'Lista de elementos de navegación', 'mejor_cotiza' ),
+		'filter_items_list'     => __( 'Lista de elementos de filtro', 'mejor_cotiza' ),
+	);
+	$args = array(
+		'label'                 => __( 'Banner materiales', 'mejor_cotiza' ),
+		'description'           => __( 'Post Type Description', 'mejor_cotiza' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'taxonomies'            => array(  ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-format-image',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'Banner_materials', $args );
+
+}
+add_action( 'init', 'Banner_materials', 0 );
 
 
+function Banner_mejor() {
 
+	$labels = array(
+		'name'                  => _x( 'Banner mejor', 'Post Type General Name', 'mejor_cotiza' ),
+		'singular_name'         => _x( 'Banner mejor', 'Post Type Singular Name', 'mejor_cotiza' ),
+		'menu_name'             => __( 'Banner mejor', 'mejor_cotiza' ),
+		'name_admin_bar'        => __( 'Post Type', 'mejor_cotiza' ),
+		'archives'              => __( 'Archivo', 'mejor_cotiza' ),
+		'attributes'            => __( 'Atributos', 'mejor_cotiza' ),
+		'parent_item_colon'     => __( 'Artículo principal', 'mejor_cotiza' ),
+		'all_items'             => __( 'Todos los artículos', 'mejor_cotiza' ),
+		'add_new_item'          => __( 'Agregar ítem nuevo', 'mejor_cotiza' ),
+		'add_new'               => __( 'Añadir nuevo', 'mejor_cotiza' ),
+		'new_item'              => __( 'Nuevo artículo', 'mejor_cotiza' ),
+		'edit_item'             => __( 'Editar elemento', 'mejor_cotiza' ),
+		'update_item'           => __( 'Actualizar artículo', 'mejor_cotiza' ),
+		'view_item'             => __( 'Ver ítem', 'mejor_cotiza' ),
+		'view_items'            => __( 'Ver artículos', 'mejor_cotiza' ),
+		'search_items'          => __( 'Buscar artículo', 'mejor_cotiza' ),
+		'not_found'             => __( 'Extraviado', 'mejor_cotiza' ),
+		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'mejor_cotiza' ),
+		'featured_image'        => __( 'Foto principal', 'mejor_cotiza' ),
+		'set_featured_image'    => __( 'Establecer imagen destacada', 'mejor_cotiza' ),
+		'remove_featured_image' => __( 'Remove featured image', 'mejor_cotiza' ),
+		'use_featured_image'    => __( 'Usar como imagen destacada', 'mejor_cotiza' ),
+		'insert_into_item'      => __( 'Insertar en el elemento', 'mejor_cotiza' ),
+		'uploaded_to_this_item' => __( 'Subido a este artículo', 'mejor_cotiza' ),
+		'items_list'            => __( 'Lista de artículos', 'mejor_cotiza' ),
+		'items_list_navigation' => __( 'Lista de elementos de navegación', 'mejor_cotiza' ),
+		'filter_items_list'     => __( 'Lista de elementos de filtro', 'mejor_cotiza' ),
+	);
+	$args = array(
+		'label'                 => __( 'Banner mejor', 'mejor_cotiza' ),
+		'description'           => __( 'Post Type Description', 'mejor_cotiza' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'taxonomies'            => array(  ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-format-image',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'Banner_mejor', $args );
+
+}
+add_action( 'init', 'Banner_mejor', 0 );
 // Register Custom Post Type
 function team() {
 
@@ -358,62 +468,7 @@ function bidding() {
 add_action( 'init', 'bidding', 0 );
 
 
-// Register Custom Post Type
-function Banner_materials() {
 
-	$labels = array(
-		'name'                  => _x( 'Banner materiales', 'Post Type General Name', 'mejor_cotiza' ),
-		'singular_name'         => _x( 'Banner materiales', 'Post Type Singular Name', 'mejor_cotiza' ),
-		'menu_name'             => __( 'Banner Materiales', 'mejor_cotiza' ),
-		'name_admin_bar'        => __( 'Post Type', 'mejor_cotiza' ),
-		'archives'              => __( 'Archivo', 'mejor_cotiza' ),
-		'attributes'            => __( 'Atributos', 'mejor_cotiza' ),
-		'parent_item_colon'     => __( 'Artículo principal', 'mejor_cotiza' ),
-		'all_items'             => __( 'Todos los artículos', 'mejor_cotiza' ),
-		'add_new_item'          => __( 'Agregar ítem nuevo', 'mejor_cotiza' ),
-		'add_new'               => __( 'Añadir nuevo', 'mejor_cotiza' ),
-		'new_item'              => __( 'Nuevo artículo', 'mejor_cotiza' ),
-		'edit_item'             => __( 'Editar elemento', 'mejor_cotiza' ),
-		'update_item'           => __( 'Actualizar artículo', 'mejor_cotiza' ),
-		'view_item'             => __( 'Ver ítem', 'mejor_cotiza' ),
-		'view_items'            => __( 'Ver artículos', 'mejor_cotiza' ),
-		'search_items'          => __( 'Buscar artículo', 'mejor_cotiza' ),
-		'not_found'             => __( 'Extraviado', 'mejor_cotiza' ),
-		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'mejor_cotiza' ),
-		'featured_image'        => __( 'Foto principal', 'mejor_cotiza' ),
-		'set_featured_image'    => __( 'Establecer imagen destacada', 'mejor_cotiza' ),
-		'remove_featured_image' => __( 'Remove featured image', 'mejor_cotiza' ),
-		'use_featured_image'    => __( 'Usar como imagen destacada', 'mejor_cotiza' ),
-		'insert_into_item'      => __( 'Insertar en el elemento', 'mejor_cotiza' ),
-		'uploaded_to_this_item' => __( 'Subido a este artículo', 'mejor_cotiza' ),
-		'items_list'            => __( 'Lista de artículos', 'mejor_cotiza' ),
-		'items_list_navigation' => __( 'Lista de elementos de navegación', 'mejor_cotiza' ),
-		'filter_items_list'     => __( 'Lista de elementos de filtro', 'mejor_cotiza' ),
-	);
-	$args = array(
-		'label'                 => __( 'Banner materiales', 'mejor_cotiza' ),
-		'description'           => __( 'Post Type Description', 'mejor_cotiza' ),
-		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
-		'taxonomies'            => array(  ),
-		'hierarchical'          => false,
-		'public'                => true,
-		'show_ui'               => true,
-		'show_in_menu'          => true,
-		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-format-image',
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
-	);
-	register_post_type( 'Banner_materials', $args );
-
-}
-add_action( 'init', 'Banner_materials', 0 );
 
 
 function distributor() {
@@ -530,58 +585,3 @@ function professionals() {
 add_action( 'init', 'professionals', 0 );
 
 
-function Banner_mejor() {
-
-	$labels = array(
-		'name'                  => _x( 'Banner mejor', 'Post Type General Name', 'mejor_cotiza' ),
-		'singular_name'         => _x( 'Banner mejor', 'Post Type Singular Name', 'mejor_cotiza' ),
-		'menu_name'             => __( 'Banner mejor', 'mejor_cotiza' ),
-		'name_admin_bar'        => __( 'Post Type', 'mejor_cotiza' ),
-		'archives'              => __( 'Archivo', 'mejor_cotiza' ),
-		'attributes'            => __( 'Atributos', 'mejor_cotiza' ),
-		'parent_item_colon'     => __( 'Artículo principal', 'mejor_cotiza' ),
-		'all_items'             => __( 'Todos los artículos', 'mejor_cotiza' ),
-		'add_new_item'          => __( 'Agregar ítem nuevo', 'mejor_cotiza' ),
-		'add_new'               => __( 'Añadir nuevo', 'mejor_cotiza' ),
-		'new_item'              => __( 'Nuevo artículo', 'mejor_cotiza' ),
-		'edit_item'             => __( 'Editar elemento', 'mejor_cotiza' ),
-		'update_item'           => __( 'Actualizar artículo', 'mejor_cotiza' ),
-		'view_item'             => __( 'Ver ítem', 'mejor_cotiza' ),
-		'view_items'            => __( 'Ver artículos', 'mejor_cotiza' ),
-		'search_items'          => __( 'Buscar artículo', 'mejor_cotiza' ),
-		'not_found'             => __( 'Extraviado', 'mejor_cotiza' ),
-		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'mejor_cotiza' ),
-		'featured_image'        => __( 'Foto principal', 'mejor_cotiza' ),
-		'set_featured_image'    => __( 'Establecer imagen destacada', 'mejor_cotiza' ),
-		'remove_featured_image' => __( 'Remove featured image', 'mejor_cotiza' ),
-		'use_featured_image'    => __( 'Usar como imagen destacada', 'mejor_cotiza' ),
-		'insert_into_item'      => __( 'Insertar en el elemento', 'mejor_cotiza' ),
-		'uploaded_to_this_item' => __( 'Subido a este artículo', 'mejor_cotiza' ),
-		'items_list'            => __( 'Lista de artículos', 'mejor_cotiza' ),
-		'items_list_navigation' => __( 'Lista de elementos de navegación', 'mejor_cotiza' ),
-		'filter_items_list'     => __( 'Lista de elementos de filtro', 'mejor_cotiza' ),
-	);
-	$args = array(
-		'label'                 => __( 'Banner mejor', 'mejor_cotiza' ),
-		'description'           => __( 'Post Type Description', 'mejor_cotiza' ),
-		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
-		'taxonomies'            => array(  ),
-		'hierarchical'          => false,
-		'public'                => true,
-		'show_ui'               => true,
-		'show_in_menu'          => true,
-		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-format-image',
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
-	);
-	register_post_type( 'Banner_mejor', $args );
-
-}
-add_action( 'init', 'Banner_mejor', 0 );

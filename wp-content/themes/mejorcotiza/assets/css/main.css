@@ -968,6 +968,7 @@ body.fixed-body {
   width: 100%;
   height: 1px;
   border: 1px transparent;
+  background: #3D9BE9;
   z-index: 1;
   opacity: 0;
   transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
@@ -3766,12 +3767,16 @@ a.content-category {
   width: 90px;
 }
 
-/* .containers-btn-functions {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 35px;
-} */
+#function {
+  position: relative;
+}
+
+.containers-btn-functions {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 35px;
+}
 
 @media (min-width: 0px) and (max-width: 767px) {
   .containers-btn-functions {
